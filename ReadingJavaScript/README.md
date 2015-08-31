@@ -1,8 +1,8 @@
 # There are four Basic literal types (primitive):
 1. null- 1 value. Intentionally empty value.
 2. Boolean- 2 values (true and false)
-ex: Boolean(0)
-false
+  ex: Boolean(0)
+      false
 3. Number- made up of rationals.
 4. String- "words", textual data in quotes, numbers don't need quotes.
   ex: String("Hello World")
@@ -20,8 +20,8 @@ Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns 
       4 / 2
 
 Comparison, e.g. >, <= :
-  strict (===)- only true if the operands are the same type
-  abstract (==)- converts the operands to the same type before making the comparison
-  relational abstract (<=)- operands are first converted to primitives, then to the same type, before comparison
+strict (===)- only true if the operands are the same type
+abstract (==)- converts the operands to the same type before making the comparison
+relational abstract (<=)- operands are first converted to primitives, then to the same type, before comparison
 
 Assignment, e.g. var, =, += :
