@@ -10,7 +10,7 @@
 4. String- "words", textual data in quotes, numbers don't need quotes.
   - ex: String("Hello World")
 
-Special constants:
+##Special constants:
 - Inifinty- numeric value representing infinity
   - ex: 4 / Infinity = 0
   - ex: 2 * Infinity = Infinity
@@ -20,23 +20,23 @@ Special constants:
   - ex: Number(demo) // demo is not defined
 
 ##Basic Operators:
-Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns a single numerical value.
-  ex: 3 + 2
-      4 / 2
-      3 - 1
+- Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns a single numerical value.
+  - ex: 3 + 2
+  - ex: 4 / 2
+  - ex: 3 - 1
 
-Comparison, e.g. >, <= :
-Strict (===)- only true if the operands are the same type
-  ex: 3 === 3 // true
-      3 === "3" // false
-Equality (==)- converts the operands to the same type before making the comparison
-  ex: 1 == "1" // true
-      1 == 1 // true
-      0 == false // true
-      0 == null // false
-      null == undefined // true
-relational abstract (<=)- operands are first converted to primitives, then to the same type, before comparison
-    ex: 3 <= 4 // true
+- Comparison, e.g. >, <= :
+ - Strict (===)- only true if the operands are the same type
+   - ex: 3 === 3 // true
+    - ex: 3 === "3" // false
+ - Equality (==)- converts the operands to the same type before making the comparison
+   -ex: 1 == "1" // true
+    - ex: 1 == 1 // true
+    - ex: 0 == false // true
+    - ex: 0 == null // false
+    - ex: null == undefined // true
+ - relational abstract (<=)- operands are first converted to primitives, then to the same type, before comparison
+   - ex: 3 <= 4 // true
 
-Assignment, e.g. var, =, += : assigns a value to its left operand based on the value of its right operand.
+- Assignment, e.g. var, =, += : assigns a value to its left operand based on the value of its right operand.
   ex: x = y, x += y (which means x = x + y)
