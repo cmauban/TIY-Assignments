@@ -1,8 +1,8 @@
-There are four Basic literal types (primitive):
+# There are four Basic literal types (primitive):
 1. null- 1 value. Intentionally empty value.
 2. Boolean- 2 values (true and false)
-  ex: Boolean(0)
-      false
+ex: Boolean(0)
+false
 3. Number- made up of rationals.
 4. String- "words", textual data in quotes, numbers don't need quotes.
   ex: String("Hello World")
