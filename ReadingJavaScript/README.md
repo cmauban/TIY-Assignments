@@ -1,23 +1,23 @@
 # The four basic literal types (primitive):
 1. null- 1 value. Intentionally empty value. 
-  1. ex: Number(null) // 0
+  - ex: Number(null) // 0
 2. Boolean- 2 values (true and false)
-   2. ex: Boolean(0) // false
-   3. ex: Boolean(3) // true
-   4. ex: Boolean(null) // false
-3. Number- made up of rationals. ex: 3.1459
+   - ex: Boolean(0) // false
+   - ex: Boolean(3) // true
+   - ex: Boolean(null) // false
+3. Number- made up of rationals.
+  - ex: 3.1459
 4. String- "words", textual data in quotes, numbers don't need quotes.
-  ex: String("Hello World")
+  - ex: String("Hello World")
 
 Special constants:
 - Inifinty- numeric value representing infinity
-  ex: 4 / Infinity = 0
-      2 * Infinity = Infinity
+  - ex: 4 / Infinity = 0
+  - ex: 2 * Infinity = Infinity
 - NaN- not a number. numeric data type that has an undefined value and cannot be represented.
-  ex: 0/0
-      NaN
+  - ex: 0/0 // NaN
 - undefined- a value that is undefined such as a variable that has not been assigned a value.
-  ex: Number(demo) // demo is not defined
+  - ex: Number(demo) // demo is not defined
 
 ##Basic Operators:
 Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns a single numerical value.
