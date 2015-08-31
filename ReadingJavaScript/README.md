@@ -31,13 +31,14 @@
    - ex: 3 === 3 // true
     - ex: 3 === "3" // false
  - Equality (==)- converts the operands to the same type before making the comparison
-   -ex: 1 == "1" // true
+    - ex: 1 == "1" // true
     - ex: 1 == 1 // true
     - ex: 0 == false // true
     - ex: 0 == null // false
     - ex: null == undefined // true
  - relational abstract (<=)- operands are first converted to primitives, then to the same type, before comparison
-   - ex: 3 <= 4 // true
+    - ex: 3 <= 4 // true
 
 - Assignment, e.g. var, =, += : assigns a value to its left operand based on the value of its right operand.
-  ex: x = y, x += y (which means x = x + y)
+  - ex: x = y
+  - ex: x += y (which means x = x + y)
