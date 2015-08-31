@@ -1,4 +1,4 @@
-# The four Basic literal types (primitive):
+# The four basic literal types (primitive):
 1. null- 1 value. Intentionally empty value. 
   ex: Number(null)
       0
@@ -17,6 +17,7 @@ NaN- not a number. numeric data type that has an undefined value and cannot be r
   ex: 0/0
       NaN
 undefined- a value that is undefined such as a variable that has not been assigned a value.
+  ex: Number(demo) // demo is not defined
 
 ##Basic Operators:
 Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns a single numerical value.
