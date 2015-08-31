@@ -1,4 +1,5 @@
-# The four basic literal types (primitive):
+#About JavaScript
+##The Four Basic Literal Types (primitive):
 1. null- 1 value. Intentionally empty value. 
   - ex: Number(null) // 0
 2. Boolean- 2 values (true and false)
@@ -10,7 +11,7 @@
 4. String- "words", textual data in quotes, numbers don't need quotes.
   - ex: String("Hello World")
 
-##Special constants:
+##Special Constants:
 - Inifinty- numeric value representing infinity
   - ex: 4 / Infinity = 0
   - ex: 2 * Infinity = Infinity
