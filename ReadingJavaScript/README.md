@@ -1,8 +1,8 @@
 #About JavaScript
 ##The Four Basic Literal Types (primitive):
-1. `null`- 1 value. Intentionally empty value. 
+1. `null`- 1 value. Intentionally empty value. Simplest type of expression.
   - ex: Number(null) // 0
-2. `Boolean`- 2 values (true and false)
+2. `Boolean`- 2 values. comparing two things. (true and false)
    - ex: Boolean(0) // false
    - ex: Boolean(3) // true
    - ex: Boolean(null) // false
