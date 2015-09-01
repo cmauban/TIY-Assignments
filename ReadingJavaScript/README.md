@@ -1,23 +1,23 @@
 #About JavaScript
 ##The Four Basic Literal Types (primitive):
-1. null- 1 value. Intentionally empty value. 
+1. `null`- 1 value. Intentionally empty value. 
   - ex: Number(null) // 0
-2. Boolean- 2 values (true and false)
+2. `Boolean`- 2 values (true and false)
    - ex: Boolean(0) // false
    - ex: Boolean(3) // true
    - ex: Boolean(null) // false
-3. Number- made up of rationals.
+3. `Number`- made up of rationals.
   - ex: 3.1459
-4. String- represents text. "words", textual data in quotes, numbers don't need quotes. Concatenate: putting two strings together.
+4. `String`- represents text. "words", textual data in quotes, numbers don't need quotes. Concatenate: putting two strings together.
   - ex: String("Hello World")
 
 ##Special Constants:
-- Inifinty- numeric value representing infinity
+- `Inifinty`- numeric value representing infinity
   - ex: 4 / Infinity = 0
   - ex: 2 * Infinity = Infinity
-- NaN- not a number. numeric data type that has an undefined value and cannot be represented.
+- `NaN`- not a number. numeric data type that has an undefined value and cannot be represented.
   - ex: 0/0 // NaN
-- undefined- a value that is undefined such as a variable that has not been assigned a value.
+- `undefined`- a value that is undefined such as a variable that has not been assigned a value.
   - ex: Number(demo) // demo is not defined
 
 ##Basic Operators:
