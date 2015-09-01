@@ -8,7 +8,7 @@
    - ex: Boolean(null) // false
 3. Number- made up of rationals.
   - ex: 3.1459
-4. String- "words", textual data in quotes, numbers don't need quotes.
+4. String- represents text. "words", textual data in quotes, numbers don't need quotes. Concatenate: putting two strings together.
   - ex: String("Hello World")
 
 ##Special Constants:
