@@ -1,5 +1,5 @@
 #About JavaScript
-##The Four Basic Literal Types (primitive):
+##The Four Primitive Types:
 1. `null`- 1 value. Intentionally empty value. Simplest type of expression.
   - ex: Number(null) // 0
 2. `Boolean`- 2 values. comparing two things. (true and false)
