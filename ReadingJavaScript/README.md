@@ -42,3 +42,29 @@
 - Assignment, e.g. var, =, += : assigns a value to its left operand based on the value of its right operand.
   - ex: x = y
   - ex: x += y (which means x = x + y)
+
+## Functions
+
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs. They are a snippet of code, when told to do its job, executes all of its statements.
+
+#####Functions have 3 things:
+
+1. Input- parameters. variable.
+2. Output- ex: return. (return value is always undefined unless notes)
+3. Side Effects- outside of function ex: console.log
+
+### `function` keyword
+
+The `function` keyword is used to _define_ a function with parentheses and curly braces:
+
+    // This is a Function Definition for `whatever`...
+    function whatever ( /* arguments go here */ ) {
+      // body of function goes here
+    }
+
+Once a function has been defined, it can be _invoked_ by... (get the picture?)
+
+###Different types of functions:
+
+- An anonymous function is a function without a function name: `function () {}`
+- A named function is a function with a function name: `function foo() {}`
