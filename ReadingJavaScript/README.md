@@ -1,5 +1,5 @@
 #About JavaScript
-##The Four Primitive Types:
+###The Four Primitive Types:
 1. `null`- 1 value. Intentionally empty value. Simplest type of expression.
   - ex: Number(null) // 0
 2. `Boolean`- 2 values. comparing two things. (true and false)
@@ -45,6 +45,8 @@
 
 - Unary operator- only one operand. ex: `typeof`, `return`
     - the `typeof` operator returns a string indicating the type of the unevaluated operand. ex: `typeof` name
+  
+- .(dot) operator- used to access a class, structure or union member. ex: `.length`
 
 **Sequential Operation:** an order of expressions with the highest precedence first in a line. When this operation is put into a program, that is called control flow.
 
@@ -57,7 +59,7 @@ Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow
 #####Functions have 3 things:
 
 1. Input- parameters. variable.
-2. Output- ex: return. (return value is always undefined unless notes)
+2. Output- ex: return. (return value is always undefined unless noted)
 3. Side Effects- outside of function ex: console.log
 
 ### `function` keyword
