@@ -56,9 +56,17 @@
 
 Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs. They are a snippet of code, when told to do its job, executes all of its statements.
 
+FUNCTION INVOCATION: is when a function is invoked by placing parenthesis after it's identifier. Arguments are in the inputs provided to a function inovation.
+
+ex:
+```
+  addition();
+  Number(Boolean(null));
+```
+
 #####Functions have 3 things:
 
-1. Input- parameters. variable.
+1. Input- parameters/arguments
 2. Output- ex: return. (return value is always undefined unless noted)
 3. Side Effects- outside of function ex: console.log
 
@@ -78,11 +86,32 @@ Once a function has been defined, it can be _invoked_ by a function name.
 - An anonymous function is a function without a function name: `function () {}`
 - A named function is a function with a function name: `function foo() {}`
 - An inner function is a function inside another function (square in this case). An outer function is a function containing a function (addSquares in this case):
-  - ex: 
-     ```
+  - ex:
+```
     function addSquares(a,b) {
      function square(x) {
       return x * x;
      }
        return square(a) + square(b);
-    }```
+    }
+```
+
+##Control Flow Constructs
+
+- Block Statements: The most basic statement. used to group statements. The block is delimited by a pair of curly brackets:
+```
+{
+  statement_1;
+  statement_2;
+  .
+  .
+  .
+  statement_n;
+}
+```
+block statement with control flow statement:
+```
+while (x < 10) {
+  x++;
+}
+```
