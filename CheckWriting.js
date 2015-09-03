@@ -1,7 +1,7 @@
 var test = require('mocha').it,
   assert = require('chai').assert;
 
-test('toEnglish: `0` to `9`', function(){
+test('toEnglish: `0` to `9`', functio(){
   assert.isDefined(toEnglish);
   assert.isFunction(toEnglish);
   assert.equal(toEnglish(0), "zero");
