@@ -1,5 +1,5 @@
 #About JavaScript
-##The Four Primitive Types:
+###The Four Primitive Types:
 1. `null`- 1 value. Intentionally empty value. Simplest type of expression.
   - ex: Number(null) // 0
 2. `Boolean`- 2 values. comparing two things. (true and false)
@@ -42,3 +42,47 @@
 - Assignment, e.g. var, =, += : assigns a value to its left operand based on the value of its right operand.
   - ex: x = y
   - ex: x += y (which means x = x + y)
+
+- Unary operator- only one operand. ex: `typeof`, `return`
+    - the `typeof` operator returns a string indicating the type of the unevaluated operand. ex: `typeof` name
+  
+- .(dot) operator- used to access a class, structure or union member. ex: `.length`
+
+**Sequential Operation:** an order of expressions with the highest precedence first in a line. When this operation is put into a program, that is called control flow.
+
+**Control Flow:** putting sequencial operations in a program. 
+
+## Functions
+
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs. They are a snippet of code, when told to do its job, executes all of its statements.
+
+#####Functions have 3 things:
+
+1. Input- parameters. variable.
+2. Output- ex: return. (return value is always undefined unless noted)
+3. Side Effects- outside of function ex: console.log
+
+### `function` keyword
+
+The `function` keyword is used to _define_ a function with parentheses and curly braces:
+
+    // This is a Function Definition for `identifier`...
+    function identifier ( /* arguments go here */ ) {
+      // body of function goes here
+    }
+
+Once a function has been defined, it can be _invoked_ by a function name.
+
+###Different types of functions:
+
+- An anonymous function is a function without a function name: `function () {}`
+- A named function is a function with a function name: `function foo() {}`
+- An inner function is a function inside another function (square in this case). An outer function is a function containing a function (addSquares in this case):
+  - ex: 
+     ```
+    function addSquares(a,b) {
+     function square(x) {
+      return x * x;
+     }
+       return square(a) + square(b);
+    }```
