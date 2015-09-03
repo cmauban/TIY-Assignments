@@ -1,9 +1,5 @@
-
-
 var test = require('mocha').it,
   expect = require('chai').expect;
-
-
 
 test('fromEnglish: "zero" through "nine"', function(){
   expect(fromEnglish).to.exist;
@@ -24,8 +20,12 @@ test('fromEnglish: "zero" through "nine"', function(){
  * @return {Number} value corresponding to `word`
  */
 
- function fromEnglish("word"){
-   return Number;
+ function fromEnglish(word){
+   if (word === "zero"){
+     return 0;
+   }
+   return 1;
+
  } // END fromEnglish
 
 test('plus: ("zero", "zero") through ("zero", "nine")', function(){
