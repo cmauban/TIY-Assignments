@@ -1,5 +1,9 @@
+
+
 var test = require('mocha').it,
   expect = require('chai').expect;
+
+
 
 test('fromEnglish: "zero" through "nine"', function(){
   expect(fromEnglish).to.exist;
@@ -19,16 +23,18 @@ test('fromEnglish: "zero" through "nine"', function(){
  * @param {String} word representing an English number
  * @return {Number} value corresponding to `word`
  */
-function fromEnglish(word){
-  // fill this in after writing tests...
-} // END fromEnglish
+
+ function fromEnglish("word"){
+   return Number;
+ } // END fromEnglish
 
 test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus).to.exist;
   expect(plus("zero", "zero")).to.equal(0);
   expect(plus("zero", "one")).to.equal(1); // change just one thing!
-  expect(plus("zero", "two")).to.equal(FILL_ME_IN); // ha!
-  // write more tests like those...
+  expect(plus("zero", "two")).to.equal(2); // ha!
+  expect(plus("zero", "three")).to.equal(3);
+  expect(plus("zero", "four")).to.equal(4);
 }); // END test(plus)
 
 /**
