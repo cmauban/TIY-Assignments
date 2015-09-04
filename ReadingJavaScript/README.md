@@ -216,4 +216,16 @@ ex: `for` statement starts by declaring the variable `i` and initializing it to 
        // more statements
 }
 ```
-      
+## `Array`
+
+. . .
+
+### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+
+#### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* _params:_ none
+* _returns:_ the last element
+* _side-effects_: removes the element returned
+
+##### Examples
