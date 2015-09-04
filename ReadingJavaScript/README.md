@@ -172,6 +172,33 @@ while (x < 10) {
           [break;]
       }
 ```
+  ex: When break is encountered, the program breaks out of switch and executes the statement following switch. If break were omitted, the statement for case "Cherries" would also be executed.
+    
+```
+    switch (expr) {
+  case "Oranges":
+    console.log("Oranges are $0.59 a pound.");
+    break;
+  case "Apples":
+    console.log("Apples are $0.32 a pound.");
+    break;
+  case "Bananas":
+    console.log("Bananas are $0.48 a pound.");
+    break;
+  case "Cherries":
+    console.log("Cherries are $3.00 a pound.");
+    break;
+  case "Mangoes":
+  case "Papayas":
+    console.log("Mangoes and papayas are $2.79 a pound.");
+    break;
+  default:
+    console.log("Sorry, we are out of " + expr + ".");
+}
+
+console.log("Is there anything else you'd like?");
+```
+    
 ####Loops
 
 - **While Statement**: creates a loop that executes a specified statement as long as the test condition evaluates to `true`.
