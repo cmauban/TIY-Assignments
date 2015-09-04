@@ -1,7 +1,11 @@
-/**
- * write a function `max` that takes two `Numbers` as arguments
- * and returns the largest of them. HINT: Use `if-else`...!
- */
+
+function max(A, B){
+    if (A < B ){
+      return B
+    } else if (A > B){
+      return false;
+    }
+}
 console.assert(max(1,3) === 3);
 console.assert(max(0,3) === 3);
 console.assert(max(10,3) === 10);
@@ -18,9 +22,7 @@ console.assert(isNaN(max("aaa","bbb")));
  * @param {Number} B to compare to A
  * @return {Number} the greater of A or B
  */
-function max(A, B){
-    // YOUR CODE HERE
-}
+
 
 /**
  * Write a function `maxOfThree` that takes _three_
@@ -44,7 +46,10 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @return {Number} greatest of A, B, and C
  */
 function maxOfThree(A, B, C){
-    // YOUR CODE HERE
+    if(A < B){
+
+
+    }
 }
 
 /**
