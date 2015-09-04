@@ -83,17 +83,41 @@ Once a function has been defined, it can be _invoked_ by a function name.
 
 ###Different types of functions:
 
-- An anonymous function is a function without a function name: `function () {}`
-- A named function is a function with a function name: `function foo() {}`
-- An inner function is a function inside another function (square in this case). An outer function is a function containing a function (addSquares in this case):
+- An **anonymous function** is a function without a function name: `function () {}`
+ - `setTimeout` accepts a function as an argument. The correct way to pass a function as an argument is defining it as anonymous or giving the function a name. If you use parenthesis(brackets), you aren't actually passing a function, You are executing the function and passing the result of the function to setTimeout. So don't use parenthesis to pass.
+ 
+      -ex: passing the return value of checkme();
+```
+             setTimeout(checkme(),4000)
+```
+          -but to pass it as a function...
+```
+              setTimeout(function(){checkme()},4000)
+```
+      - `setInterval` ex: Alert "Hello" every 3 seconds (3000 milliseconds)
+```
+              setInterval(function(){ alert("Hello"); }, 3000);
+```
+
+- A **named function** is a function with a function name: `function foo() {}`
+- An **inner function** is a function inside another function (square in this case). An outer function is a function containing a function (addSquares in this case):
   - ex:
 ```
-    function addSquares(a,b) {
-     function square(x) {
-      return x * x;
-     }
-       return square(a) + square(b);
-    }
+        function addSquares(a,b) {
+        function square(x) {
+         return x * x;
+         }
+          return square(a) + square(b);
+       }
+```
+  - A **recursive function** is a function that calls itself. Used to solve problems that contain smaller sub-problems. can receive two inputs: a base case (ends recursion) or a recursive case (continues recursion).
+    - ex:
+```
+       function loop(x) {
+           if (x >= 10)
+            return;
+          loop(x + 1);
+       }
 ```
 
 ##Control Flow Constructs
@@ -109,9 +133,23 @@ Once a function has been defined, it can be _invoked_ by a function name.
   statement_n;
 }
 ```
-block statement with control flow statement:
+   - block statement with control flow statement: { x++; } is the block statement
 ```
 while (x < 10) {
   x++;
 }
 ```
+- Conditional Statements: a set of commands that executes if a specified condition is true. There are 2 conditional statements:
+      1. `if... else`: to execute a statement if a logical *condition* is true. if, `return true;`else, `return false;`
+```
+              function checkData() {
+                  if (document.form1.threeChar.value.length == 3) {
+                     return true;
+                   } else {
+                     alert("Enter exactly three characters. " +
+                     document.form1.threeChar.value + " is not valid.");
+                     return false;
+                   }
+              }
+```
+        2. `switch`: allows a program to evaluate an *expression* and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement. 
