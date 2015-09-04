@@ -90,11 +90,15 @@ Once a function has been defined, it can be _invoked_ by a function name.
 ```
              setTimeout(checkme(),4000)
 ```
-          -but to pass it as a function...
+
+             //but to pass it as a funtion...
+
 ```
               setTimeout(function(){checkme()},4000)
 ```
-      - `setInterval` ex: Alert "Hello" every 3 seconds (3000 milliseconds)
+  
+  - `setInterval` ex: Alert "Hello" every 3 seconds (3000 milliseconds)
+
 ```
               setInterval(function(){ alert("Hello"); }, 3000);
 ```
@@ -140,7 +144,7 @@ while (x < 10) {
 }
 ```
 - Conditional Statements: a set of commands that executes if a specified condition is true. There are 2 conditional statements:
-      1. `if... else`: to execute a statement if a logical *condition* is true. if, `return true;`else, `return false;`
+      - 1. `if... else`: to execute a statement if a logical *condition* is true. if, `return true;`else, `return false;`
 ```
               function checkData() {
                   if (document.form1.threeChar.value.length == 3) {
@@ -152,4 +156,64 @@ while (x < 10) {
                    }
               }
 ```
-        2. `switch`: allows a program to evaluate an *expression* and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement. 
+  - 2. `switch`: allows a program to evaluate an *expression* and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement.
+    - ex:
+```
+      switch (expression) {
+        case label_1:
+          statements_1
+          [break;]
+        case label_2:
+          statements_2
+          [break;]
+          ...
+        default:
+          statements_def
+          [break;]
+      }
+```
+####Loops
+
+- **While Statement**: creates a loop that executes a specified statement as long as the test condition evaluates to `true`.
+```
+      while (condition) {
+        statement
+      }
+```
+ex: `while loop` iterates as long as `n` is less than 3. Each iteration, the loop increments `n` and add its to `x`. after 3rd pass, condition `n < 3` is no longer `true` so loop ends.
+```
+  var n = 0;
+  var x = 0;
+
+  while (n < 3) {
+     n++;
+     x += n;
+  }
+```
+- **Do..While Statements**: creates a loop that executes a specified statement until the test condition evaluates to `false`.
+```
+do
+   statement
+while (condition);
+```
+ex: `do...while` loop iterates at least once and reiterates until `i` is no longer less than 5.
+```
+    var i = 0;
+    do {
+      i += 1;
+      console.log(i);
+    } while (i < 5);
+```
+- **For Statements**: creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement or a set of statements executed in the loop.
+```
+    for ([initialization]; [condition]; [final-expression])
+      statement
+```
+ex: `for` statement starts by declaring the variable `i` and initializing it to 0. It checks that `i` is less than nine, performs the two succeeding statements, and increments i by 1 after each pass through the loop.
+```
+    for (var i = 0; i < 9; i++) {
+       console.log(i);
+       // more statements
+}
+```
+      
