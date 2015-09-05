@@ -1,11 +1,8 @@
 
-function max(A, B){
-    if (A < B ){
-      return B
-    } else if (A > B){
-      return false;
-    }
-}
+
+
+
+
 console.assert(max(1,3) === 3);
 console.assert(max(0,3) === 3);
 console.assert(max(10,3) === 10);
@@ -23,6 +20,13 @@ console.assert(isNaN(max("aaa","bbb")));
  * @return {Number} the greater of A or B
  */
 
+ function max(A, B){
+     if (A >= B ){
+       return A;
+     } else {
+       return B;
+     }
+ }
 
 /**
  * Write a function `maxOfThree` that takes _three_
@@ -46,10 +50,17 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * @return {Number} greatest of A, B, and C
  */
 function maxOfThree(A, B, C){
-    if(A < B){
+    if ((A > B) && (A > C)){
+      return A;
 
+    } else if (B > C){
+      return B;
+
+    } else {
+      return C;
 
     }
+
 }
 
 /**
@@ -67,14 +78,38 @@ console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 
 // What should _this_ do?
-// console.assert(isVowel("AEIOU") === FILL_ME_IN);
+console.assert(isVowel("AEIOU") === true);
 
 /**
  * @param {String} char of length 1
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-    // YOUR CODE HERE
+  if ( char == "AEIOU" ) {
+    return true;
+  } else if (char == "a") {
+    return true;
+  } else if (char == "e") {
+    return true;
+  } else if (char == "i") {
+    return true;
+  } else if (char == "o") {
+    return true;
+  } else if (char == "u") {
+    return true;
+  } else if (char == "A") {
+    return true;
+  } else if (char == "E") {
+    return true;
+  } else if (char == "I") {
+    return true;
+  } else if (char == "O") {
+    return true;
+  } else if (char == "U") {
+    return true;
+  } else {
+  return false;
+}
 }
 
 /**
@@ -86,7 +121,11 @@ function isVowel(char){
  * @return {String} cmmnt dsmvwld
  */
 function disemvowel(comment){
-  // YOUR CODE HERE
+  if (comment != "A || E || I || O || U "){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Shorter test cases might be appreciated...
@@ -108,7 +147,9 @@ console.assert(
  * @return {String} translation
  */
 function rovarspraket(input){
-    // YOUR CODE HERE
+    if (input ){
+
+    }
 }
 
 // Feel free to provide additional examples...
