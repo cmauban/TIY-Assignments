@@ -199,7 +199,7 @@ while (x < 10) {
 console.log("Is there anything else you'd like?");
 ```
     
-####Loops
+###Loops
 
 - **While Statement**: creates a loop that executes a specified statement as long as the test condition evaluates to `true`.
 ```
@@ -207,6 +207,22 @@ console.log("Is there anything else you'd like?");
         statement
       }
 ```
+
+ex: Write a while loop that logs "I'm looping!" to the console three times. You can do this however you like, but NOT with three console.log calls.
+
+```
+var count = 0
+var loop = function(){
+	while(count < 3){
+		count++;
+		console.log("I'm looping!");
+	}
+	
+};
+
+```
+
+
 ex: `while loop` iterates as long as `n` is less than 3. Each iteration, the loop increments `n` and add its to `x`. after 3rd pass, condition `n < 3` is no longer `true` so loop ends.
 ```
   var n = 0;
@@ -217,6 +233,22 @@ ex: `while loop` iterates as long as `n` is less than 3. Each iteration, the loo
      x += n;
   }
 ```
+ex: Inside the soloLoop function, write a while loop that takes an initial condition that's true. Your loop should log "Looped once!" to the console, then change that initial condition to false.
+
+```
+//Remember to make your condition true outside the loop!
+i = true
+
+var soloLoop = function(){
+  while(i) {
+  console.log("Looped once!");
+  i = false;
+  }
+};
+
+soloLoop();
+```
+
 - **Do..While Statements**: creates a loop that executes a specified statement until the test condition evaluates to `false`.
 ```
 do
@@ -256,3 +288,12 @@ ex: `for` statement starts by declaring the variable `i` and initializing it to 
 * _side-effects_: removes the element returned
 
 ##### Examples
+
+ex: The for loop runs until i < 7 (because cities.length equals 7. The array cities has 7 elements in it. We will increment i by 1 each time we loop over. We print out cities[0], which is "Melbourne". We then start the loop again. Except now i = 1. It will print out cities[1], which is "Amman". This continues until i is no longer less than cities.length.
+
+```
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Raleigh", "Charlotte", "Greenville"];
+
+for (var i = 0; i < cities.length; i++) {
+    console.log("I would like to visit " + cities[i]);
+```
