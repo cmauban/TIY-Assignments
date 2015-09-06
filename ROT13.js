@@ -41,21 +41,31 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
-function encode(phrase){
-  var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var phrasestring = "";
-  // var phrasestri = phrase.charCodeAt(N)
-  for (var i = 0; i < phrase.length; i++) {
-    ch = phrase.charAt(i)
-    index = letters.indexOf(ch);
-    if (index == -1){
-      phrasestring = phrasestring + ch;
 
-    }
+function encode (phrase, N){
+  //var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var message = "";
+  for (var i = 0; i < phrase.length; i++){
+      var charc = phrase[i].charCodeAt(0);
+      charc += 13;
+      if (charc > 122){
+        message += String.fromCharCode((charc - 123) + 97);
+      } else {
+      message += String.fromCharCode(charc);
+    // // } for (var i = 0; i < phrase.length; i++){
+    // //     var charc = phrase[i].charCodeAt(0);
+    // //     charc += N
+    // //     if (charc > 122){
+    // //   message += String.fromCharCode((charc - 123) + 97);
+    // } else {
+    //   message += String.fromCharCode(charc);
   }
-    return phrasestring;
-    // YOUR CODE HERE... EMPHASIS ON **YOUR**
 }
+     return message;
+  }
+
+
+
 
 /**
  * Function `decode` accepts a `phrase` and `N` and
@@ -67,12 +77,19 @@ function encode(phrase){
  * @return {String} decoded by ROT-N
  */
 function decode(phrase, N){
-    // YOUR CODE HERE
+    var message = " ";
+  for (var i = 0; i < phrase.length; i++) {
+    var charc = phrase[i].charCodeAt(0);
+    charc -= N;
+      if (charc < 97){
+        message += String.fromCharCode((charc - 123) + 97);
+      }
+      message += String.fromCharCode(charc);
+    } return message;
 }
 
 // Produce more examples, please...
 console.assert(encode("hello") === "uryyb");
 console.assert(encode("uryyb") === "hello");
-
 console.assert(encode("hello", 2) === "jgnnq")
 console.assert(decode("jgnnq", 2) === "hello")

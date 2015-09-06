@@ -1,8 +1,4 @@
 
-
-
-
-
 console.assert(max(1,3) === 3);
 console.assert(max(0,3) === 3);
 console.assert(max(10,3) === 10);
@@ -85,6 +81,31 @@ console.assert(isVowel("AEIOU") === true);
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
+  // switch(char) {
+  //   case "A":
+  //   case "a":
+  //     return true;
+  //     break;
+  //   case "E":
+  //   case "e":
+  //     return true;
+  //     break;
+  //   case "I":
+  //   case "i":
+  //     return true;
+  //     break;
+  //   case "O":
+  //   case "o":
+  //     return true;
+  //     break;
+  //   case "U":
+  //   case "u":
+  //     return true;
+  //     break;
+  //   default:
+  //     return false;
+  //   }
+
   if ( char == "AEIOU" ) {
     return true;
   } else if (char == "a") {
@@ -147,8 +168,10 @@ console.assert(
  * @return {String} translation
  */
 function rovarspraket(input){
-    if (input ){
-
+    if (input === ""){
+        return true;
+    } else {
+      return false;
     }
 }
 
