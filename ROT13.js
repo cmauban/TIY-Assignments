@@ -1,11 +1,14 @@
 /**
  * The function `reverse` computes the reversal
  * of a given `String` (don't copy-pasta!)
- *
+ *str_rot13
  * @param {String} S to reverse
  * @return {String}
  */
+
 function reverse(S){
+  return S.split("").reverse().join("");
+
     // YOUR CODE HERE: NO INTERNET COPY-PASTA!
 }
 
@@ -38,7 +41,19 @@ console.assert(
  * // @param {Number} N rotation to apply, default 13
  * @return {String} encoded with ROT13
  */
-function encode(phrase/*, N */){
+function encode(phrase){
+  var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var phrasestring = "";
+  // var phrasestri = phrase.charCodeAt(N)
+  for (var i = 0; i < phrase.length; i++) {
+    ch = phrase.charAt(i)
+    index = letters.indexOf(ch);
+    if (index == -1){
+      phrasestring = phrasestring + ch;
+
+    }
+  }
+    return phrasestring;
     // YOUR CODE HERE... EMPHASIS ON **YOUR**
 }
 
