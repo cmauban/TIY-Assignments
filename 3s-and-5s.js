@@ -32,32 +32,22 @@ test('fives', function(){
 
 var three = [];
 var five = [];
-var fifteen = [];
-var sumThree = 0;
-var sumFive = 0;
-var sumFifteen = 0;
-var sumAll = sumThree + sumFive - sumFifteen;
+var both = [];
+var All = three.concat(five, both);
 
-function sumsofthrees (){
-  for(var i = 0; i < 1000; i += 3){
-    three.push(i); // var three = [array of multiples of 3]
-  }
-  for(var i = 0; i < 1000; i += 5){
-    five.push(i); // var five = [array of multiples of 5]
-  }
-  for(var i = 0; i <1000; i += 15){
-    fifteen.push(i); // var fifteen = [array of multiples of 15]
-  }
-  for (var x = 0; x < three.length; x++) { //looping length of array
-    sumThree = (sumThree + three[i]); //adding loop of array together
-  }
-for (var x = 0; x < five.length; x++){
-    sumFive = (sumFive + five[i]);
+
+function Multiples (){
+
+  for(var i = 0; i < 1000; i++){
+    if (i % 3 === 0 && i % 5 === 0){ //works if i divided by 3 and 5 has no remainder
+      both.push(i); //var both = [array of both 3 and 5]
+    } else if (i % 3 === 0){ //works if i divided by 3 has no remainders
+      three.push(i); //var three = [array of multiples of 3]
+    } else if (i % 5 === 0){ //works if i divided by 5 has no remainders
+      five.push(i); //var five = [array of multiples of 5]
+    }
 }
-for (var x =0; x < fifteen.length; x++){
-    sumFifteen = (sumFifteen + fifteen[i]);
-}
-if(sumAll === sumThree + sumFive - sumFifteen){
-  return sumAll;
-}
+  for (var i = 0, sum = 0; i < All.length; sum += All[i++]) { //looping length of array
+  }
+
 }
