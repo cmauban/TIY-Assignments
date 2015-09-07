@@ -13,7 +13,6 @@ test('three', function(){
 }); // END test 3s
 
 test('sumoffives', function(){
-  assert.equal(sumoffives).to.exist;
   assert.equal(sumoffives([5]), 5);
   assert.equal(sumoffives([5, 10, 15]), 30);
   assert.equal(sumoffives([5, 10, 15, 20, 25, 30, 35, 40, 45]), 225);
