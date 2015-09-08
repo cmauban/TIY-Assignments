@@ -335,8 +335,11 @@ for (var i = 0; i < cities.length; i++) {
 ###Document Object Model (DOM)
 is a programming interface for HTML, XML and SVG documents.
 
-- **Window Object**: represents a window containing a DOM document.  a window for a given document can be obtained using the document.defaultView property. a brief reference for all of the methods, properties, and events available through the DOM window object. The window object implements the Window interface, which in turn inherits from the AbstractView interface.
-	- LOCATION: read-only property returns a Location object with information about the current location of the document.
+####Window Object
+represents a window containing a DOM document.  a window for a given document can be obtained using the document.defaultView property. a brief reference for all of the methods, properties, and events available through the DOM window object. The window object implements the Window interface, which in turn inherits from the AbstractView interface.
+
+#####Properties:
+- LOCATION: read-only property returns a Location object with information about the current location of the document.
 ```		
 		var oldLocation = location;
 		location = newLocation;
@@ -347,8 +350,7 @@ is a programming interface for HTML, XML and SVG documents.
 	ex: location.reload(true); //forcing reloading the current page from the server
 ```
 
-
-  	- DOCUMENT: Returns a reference to the document contained in the window.
+- DOCUMENT: Returns a reference to the document contained in the window.
 	
 ```
 		doc = window.document
@@ -367,3 +369,116 @@ is a programming interface for HTML, XML and SVG documents.
 
 	</body>
 	</html>
+```
+- HISTORY: returns a reference to the History object, which provides an interface for manipulating the browser session history (pages visited in the tab or frame that the current page is loaded in).
+```
+		var historyObj = window.history;
+
+	ex: history.back();     // equivalent to clicking back button
+	    history.go(-1);     // equivalent to history.back();		
+```
+#####Methods:
+- alert: `window.alert("Hello world!");`
+- confirm: displays a modal dialog with an optional message and two buttons, OK and Cancel.
+	- syntax: result = window.confirm(message);
+	- ex:
+```
+		if (window.confirm("Do you really want to leave?")) { 
+  		window.open("exit.html", "Thanks for Visiting!");
+		}
+```
+- open: Loads a resource into either a new browsing context (such as a window) or one that already exists, depending on the specified parameters.
+	- syntax: var windowObjectReference = window.open(strUrl, strWindowName, [strWindowFeatures]);
+	- ex:
+```
+		var windowObjectReference;
+		var strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+		function openRequestedPopup() {
+  		windowObjectReference = window.open("http://www.cnn.com/", "CNN_WindowName", strWindowFeatures);
+		}
+		
+		var windowObjectReference;
+
+		function openRequestedPopup() {
+		 windowObjectReference = window.open(
+		 "http://www.domainname.ext/path/ImageFile.png",
+		 "DescriptiveWindowName",
+		 "resizable,scrollbars,status"
+		 );
+		}
+```
+- close: `window.close();`
+	- ex: closing a window opened with window.open();
+```
+	<script type="text/javascript">
+	//Global var to store a reference to the opened window
+	var openedWindow;
+
+	function openWindow()
+	{
+	  openedWindow = window.open('moreinfo.htm');
+	}
+
+	function closeOpenedWindow()
+	{
+	 openedWindow.close();
+	}
+	</script>
+```
+	//ex: closing the current window
+```
+	<script type="text/javascript">
+	function closeCurrentWindow()
+	{
+	  window.close();
+	}
+	</script>
+```
+####Location Object
+
+#####Properties:
+
+####Document Object
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as <body> and <table>) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
+
+#####Properties:
+- HEAD: Returns the <head> element of the current document. `var objRef = document.head;`
+	ex:
+```
+		// in HTML: <head id="my-document-head">
+		var aHead = document.head;
+
+		alert(aHead.id); // "my-document-head";
+
+		alert( document.head === document.querySelector("head") ); // true
+```
+
+
+- BODY: Returns the <body> or <frameset> node of the current document, or null if no such element exists.
+	-syntax: `var objRef = document.body; `
+		 `document.body = objRef;`
+
+```
+		// in HTML: <body id="oldBodyElement"></body>
+		alert(document.body.id); // "oldBodyElement"
+
+		var aNewBodyElement = document.createElement("body");
+
+		aNewBodyElement.id = "newBodyElement";
+		document.body = aNewBodyElement;
+		alert(document.body.id); // "newBodyElement"
+```
+#####Methods:
+- `getElementById`: if there is no element with the given id, it returns null.
+	- `element = document.getElementById(id);`
+- `getElementsByClassName`: Get all elements that have a class of 'test', inside of an element that has the ID of 'main'
+	- `document.getElementById('main').getElementsByClassName('test');`
+- `querySelector`: Returns the first element within the document that matches the specified group of selectors. ex-the first element in the document with the class "myclass" is returned:
+	- `var el = document.querySelector(".myclass");`
+- `querySelectorAll`: The object returned is a NodeList. ex-returns a list of all div elements within the document with a class of either "note" or "alert":
+	- `var matches = document.querySelectorAll("div.note, div.alert");` 
+- `appendChild`
+- `create*` family
+- `write`
+- `writeln`
