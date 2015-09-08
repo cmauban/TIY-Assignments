@@ -3,7 +3,7 @@ var items = require('items.json');
 
 // TODO: Setup mocha and chai...
 
-test('this is the easy one', function(){
+test('this is the easy one', function(camille){
   expect(Array.isArray(items)).to.be.true; // What.
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
 
