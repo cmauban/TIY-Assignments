@@ -7,7 +7,7 @@
  */
 
 function reverse(S){
-  return S.split("").reverse().join("");
+  return S.split("").reverse().join(""); // splits the string, reverses it, and joins it back together.
 
     // YOUR CODE HERE: NO INTERNET COPY-PASTA!
 }
@@ -45,11 +45,11 @@ console.assert(
 function encode (phrase, N){
   //var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var message = "";
-  for (var i = 0; i < phrase.length; i++){
-      var charc = phrase[i].charCodeAt(0);
-      charc += 13;
+  for (var i = 0; i < phrase.length; i++){ //loops the phrase
+      var charc = phrase[i].charCodeAt(0); // gives it a code
+      charc += 13; // adds 13 letters ahead
       if (charc > 122){
-        message += String.fromCharCode((charc - 123) + 97);
+        message += String.fromCharCode((charc - 123) + 97); //to continue the loop
       } else {
       message += String.fromCharCode(charc);
     // // } for (var i = 0; i < phrase.length; i++){
@@ -91,5 +91,5 @@ function decode(phrase, N){
 // Produce more examples, please...
 console.assert(encode("hello") === "uryyb");
 console.assert(encode("uryyb") === "hello");
-console.assert(encode("hello", 2) === "jgnnq")
-console.assert(decode("jgnnq", 2) === "hello")
+console.assert(encode("hello", 2) === "jgnnq");
+console.assert(decode("jgnnq", 2) === "hello");
