@@ -489,10 +489,10 @@ Each web page loaded in the browser has its own document object. The Document in
 - id: `<h1 id="myHeader">Hello World!</h1>`
 - className: returns class name of an element `document.getElementById("myDIV").className = "mystyle";`
 - innerHTML: sets or returns the HTML content (inner HTML) of an element.
-- outterHTML:
-- children:
+- outterHTML: `var content = element.outerHTML;`
+- children: returns a collection of an element's child elements, as an HTMLCollection object. `var c = document.body.children;`
 - parent:
-- nextSibling:
+- nextSibling: returns the node immediately following the specified node, in the same tree level.
 - firstChild:
 
 #####Methods:
