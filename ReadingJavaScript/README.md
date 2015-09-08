@@ -332,3 +332,38 @@ var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Raleigh", "Charlotte", "
 for (var i = 0; i < cities.length; i++) {
     console.log("I would like to visit " + cities[i]);
 ```
+###Document Object Model (DOM)
+is a programming interface for HTML, XML and SVG documents.
+
+- **Window Object**: represents a window containing a DOM document.  a window for a given document can be obtained using the document.defaultView property. a brief reference for all of the methods, properties, and events available through the DOM window object. The window object implements the Window interface, which in turn inherits from the AbstractView interface.
+	- LOCATION: read-only property returns a Location object with information about the current location of the document.
+```		
+		var oldLocation = location;
+		location = newLocation;
+
+	ex: alert(location); // alerts "https://developer.mozilla.org/en-US/docs/Web/API/Window.location"
+	ex: location.assign("http://www.mozilla.org"); // or
+	    location = "http://www.mozilla.org";
+	ex: location.reload(true); //forcing reloading the current page from the server
+```
+
+
+  	- DOCUMENT: Returns a reference to the document contained in the window.
+	
+```
+		doc = window.document
+		
+	ex: <!DOCTYPE html>
+	<html>
+	<head>
+	 <title>Hello, World!</title>
+	</head>
+	<body>
+
+	<script type="text/javascript">
+	 var doc = window.document;
+	 alert( doc.title);    // alerts: Hello, World!
+	</script>
+
+	</body>
+	</html>
