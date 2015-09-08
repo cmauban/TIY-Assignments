@@ -27,16 +27,6 @@ function fibonacci () {
 }
 
 
-//   while(a < 4000000) {
-//     if (a % 2 ===0){
-//       sum += a;
-//     }
-//     var c = a + b;
-//     a = b;
-//     b = c;
-//   }
-// }
-
 test('just even numbers?', function(){
   expect(evens([ 0 ])).to.deep.equal([ 0 ]);
   expect(evens([ 1 ])).to.deep.equal([ ]);
@@ -46,7 +36,17 @@ test('just even numbers?', function(){
   // More tests, perhaps?
 }); // END test(evens)
 
+function evens(){
+  while(a < 4000000) {
+    if (a % 2 === 0){
+    sum += a;
+    }
+      var c = a + b;
+      a = b;
+      b = c;
 
+  }
+}
 
 test('summing lists of Number', function(){
   assert.equal(sum([ ]), 0);
