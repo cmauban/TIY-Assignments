@@ -478,7 +478,24 @@ Each web page loaded in the browser has its own document object. The Document in
 	- `var el = document.querySelector(".myclass");`
 - `querySelectorAll`: The object returned is a NodeList. ex-returns a list of all div elements within the document with a class of either "note" or "alert":
 	- `var matches = document.querySelectorAll("div.note, div.alert");` 
-- `appendChild`
+- `appendChild`: 
 - `create*` family
 - `write`
 - `writeln`
+
+####`HTMLElement` Type
+
+#####Properties:
+- id: `<h1 id="myHeader">Hello World!</h1>`
+- className: returns class name of an element `document.getElementById("myDIV").className = "mystyle";`
+- innerHTML: sets or returns the HTML content (inner HTML) of an element.
+- outterHTML:
+- children:
+- parent:
+- nextSibling:
+- firstChild:
+
+#####Methods:
+- addEventListener:
+- dispatchEvent:
+- *Attribute family:
