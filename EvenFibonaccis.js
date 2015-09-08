@@ -1,34 +1,28 @@
-var text = require('mocha').it,
-  expects = require('chai').expect;
+var test = require('mocha').it, //changed "text" to "test"
+  expect = require('chai').expect; //removed the "s" in expect
 
-test('generating the Fibonacci sequence', function(){
-  expect(fibonacci[0]).to.deep.equal([0]);
-  expect(fibonacci[1]).to.deep.equal([ 1 ]);
-  expect(fibonacci[2]).to.deep.equal([ 1, 2 ]);
-  expect(fibonacci[5]).to.deep.equal([1, 2, 3, 5 ]);
-  // ...ad nauseum.
-}); // END test(fibonacci)
-
-var fib = [];
-// Hey, where's `fibonacci`...? Uh oh...
-function fibonacci (n) {
+  test('fibonacci', function(){
+    expect(fibonacci[0]).to.deep.equal([ 0 ]);
+    expect(fibonacci[1]).to.deep.equal([ 1 ]);
+    expect(fibonacci[2]).to.deep.equal([ 1, 2 ]);
+    expect(fibonacci[5]).to.deep.equal([1, 2, 3, 5 ]);
+    // ...ad nauseum.
+  }); // END test(fibonacci)
 
 
-  var one = 1;
-  var two = 2;
-  var sum = 0;
 
-  for (var i = 1; i < n; i++ ){
-    if (i % 2 === 0) {
-      sum += one;
-      fib.push(i);
+var fib = []; //initializing array
+
+function fibonacci () {
+
+  fib[0]= 0;
+  fib[1] = 1;
+
+  for (var i = 0; i <= 10; i++ ){
+
+      fib[i] = fib[i-2] + fib[i-1];
+      fib.push(i); //pushing values into an array
     }
-    var three = one + two;
-    one = two;
-    two = three;
-
-  }
-   return three;
 
 }
 

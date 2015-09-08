@@ -74,64 +74,64 @@ console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 
 // What should _this_ do?
-console.assert(isVowel("AEIOU") === true);
+// console.assert(isVowel("AEIOU") === true);
 
 /**
  * @param {String} char of length 1
  * @return {Boolean} whether `char` is an English vowel
  */
 function isVowel(char){
-  // switch(char) {
-  //   case "A":
-  //   case "a":
-  //     return true;
-  //     break;
-  //   case "E":
-  //   case "e":
-  //     return true;
-  //     break;
-  //   case "I":
-  //   case "i":
-  //     return true;
-  //     break;
-  //   case "O":
-  //   case "o":
-  //     return true;
-  //     break;
-  //   case "U":
-  //   case "u":
-  //     return true;
-  //     break;
-  //   default:
-  //     return false;
-  //   }
-
-  if ( char == "AEIOU" ) {
-    return true;
-  } else if (char == "a") {
-    return true;
-  } else if (char == "e") {
-    return true;
-  } else if (char == "i") {
-    return true;
-  } else if (char == "o") {
-    return true;
-  } else if (char == "u") {
-    return true;
-  } else if (char == "A") {
-    return true;
-  } else if (char == "E") {
-    return true;
-  } else if (char == "I") {
-    return true;
-  } else if (char == "O") {
-    return true;
-  } else if (char == "U") {
-    return true;
-  } else {
-  return false;
+  switch(char) {
+    case "A":
+    case "a":
+      return true;
+      break;
+    case "E":
+    case "e":
+      return true;
+      break;
+    case "I":
+    case "i":
+      return true;
+      break;
+    case "O":
+    case "o":
+      return true;
+      break;
+    case "U":
+    case "u":
+      return true;
+      break;
+    default:
+      return false;
+    }
 }
-}
+//   if ( char == "AEIOU" ) {
+//     return true;
+//   } else if (char == "a") {
+//     return true;
+//   } else if (char == "e") {
+//     return true;
+//   } else if (char == "i") {
+//     return true;
+//   } else if (char == "o") {
+//     return true;
+//   } else if (char == "u") {
+//     return true;
+//   } else if (char == "A") {
+//     return true;
+//   } else if (char == "E") {
+//     return true;
+//   } else if (char == "I") {
+//     return true;
+//   } else if (char == "O") {
+//     return true;
+//   } else if (char == "U") {
+//     return true;
+//   } else {
+//   return false;
+// }
+// }
 
 /**
  * The `disemvowel` function combats the Internet
@@ -142,7 +142,7 @@ function isVowel(char){
  * @return {String} cmmnt dsmvwld
  */
 function disemvowel(comment){
-  if (comment != "A || E || I || O || U "){
+  if (comment != "A || E || I || O || U "){ //true if not a vowel.
     return true;
   } else {
     return false;
@@ -168,16 +168,17 @@ console.assert(
  * @return {String} translation
  */
 function rovarspraket(input){
-    if (input === ""){
-        return true;
-    } else {
-      return false;
+  var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  var str = "";
+    for (var i = 0; i < input.length; i++) {
+      if(
     }
+  return str;
 }
 
 // Feel free to provide additional examples...
-console.assert(rovarspraket("a") === "a")
-console.assert(rovarspraket("b") === "bob")
-console.assert(rovarspraket("cat") === "cocatot")
-console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot")
-console.assert(rovarspraket(0) === "0")
+console.assert(rovarspraket("a") === "a");
+console.assert(rovarspraket("b") === "bob");
+console.assert(rovarspraket("cat") === "cocatot");
+console.assert(rovarspraket("javascript") === "jojavovasoscocroripoptot");
+console.assert(rovarspraket(0) === "0");
