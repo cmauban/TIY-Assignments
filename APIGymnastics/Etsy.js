@@ -8,7 +8,7 @@ var items = require('items.json');
 test('this is the easy one', function(){
   expect(Array.isArray(items)).to.be.true; // What.
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
-  expect(items.length).to.equal(25); // It's haunting me now...
+  expect(items.length).to.equal(); // It's haunting me now...
 });
 
 function amount (items){
