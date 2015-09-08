@@ -31,11 +31,11 @@ var both = [];
 function Multiples (){
 
   for(var i = 1; i < 1000; i++){
-    if (i % 3 === 0 && i % 5 === 0){ //works if i divided by 3 and 5 has no remainder
+    if (i % 3 === 0 && i % 5 === 0){ //works if i is divisable by 3 and 5 has no remainder
       both.push(i); //var both = [array of both 3 and 5]
-    } else if (i % 3 === 0){ //works if i divided by 3 has no remainders
+    } else if (i % 3 === 0){ //works if i is divisable by 3 has no remainders
       three.push(i); //var three = [array of multiples of 3]
-    } else if (i % 5 === 0){ //works if i divided by 5 has no remainders
+    } else if (i % 5 === 0){ //works if i is divisable by 5 has no remainders
       five.push(i); //var five = [array of multiples of 5]
     }
 }
