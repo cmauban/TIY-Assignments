@@ -277,9 +277,44 @@ ex: `for` statement starts by declaring the variable `i` and initializing it to 
 ```
 ## `Array`
 
-. . .
-
 ### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
+
+- to add onto the end of an array or push into an array: `<arrayname>.push();`
+- to remove from the end of an array: `<arrayname>.pop();`
+- to remove from the front of an array: `<arrayname>.shift();`
+- to add to the front of an array: `<arrayname>.unshift();`
+- to find the index of an item in the array (ex- finding "orange" in [berry,orange,mango] //1): `.indexOf(orange);`
+- to remove an item by index position: `.splice();`
+	- ex:
+```
+		fruits.push("Mango");
+		// **["Strawberry", "Banana", "Mango"]**
+
+		var pos = fruits.indexOf("Banana");
+		// 1
+
+		var removedItem = fruits.splice(pos, 1); // this is how to remove an item
+		// ["Strawberry", "Mango"]
+
+```
+- `.length` example:
+```
+		var numbers = [1, 2, 3, 4, 5];
+
+		for (var i = 0; i < numbers.length; i++) {
+  		numbers[i] *= 2;
+		}
+		// numbers is now [2, 4, 6, 8, 10]
+```
+- to join all elements of an array into a string: `str = <arrayname>.join([separator = ','])`
+	- ex:
+```
+		var a = ['Wind', 'Rain', 'Fire'];
+		var myVar1 = a.join();      // assigns 'Wind,Rain,Fire' to myVar1
+		var myVar2 = a.join(', ');  // assigns 'Wind, Rain, Fire' to myVar2
+		var myVar3 = a.join(' + '); // assigns 'Wind + Rain + Fire' to myVar3
+		var myVar4 = a.join('');    // assigns 'WindRainFire' to myVar4
+```
 
 #### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
