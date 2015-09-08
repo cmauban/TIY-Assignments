@@ -2,14 +2,10 @@ var test = require('mocha').it,
     expect = require('chai').expect, // Use `expect(X).to.be` et al
     assert = require('chai').assert;  // OR use `assert.equal` etc
 
-test('three', function(){
-  // assert.equal(three).to.exist;
-  assert.equal(three([3, 6, 9]), 18);
-  assert.equal(three([3, 6, 9, 12, 15, 18]), 63);
-  assert.equal(sumofthrees([3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48]), 408);
-  // expect(three(10)).to.equal(18);
-  // expect(three(20)).to.equal(63);
-  // expect(threes(50)).to.equal([3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48]);
+test('threes', function(){
+  expect(threes).to.be.a("function");
+  expect(threes(0)).to.deep.equal([]);
+  expect(threes(4)).to.deep.equal([3]);
 }); // END test 3s
 
 test('sumoffives', function(){
@@ -23,6 +19,35 @@ test('sumoffives', function(){
 
 //could not get the tests to work, but i checked the function
 // in the console and it runs.
+
+function threes(N){
+  var multiples = [];
+
+  var increment = 0;
+
+  while (incremet < N){
+    console.log(increment);
+    increment++;
+  }
+
+
+  if (N > 3){
+    multiples.push(3); // [3]
+  }
+  if (N > 6){
+    //return [3,6];
+    multiples.push(6); // [3, 6]
+  }
+  if (N > 9){
+    multiples.push(9);
+  }
+
+} {
+return multiples;
+}
+
+
+
 
 var three = [];
 var five = [];
