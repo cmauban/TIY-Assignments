@@ -4,7 +4,7 @@
   "description": "",
   "main": "Etsy.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --bail"
   },
   "repository": {
     "type": "git",
