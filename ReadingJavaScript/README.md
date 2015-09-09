@@ -277,6 +277,12 @@ ex: `for` statement starts by declaring the variable `i` and initializing it to 
 ```
 ## `Array`
 
+2 container types
+- array: list
+- object: dictionary (gives you keys and values)
+	- {kelly: "associate instructor",
+		david: "instructor"}
+
 ### [Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2)
 
 - to add onto the end of an array or push into an array: `<arrayname>.push();`
