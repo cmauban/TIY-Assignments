@@ -315,6 +315,7 @@ ex: `for` statement starts by declaring the variable `i` and initializing it to 
 		var myVar3 = a.join(' + '); // assigns 'Wind + Rain + Fire' to myVar3
 		var myVar4 = a.join('');    // assigns 'WindRainFire' to myVar4
 ```
+- `Array.isArray(obj)`: returns true if an object is an array, false if its not.
 
 #### [`Array.prototype.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
