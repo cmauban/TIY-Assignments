@@ -504,3 +504,18 @@ Each web page loaded in the browser has its own document object. The Document in
 - dispatchEvent: Dispatches an Event at the specified EventTarget, invoking the affected EventListeners in the appropriate order. `cancelled = !target.dispatchEvent(event)`
 	- The return value is false if at least one of the event handlers which handled this event called Event.preventDefault(). Otherwise it returns true.
 - *Attribute family:
+
+####`HTMLCollection` and `NodeList` Types
+
+The **HTMLCollection** interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
+
+- the `item` method: `HTMLCollection.item( )` gets an element by position. It returns a numbered element from an HTMLCollection. In JavaScript, it is easier to treat the HTMLCollection as an array and to index it using array notation.
+	- ex:
+```
+		var c = document.images;  // This is an HTMLCollection
+		var img0 = c.item(0);     // You can use the item( ) method this way
+		var img1 = c[1];          // But this notation is easier and more common
+```
+**NodeList** objects are collections of nodes such as those returned by `Node.childNodes` and the `document.querySelectorAll` method. CANT USE ARRAY METHODS.
+
+- the `item` method: `item ( idx )` Returns an item in the list by its index, or null if the index is out-of-bounds; can be used as an alternative to simply accessing `nodeList[idx]` (which instead returns  undefined when `idx` is out-of-bounds).
