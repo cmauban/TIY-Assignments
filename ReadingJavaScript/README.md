@@ -437,7 +437,7 @@ represents a window containing a DOM document.  a window for a given document ca
 ```
 ####Location Object
 
-#####Properties:
+#####Properties: *see location property in window*
 
 ####Document Object
 Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as <body> and <table>) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
@@ -472,12 +472,16 @@ Each web page loaded in the browser has its own document object. The Document in
 #####Methods:
 - `getElementById`: if there is no element with the given id, it returns null.
 	- `element = document.getElementById(id);`
+	
 - `getElementsByClassName`: Get all elements that have a class of 'test', inside of an element that has the ID of 'main'
 	- `document.getElementById('main').getElementsByClassName('test');`
+	
 - `querySelector`: Returns the first element within the document that matches the specified group of selectors. ex-the first element in the document with the class "myclass" is returned:
 	- `var el = document.querySelector(".myclass");`
+	
 - `querySelectorAll`: The object returned is a NodeList. ex-returns a list of all div elements within the document with a class of either "note" or "alert":
 	- `var matches = document.querySelectorAll("div.note, div.alert");` 
+	
 - `appendChild`: 
 - `create*` family
 - `write`
@@ -496,6 +500,7 @@ Each web page loaded in the browser has its own document object. The Document in
 - firstChild:
 
 #####Methods:
-- addEventListener:
-- dispatchEvent:
+- addEventListener: is the way to register an event listener as specified in W3C DOM. It allows adding more than a single handler for an event.
+- dispatchEvent: Dispatches an Event at the specified EventTarget, invoking the affected EventListeners in the appropriate order. `cancelled = !target.dispatchEvent(event)`
+	- The return value is false if at least one of the event handlers which handled this event called Event.preventDefault(). Otherwise it returns true.
 - *Attribute family:
