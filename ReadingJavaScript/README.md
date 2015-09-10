@@ -447,7 +447,7 @@ represents a window containing a DOM document.  a window for a given document ca
 #####Properties: *see location property in window*
 
 ####Document Object
-Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as <body> and <table>) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
+Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as body and table) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
 
 #####Properties:
 - HEAD: Returns the <head> element of the current document. `var objRef = document.head;`
@@ -477,8 +477,8 @@ Each web page loaded in the browser has its own document object. The Document in
 		alert(document.body.id); // "newBodyElement"
 ```
 #####Methods:
-- `getElementById`: if there is no element with the given id, it returns null.
-	- `element = document.getElementById(id);`
+- `getElementById`: takes a string and returns the DOM element with that ID. if there is no element with the given id, it returns null.
+	- `element = document.getElementById("id");`
 	
 - `getElementsByClassName`: Get all elements that have a class of 'test', inside of an element that has the ID of 'main'
 	- `document.getElementById('main').getElementsByClassName('test');`
@@ -502,9 +502,11 @@ Each web page loaded in the browser has its own document object. The Document in
 - innerHTML: sets or returns the HTML content (inner HTML) of an element.
 - outterHTML: `var content = element.outerHTML;`
 - children: returns a collection of an element's child elements, as an HTMLCollection object. `var c = document.body.children;`
-- parent:
-- nextSibling: returns the node immediately following the specified node, in the same tree level.
-- firstChild:
+- parentNode: returns the node that encloses the current node.
+- .nextSibling: returns the node immediately following the specified node, in the same tree level. slides sideways on the DOM tree.
+- .firstChild: short cut to find `childNodes`
+
+*parentNode, firstChild, lastChild, previousSibling, nextSibling - returns null if there is no such child, parent, or sibling node. BUT `childNodes` array is length of zero if no childNodes.
 
 #####Methods:
 - addEventListener: is the way to register an event listener as specified in W3C DOM. It allows adding more than a single handler for an event.
@@ -526,3 +528,5 @@ The **HTMLCollection** interface represents a generic collection (array-like obj
 **NodeList** objects are collections of nodes such as those returned by `Node.childNodes` and the `document.querySelectorAll` method. CANT USE ARRAY METHODS.
 
 - the `item` method: `item ( idx )` Returns an item in the list by its index, or null if the index is out-of-bounds; can be used as an alternative to simply accessing `nodeList[idx]` (which instead returns  undefined when `idx` is out-of-bounds).
+
+-  Each node has a `childNodes` property that contains an ordered array of all its children. One can index into this array. Use when you want to manipulate a Node that doesn't have an ID.
