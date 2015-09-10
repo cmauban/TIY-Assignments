@@ -534,6 +534,8 @@ The **HTMLCollection** interface represents a generic collection (array-like obj
 ###[Events] (http://www.w3schools.com/js/js_htmldom_events.asp)
 HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document. It is any input a user can provide triggers an event in JavaScript: clicks, scrolls, pressing a key on the keyboard.
 
+Events are first captured down to the innermost target, then bubble up.
+
 #####Properties:
 - `event.bubbles`: After an event triggers on the deepest possible element, it then triggers on parents in nesting order. First captured and handled by the innermost element and then propagated to outer elements. it returns a Boolean value, which is true if the event bubbles up through the DOM. only certain events can bubble, and they will bubble if the property is set to true.
 	- The order is called a *bubbling order*, because an event bubbles from the innermost element up through parents, like a bubble of air in the water. ex: 3 bubbles first, then 2, then 1.
@@ -543,12 +545,14 @@ HTML DOM events allow JavaScript to register different event handlers on element
 		  <div class="d3">3 <!-- the innermost -->
 
 ```
+All handlers work on bubbling stage excepts `addEventListener` with last argument `true`, which is the only way to catch the event on capturing stage.
+
 The bubbling goes right to the top. When an event occurs on an element - it will bubble up to HTML, triggering handlers on it’s way.
 
 But a handler may decide that event is fully processed and stop the bubbling.
 
 - `event.stopPropagation();` makes event bubbling stop.
-- `event.target`: The target is the deepest element which triggered the event. when the event handler is called during the bubbling or capturing phase of the event. When handlers trigger on parents the event.target remains the same element. (this, the current element, the one event has bubbled too, runs the handler, number goes down)
+- `event.target`: The target is the innermost element which triggered the event. when the event handler is called during the bubbling or capturing phase of the event. When handlers trigger on parents the event, target remains the same element. (Target is constant throughout bubbling process) (this, the current element, (changes and gets highlighted) the one event has bubbled too, runs the handler, number goes down)
 
 **Event types triggered with a mouse:**
 - `click`: fired when a pointing device button is pressed and released on a single element.
