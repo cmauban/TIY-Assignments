@@ -2,7 +2,12 @@
 // blue words have the UI accordion drop down with more information.
 // the arrows are light grey until you hoover over them.
 //
-// a class attribute in the list element for the headers is missing now.
+// when i click on a heading, the text below hides and shows.
+// - a class attribute in the list element for the headers is missing now.
+// - when i click a heading with no text visible (closed accordion):
+//    - the '<li>' that contains the heading I clicked turns into '<li class="cbp-ntopen">'
+// - when i click a heading with text visible (open accordion):
+//    - the '<li class="cbp-ntopen">' that contains the heading I clicked turns into '<li>'
 // I think this is what made all the headers of Nested Accordion interactive?
 //
 // also, in the HTML there is not a div element with an id attribute
