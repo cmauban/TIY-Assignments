@@ -531,33 +531,52 @@ The **HTMLCollection** interface represents a generic collection (array-like obj
 
 -  Each node has a `childNodes` property that contains an ordered array of all its children. One can index into this array. Use when you want to manipulate a Node that doesn't have an ID.
 
-###Events
-any input a user can provide triggers an event in JavaScript: clicks, scrolls, pressing a key on the keyboard.
+###[Events] (http://www.w3schools.com/js/js_htmldom_events.asp)
+HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document. It is any input a user can provide triggers an event in JavaScript: clicks, scrolls, pressing a key on the keyboard.
 
 #####Properties:
-- `event.bubbles`: Returns a Boolean value, which is true if the event bubbles up through the DOM. only certain events can bubble, and they will bubble if the property is set to true. you can make it stop by setting the property to false?
+- `event.bubbles`: After an event triggers on the deepest possible element, it then triggers on parents in nesting order. First captured and handled by the innermost element and then propagated to outer elements. it returns a Boolean value, which is true if the event bubbles up through the DOM. only certain events can bubble, and they will bubble if the property is set to true.
+	- The order is called a *bubbling order*, because an event bubbles from the innermost element up through parents, like a bubble of air in the water. ex: 3 bubbles first, then 2, then 1.
+```
+		<div class="d1">1  <!-- the topmost -->
+		 <div class="d2">2
+		  <div class="d3">3 <!-- the innermost -->
+
+```
+- `event.stopPropagation();` makes event bubbling stop.
 - `event.target`: this refers to the object that dispatched the event. when the event handler is called during the bubbling or capturing phase of the event.
 
 **Event types triggered with a mouse:**
 - `click`: fired when a pointing device button is pressed and released on a single element.
 - `mousedown`: fired when a pointing device button is pressed on an element.
 - `mouseup`: fired when a pointing device button is released over an element.
-- `mousemove`: fired when a pointing device is moved while over an element.
-- `dblclick`: fired when a pointing device button is clicked twice on a single element.
+- `mousemove`: pointer is moving while it is over an element.
+- `dblclick`: user clicks twice on a single element.
 - `mouseover`: fired when a pointing device is moved onto the element that has the listener attached or onto one of its children.
 - `mouseout`: fired when a pointing device is moved off the element that has the listener attached or off one of its children.
-- `mouseenter`: fired when a pointing device is moved over the element that has the listener attached.
+- `mouseenter`: pointer is moved onto an element that has the listener attached.
 - `mouseleave`: fired when a pointing device is moved off the element that has the listener attached.
-- `contextmenu`: fired when the right button of the mouse is clicked, or when the context menu key is pressed.
+- `contextmenu`: fired when the user right clicks to open the context menu, or when the context menu key is pressed.
 
 **`HTML <form> element`** represents a document section that contains interactive controls to submit information to a web server.
+
 **Event types triggered on a `<form>` element:**
-???????
+- `focus`: when a form element gets the focus
+- `focusin`: when a form element gets the focus and supports bubbling up to the parents, unlike focus.
+- `blur`: when a form element loses focus
+- `focusout`: when a form element loses the focus and it supports bubbling up to the parents, unlike blur.
 
 **Common Event Types**
 - `click`: fired when a pointing device button is pressed and released on a single element.
 - `scroll`: fired when the document view or an element has been scrolled. Throttle the event by using requestAnimationFrame, setTimeout or customEvent.
 - `change`: fired for input, select, and textarea elements when a change to the element's value is committed by the user.
 - `submit`: fired when a form is submitted. fired only on the form element, not the button or submit input. (Forms are submitted, not buttons.)
-- `load`:
-- `unload`:
+- `load`: fired when a resource and its dependent resources have finished loading.
+- `unload`: fired when the document or a child resource is being unloaded. parent frame unload will happen before child frame unload
+	- It is fired after: 1. beforeunload (cancellable event) 2. pagehide
+	- The document is in a particular state:
+		- all the resources still exist (img, iframe etc.)
+		- nothing is visible anymore to the end user
+		- UI interactions are ineffective (window.open, alert, confirm etc.)
+		- an error won't stop the unloading workflow
+
