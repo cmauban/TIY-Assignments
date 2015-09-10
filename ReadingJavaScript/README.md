@@ -543,8 +543,12 @@ HTML DOM events allow JavaScript to register different event handlers on element
 		  <div class="d3">3 <!-- the innermost -->
 
 ```
+The bubbling goes right to the top. When an event occurs on an element - it will bubble up to HTML, triggering handlers on it’s way.
+
+But a handler may decide that event is fully processed and stop the bubbling.
+
 - `event.stopPropagation();` makes event bubbling stop.
-- `event.target`: this refers to the object that dispatched the event. when the event handler is called during the bubbling or capturing phase of the event.
+- `event.target`: The target is the deepest element which triggered the event. when the event handler is called during the bubbling or capturing phase of the event. When handlers trigger on parents the event.target remains the same element. (this, the current element, the one event has bubbled too, runs the handler, number goes down)
 
 **Event types triggered with a mouse:**
 - `click`: fired when a pointing device button is pressed and released on a single element.
