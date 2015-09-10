@@ -509,7 +509,11 @@ Each web page loaded in the browser has its own document object. The Document in
 *parentNode, firstChild, lastChild, previousSibling, nextSibling - returns null if there is no such child, parent, or sibling node. BUT `childNodes` array is length of zero if no childNodes.
 
 #####Methods:
-- addEventListener: is the way to register an event listener as specified in W3C DOM. It allows adding more than a single handler for an event.
+- `addEventListener`: is the way to register an event listener. It allows adding more than a single handler for an event. You can add many event handlers to one element.
+	- `element.addEventListener(event, function, useCapture);`
+	- first parameter is the type of the event (like "click" or "mousedown").
+	- second parameter is the function we want to call when the event occurs.
+	- third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.
 - dispatchEvent: Dispatches an Event at the specified EventTarget, invoking the affected EventListeners in the appropriate order. `cancelled = !target.dispatchEvent(event)`
 	- The return value is false if at least one of the event handlers which handled this event called Event.preventDefault(). Otherwise it returns true.
 - *Attribute family:
