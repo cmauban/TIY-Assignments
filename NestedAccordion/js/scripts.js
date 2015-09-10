@@ -9,6 +9,23 @@
 // - when i click a heading with text visible (open accordion):
 //    - the '<li class="cbp-ntopen">' that contains the heading I clicked turns into '<li>'
 // I think this is what made all the headers of Nested Accordion interactive?
+
+// what does it do?
+// when i click
+//      on a heading...
+var heading = document.querySelector('.cbp-nttrigger');
+
+heading.addEventListener('click', function(){      //controller code
+  // the text below hides and shows...
+  // add the right class "ntopen" (something or other) to the right element... ?
+  console.log(no);
+});
+//
+
+
+
+
+
 //
 // also, in the HTML there is not a div element with an id attribute
 //that included style anymore. the script tags.
