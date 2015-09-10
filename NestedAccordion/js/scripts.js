@@ -18,7 +18,9 @@ var heading = document.querySelector('.cbp-nttrigger');
 heading.addEventListener('click', function(){      //controller code
   // the text below hides and shows...
   // add the right class "ntopen" (something or other) to the right element... ?
-  console.log(no);
+  document.querySelector("li").className = "cbp-ntopen";
+
+
 });
 //
 
