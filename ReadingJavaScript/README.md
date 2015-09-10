@@ -530,3 +530,22 @@ The **HTMLCollection** interface represents a generic collection (array-like obj
 - the `item` method: `item ( idx )` Returns an item in the list by its index, or null if the index is out-of-bounds; can be used as an alternative to simply accessing `nodeList[idx]` (which instead returns  undefined when `idx` is out-of-bounds).
 
 -  Each node has a `childNodes` property that contains an ordered array of all its children. One can index into this array. Use when you want to manipulate a Node that doesn't have an ID.
+
+###Events
+any input a user can provide triggers an event in JavaScript: clicks, scrolls, pressing a key on the keyboard.
+
+#####Properties:
+- `event.bubbles`: Returns a Boolean value, which is true if the event bubbles up through the DOM. only certain events can bubble, and they will bubble if the property is set to true. you can make it stop by setting the property to false?
+- `event.target`: this refers to the object that dispatched the event. when the event handler is called during the bubbling or capturing phase of the event.
+
+**Event types triggered with a mouse:**
+- `click`: fired when a pointing device button is pressed and released on a single element.
+- `mousedown`: fired when a pointing device button is pressed on an element.
+- `mouseup`: fired when a pointing device button is released over an element.
+- `mousemove`: fired when a pointing device is moved while over an element.
+- `dblclick`: fired when a pointing device button is clicked twice on a single element.
+- `mouseover`: fired when a pointing device is moved onto the element that has the listener attached or onto one of its children.
+- `mouseout`: fired when a pointing device is moved off the element that has the listener attached or off one of its children.
+- `mouseenter`: fired when a pointing device is moved over the element that has the listener attached.
+- `mouseleave`: fired when a pointing device is moved off the element that has the listener attached.
+- `contextmenu`: fired when the right button of the mouse is clicked, or when the context menu key is pressed.
