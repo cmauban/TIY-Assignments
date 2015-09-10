@@ -549,3 +549,15 @@ any input a user can provide triggers an event in JavaScript: clicks, scrolls, p
 - `mouseenter`: fired when a pointing device is moved over the element that has the listener attached.
 - `mouseleave`: fired when a pointing device is moved off the element that has the listener attached.
 - `contextmenu`: fired when the right button of the mouse is clicked, or when the context menu key is pressed.
+
+**`HTML <form> element`** represents a document section that contains interactive controls to submit information to a web server.
+**Event types triggered on a `<form>` element:**
+???????
+
+**Common Event Types**
+- `click`: fired when a pointing device button is pressed and released on a single element.
+- `scroll`: fired when the document view or an element has been scrolled. Throttle the event by using requestAnimationFrame, setTimeout or customEvent.
+- `change`: fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user.
+- `submit`: fired when a form is submitted. fired only on the form element, not the button or submit input. (Forms are submitted, not buttons.)
+- `load`:
+- `unload`:
