@@ -557,7 +557,7 @@ any input a user can provide triggers an event in JavaScript: clicks, scrolls, p
 **Common Event Types**
 - `click`: fired when a pointing device button is pressed and released on a single element.
 - `scroll`: fired when the document view or an element has been scrolled. Throttle the event by using requestAnimationFrame, setTimeout or customEvent.
-- `change`: fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user.
+- `change`: fired for input, select, and textarea elements when a change to the element's value is committed by the user.
 - `submit`: fired when a form is submitted. fired only on the form element, not the button or submit input. (Forms are submitted, not buttons.)
 - `load`:
 - `unload`:
