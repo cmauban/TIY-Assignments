@@ -13,18 +13,57 @@
 // what does it do?
 // when i click
 //      on a heading...
-var heading = document.querySelector('.cbp-nttrigger');
-
-heading.addEventListener('click', function(){      //controller code
-  // the text below hides and shows...
-  // add the right class "ntopen" (something or other) to the right element... ?
-  document.querySelector("li").className = "cbp-ntopen";
-
-
-});
+// var heading = document.querySelector('.cbp-nttrigger');
 //
+// heading.addEventListener('click', function(){ //controller code
+//   // the text below hides and shows...
+//   // add the right class "ntopen" (something or other) to the right element... ?
+//   document.querySelector("li").className = "cbp-ntopen";
+//
+// });
+//
+// //To get the other content sections to close, we need to create a variable for
+// //the current target
+// var openacc = document.querySelector("li").className = "cbp-ntopen";
+//
+// heading.addEventListener('click', function(){ //create new function
+// document.querySelector("li").className = " "; //closes the accordion
+// });
+
+//opens and closes
+//when i click on a heading..
+var heading = document.querySelector('.cbp-nttrigger');
+//the addEventListener listens to 'click'..
+heading.addEventListener('click', function(){ //controller code
+  //allows it to be closed first, then open
+  if (document.querySelector("li").className !== "cbp-ntopen") {
+    document.querySelector("li").className = "cbp-ntopen";
+  return true;
+} //open already, then closed.
+  if (document.querySelector("li").className === "cbp-ntopen") {
+    document.querySelector("li").className = "";
+  return true;
+}
+});
 
 
+
+
+
+
+// you can just wrap both main groups in a div with class="accordion-div" and
+// then you get the nested accordions as you expect.
+
+
+//
+// *****To get the other content sections to close, we need to create a variable for
+// the current target and add an if statement and find .content with class of active
+// and remove or toggle that class
+
+//var current = event.currentTarget
+// if (current.hasClass('active') {
+//   current.removeClass('active');
+// } ******
 
 
 
