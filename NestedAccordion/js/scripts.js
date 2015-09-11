@@ -30,21 +30,75 @@
 // document.querySelector("li").className = " "; //closes the accordion
 // });
 
-//opens and closes
-//when i click on a heading..
-var heading = document.querySelector('.cbp-nttrigger');
-//the addEventListener listens to 'click'..
-heading.addEventListener('click', function(){ //controller code
-  //allows it to be closed first, then open
-  if (document.querySelector("li").className !== "cbp-ntopen") {
-    document.querySelector("li").className = "cbp-ntopen";
-  return true;
-} //open already, then closed.
-  if (document.querySelector("li").className === "cbp-ntopen") {
-    document.querySelector("li").className = "";
+// //opens and closes
+// //when i click on a heading..
+// //create variable to target the class headings
+// var heading = document.querySelector('.cbp-nttrigger');
+// //the addEventListener listens to the event type 'click' and creates function
+// heading.addEventListener('click', function(){ //controller code
+//   //the method quertySelector selects first element <li>
+//   if (document.querySelector("li").className !== "cbp-ntopen"){ //allows it to be closed first by not equaling the class attribute.
+//     document.querySelector("li").className = "cbp-ntopen"; //..then opens by assigning the class attribute "ntopen"
+//   return true; //opens accordion
+// } //className is open already, then closed.
+//   if (document.querySelector("li").className === "cbp-ntopen"){ //if className is strictly equal to class attribute "ntopen"
+//     document.querySelector("li").className = ""; //..then the event type "click" changes the class attritue to null.
+//   return true; //closes accordion
+// }
+// }); //END OPEN AND CLOSE
+
+
+
+// //open and closes ALL top-headers
+// //first use the parent class, <ul> for all the heading
+// var heading = document.querySelectorAll('h3.cbp-nttrigger'); //stores NodeList of h3 in array
+//
+// for (var i = 0; i < heading.length; i++) { //loops through each item
+//   heading[i].addEventListener('click', function(){ // putting in array. change value of class attribute
+// // for each element in the NodeList, the value of the class attribute is changed to closed.
+//   var openacc = document.querySelectorAll('li.cbp-ntopen');
+//   if (openacc.length > 0) { //if it contains items
+//     for (var = 0; i < openacc.length; i++) {
+//       openacc[i].className = " ";
+//   }
+//
+// } else {
+//     document.querySelectorAll("li").className = "cbp-ntopen"
+//
+//   }
+// })
+// }; //END FOR LOOP
+
+
+
+
+
+
+
+var heading = document.querySelectorAll('h3.cbp-nittrigger'); //store NodeList in array
+var liheading = document.querySelectorAll('li.cbp-ntopen');
+
+
+heading[i].addEventListener('click', function(){
+  for (var i = 0; i < heading.length; i++) {
+  if (document.querySelector("h3").className === "cbp-nittrigger"){
+    document.querySelector("h3").className = "cbp-nittrigger";
   return true;
 }
-});
+
+
+  }
+
+
+}
+  // heading[i].className = ""; // putting in array. change value of class attribute
+ // for each element in the NodeList, the value of the class attribute is changed to closed.
+
+  } //END FOR LOOP
+
+}); //END FUNCTION
+
+
 
 
 
@@ -60,10 +114,7 @@ heading.addEventListener('click', function(){ //controller code
 // the current target and add an if statement and find .content with class of active
 // and remove or toggle that class
 
-//var current = event.currentTarget
-// if (current.hasClass('active') {
-//   current.removeClass('active');
-// } ******
+
 
 
 
