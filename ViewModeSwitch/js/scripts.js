@@ -33,3 +33,148 @@
 // use the window object to change orientation in the browser?
 //
 // execute two different loops: grid and list
+
+
+
+
+
+
+
+//
+// // capture href, add an event listener, and add a class - for grid (buttons)
+// var grid = document.getElementsByClassName('.cbp-vm-grid');
+//
+// grid.addEventListener('click', function() {
+//   // grid.className = 'cbp-vm-selected';
+//   grid.className.replace ( /(?:^|\s)'cbp-vm-selected'(?!\S)/g , '' );
+//
+// });
+
+//when grid button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-grid"
+//and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-list cbp-vm-selected" (list)
+
+
+
+
+
+
+
+// IDENTIFY THE PAGE YOURE ON
+// var page = window.location.href;
+var targetDiv = document.getElementById('.cbp-vm');
+var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher');
+
+// getElementsByClassName('.cbp-vm-switcher.cbp-vm-view-grid')[1];
+console.log(targetClass);
+
+// var grid = targetClass.firstChild;
+// var list = targetClass.lastChild;
+//
+// console.log(grid);
+// console.log(list);
+//
+// list.addEventListener('click', function(){
+//
+// grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
+// list.className = 'cbp-vm-icon cbp-vm-list';
+//
+//   console.log(grid);
+//   console.log(list);
+//
+// });
+
+
+
+// document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
+//   document.removeEventListener( "click", listView.callee, false); //
+//   switch(switcher) {
+//     case gridView:
+//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-grid';
+//       break;
+//     case listView:
+//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-list';
+//       break;
+//   }
+//
+// }, false );
+//
+//
+
+
+//SWITCH VIEWS IN ELEMENT HREF
+// document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
+//   document.removeEventListener( "click", listView.callee, false); //
+//
+//   switch(page) {
+//     case gridView:
+//       document.getElementsByClassName('cbp-vm-icon cbp-vm-grid').className += ' cbp-vm-selected';
+//       break;
+//     case listView:
+//       document.getElementsByClassName('cbp-vm-icon cbp-vm-list').className += ' cbp-vm-selected';
+//       break;
+//   }
+//
+// }, false );
+
+
+
+
+
+
+
+
+
+//starting point to find its children
+// var switcher = document.getElementById('cbp-vm');
+//
+// var grid = switcher.firstChild;
+// var list = switcher.lastChild;
+//
+// console.log(grid);
+// console.log(list);
+//
+// list.addEventListener('click', function(){
+//
+// grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
+// list.className = 'cbp-vm-icon cbp-vm-list';
+//
+//   console.log(grid);
+//   console.log(list);
+//
+// });
+//
+
+
+
+// capture href, add an event listener, and add a class - for list (buttons)
+// var list = document.getElementsByClassName('cbp-vm-list');
+//
+//   list.addEventListener('click', function(){
+//     list.className += ' cbp-vm-selected';
+//     console.log("TRACER BULLET!!!");
+//
+// });
+
+
+
+//when list button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-list"
+//and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-grid cbp-vm-selected" (grid)
+
+
+
+
+
+
+
+
+
+//figure out how to get the class unadded when the other is selected
+// for the div.. toggle between view grid and view list classes
+//      *if grid is selected, then the view grid class is added to div
+//      *if list is selected, then view list class added to div
+//      *when grid is added, list is removed
+//      *when list is added, grid is removed
+
+//1. give grid control flow - priority as default?
+//2. when list is selected it gains priority (how?)
+//3.
