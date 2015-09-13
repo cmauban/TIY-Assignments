@@ -35,7 +35,30 @@
 // execute two different loops: grid and list
 
 
+var divVm = document.querySelector("div#cbp-vm");
+var aGrid = document.querySelector('a.cbp-vm-icon.cbp-vm-grid');
+var aList = document.querySelector('a.cbp-vm-icon.cbp-vm-list');
 
+console.log (divVm);
+console.log (aGrid);
+console.log (aList);
+
+function clickGrid (clickButton) {
+ var curButton = clickButton.currentTarget;
+ divVm.className = "cbp-vm-switcher cbp-vm-view-grid";
+ curButton.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
+ aList.className = "cbp-vm-icon cbp-vm-list";
+}
+
+function clickList (clickButton) {
+ var curButton = clickButton.currentTarget;
+ divVm.className = "cbp-vm-switcher cbp-vm-view-list";
+ curButton.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
+ aGrid.className = "cbp-vm-icon cbp-vm-grid";
+}
+
+aGrid.addEventListener('click', clickGrid);
+aList.addEventListener('click', clickList);
 
 
 
@@ -61,18 +84,18 @@
 
 // IDENTIFY THE PAGE YOURE ON
 
-var targetDiv = document.getElementById('.cbp-vm'); //targeting parent of the div elements
-var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher'); //targeting the A element tags. Creates NodeList
-
-var gridView = document.querySelectorAll('a.cbp-vm-grid');
-var listView = document.querySelectorAll('a.cbp-vm-list');
+// var targetDiv = document.getElementById('.cbp-vm'); //targeting parent of the div elements
+// var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher'); //targeting the A element tags. Creates NodeList
 //
-console.log(gridView);
+// var gridView = document.querySelectorAll('a.cbp-vm-grid');
+// var listView = document.querySelectorAll('a.cbp-vm-list');
+// //
+// console.log(gridView);
+//
+// gridView.initEvent('click', true, true);
 
-gridView.addEventListener('click', function(){
-  
 
-});
+
 
 //
 // listView.addEventListener('click', function (e){
@@ -97,25 +120,25 @@ gridView.addEventListener('click', function(){
 
 
 //SWITCH VIEWS IN ELEMENT HREF
-var page = window.location.href;
-
-document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
-  document.removeEventListener( "click", listView.callee, false); //
-
-  switch(page){
-    case gridView:
-      document.getElementsByClassName('cbp-vm-icon cbp-vm-grid').className += ' cbp-vm-selected';
-      document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-grid';
-      break;
-    case listView:
-      document.getElementsByClassName('cbp-vm-icon cbp-vm-list').className += ' cbp-vm-selected';
-      document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-list';
-      break;
-  }
-
-}, false );
-
-console.log(page);
+// var page = window.location.href;
+//
+// document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
+//   document.removeEventListener( "click", listView.callee, false); //
+//
+//   switch(page){
+//     case gridView:
+//       document.getElementsByClassName('cbp-vm-icon cbp-vm-grid').className += ' cbp-vm-selected';
+//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-grid';
+//       break;
+//     case listView:
+//       document.getElementsByClassName('cbp-vm-icon cbp-vm-list').className += ' cbp-vm-selected';
+//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-list';
+//       break;
+//   }
+//
+// }, false );
+//
+// console.log(page);
 
 
 
