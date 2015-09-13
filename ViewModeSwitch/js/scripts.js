@@ -60,89 +60,62 @@
 
 
 // IDENTIFY THE PAGE YOURE ON
-// var page = window.location.href;
-var targetDiv = document.getElementById('.cbp-vm');
-var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher');
 
-// getElementsByClassName('.cbp-vm-switcher.cbp-vm-view-grid')[1];
-console.log(targetClass);
+var targetDiv = document.getElementById('.cbp-vm'); //targeting parent of the div elements
+var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher'); //targeting the A element tags. Creates NodeList
 
-// var grid = targetClass.firstChild;
-// var list = targetClass.lastChild;
+var gridView = document.querySelectorAll('a.cbp-vm-grid');
+var listView = document.querySelectorAll('a.cbp-vm-list');
 //
-// console.log(grid);
-// console.log(list);
-//
-// list.addEventListener('click', function(){
-//
-// grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
-// list.className = 'cbp-vm-icon cbp-vm-list';
-//
-//   console.log(grid);
-//   console.log(list);
-//
-// });
+console.log(gridView);
 
+gridView.addEventListener('click', function(){
+  
 
+});
 
-// document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
-//   document.removeEventListener( "click", listView.callee, false); //
-//   switch(switcher) {
-//     case gridView:
-//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-grid';
-//       break;
-//     case listView:
-//       document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-list';
-//       break;
+//
+// listView.addEventListener('click', function (e){
+//   if(listView.className !== 'cbp-vm-icon cbp-vm-list cbp-vm-selected'){
+//     listView.className = 'cbp-vm-icon cbp-vm-list cbp-vm-selected';
+//     return true;
 //   }
+//   if(targetClass.className !== 'cbp-vm-switcher cbp-vm-view-list');
+//     targetClass.className = 'cbp-vm-switcher cbp-vm-view-list';
+//     return true;
+// });
+// console.log(e);
 //
-// }, false );
-//
-//
+// // listView.addEventListener('click', function(){
+// //     listView.className += ' cbp-vm-selected';
+// //     console.log("TRACER BULLET!!!");
+// //
+// // });
+
+
+
 
 
 //SWITCH VIEWS IN ELEMENT HREF
-// document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
-//   document.removeEventListener( "click", listView.callee, false); //
-//
-//   switch(page) {
-//     case gridView:
-//       document.getElementsByClassName('cbp-vm-icon cbp-vm-grid').className += ' cbp-vm-selected';
-//       break;
-//     case listView:
-//       document.getElementsByClassName('cbp-vm-icon cbp-vm-list').className += ' cbp-vm-selected';
-//       break;
-//   }
-//
-// }, false );
+var page = window.location.href;
 
+document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
+  document.removeEventListener( "click", listView.callee, false); //
 
+  switch(page){
+    case gridView:
+      document.getElementsByClassName('cbp-vm-icon cbp-vm-grid').className += ' cbp-vm-selected';
+      document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-grid';
+      break;
+    case listView:
+      document.getElementsByClassName('cbp-vm-icon cbp-vm-list').className += ' cbp-vm-selected';
+      document.getElementsByClassName('cbp-vm-switcher').className += ' cbp-vm-view-list';
+      break;
+  }
 
+}, false );
 
-
-
-
-
-
-//starting point to find its children
-// var switcher = document.getElementById('cbp-vm');
-//
-// var grid = switcher.firstChild;
-// var list = switcher.lastChild;
-//
-// console.log(grid);
-// console.log(list);
-//
-// list.addEventListener('click', function(){
-//
-// grid.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
-// list.className = 'cbp-vm-icon cbp-vm-list';
-//
-//   console.log(grid);
-//   console.log(list);
-//
-// });
-//
+console.log(page);
 
 
 
