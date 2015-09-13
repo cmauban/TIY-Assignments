@@ -1,9 +1,5 @@
 
 //**********1.) Make variables for all of the elements I will be manipulating
-//    a. start with the form element and one type with in
-//    b. make variable for one of each type of form elements
-//    c. make them all!
-//
 
 // var firstName = document.getElementById('first_name');
 // var lastName = document.getElementById('last_name');
@@ -14,33 +10,27 @@
 //create NodeList for 3 div columns:
 var targetForm = document.getElementsByClassName('.cbp-mc-form');
 var targetDiv = document.querySelectorAll('targetForm, div.cbp-mc-column');
-console.log(targetDiv);
 
-//create NodeList for all the id attributes in the input element:
-var inputIds = document.querySelectorAll('input');
+//create NodeList for all the id attributes in the input/select/textarea elements:
+var inputIds = document.querySelectorAll('targetDiv, input, select, textarea');
 console.log(inputIds);
 
-
+//create variable for submit button/element
 var submitForm = document.querySelector('.cbp-mc-submit');
 
+//add the event listener 'click' to the submit button.
 submitForm.addEventListener('click', function(event){
-  for (var i = 0; i < inputIds.length; i++){
-  var output = inputIds[i].value;
+  for (var i = 0; i < inputIds.length; i++){ //loops through NodeList
+  var output = inputIds[i].value; //adds the text input to each item in the NodeList
     console.log(output);
+
   }
-  event.preventDefault();
+  event.preventDefault(); //prevents page from refeshing after pressing submit. (stored)
 });
 
 
 
-
-
-
-// *******2.) Make functions for every(maybe) form element.
-//    a. make a function that will console.log for the form
-//    b. make a function for one
-//    c. then make function for one of each type of form element
-//    d. then make them all!
+// *******2.) Make functions for every form element.
 
 // function data (){
 //   console.log(firstName.value);
@@ -49,8 +39,6 @@ submitForm.addEventListener('click', function(event){
 
 //
 // *********3.) Make eventListeners
-//    a. make eventListener for form
-//    b. make eventListeners as needed
 
 // firstName.addEventListener('input', data);
 // lastName.addEventListener('input', data);
