@@ -20,11 +20,17 @@ console.log(targetDiv);
 var inputIds = document.querySelectorAll('input');
 console.log(inputIds);
 
-for (var i = 0; i < inputIds.length; i++){
-  inputIds[i].addEventListener('input', function(){
-    console.log(inputIds[i].value);
-  })
-}
+
+var submitForm = document.querySelector('.cbp-mc-submit');
+
+submitForm.addEventListener('click', function(event){
+  for (var i = 0; i < inputIds.length; i++){
+  var output = inputIds[i].value;
+    console.log(output);
+  }
+  event.preventDefault();
+});
+
 
 
 
