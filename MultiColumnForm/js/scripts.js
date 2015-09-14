@@ -9,7 +9,7 @@
 var inputIds = document.querySelectorAll('input, select, textarea');
 console.log(inputIds);
 
-//create variable for submit button/element
+//create variable for submit form element
 var submitForm = document.querySelector('.cbp-mc-submit');
 
 //add the event listener 'click' to the submit button.
@@ -22,6 +22,9 @@ submitForm.addEventListener('click', function(event){
   event.preventDefault(); //prevents page from refeshing after pressing submit. (stored)
 });
 
+
+//LOCATION CHANGE WHEN FORM HAS INPUT FROM USER:
+//http://tympanus.net/Blueprints/ResponsiveMultiColumnForm/?first_name=camille&last_name=mauban&email=&country=Choose+a+country&bio=&phone=&affiliations=&occupation=Choose+an+occupation&cat_name=&gagdet=&talent=Choose+a+talent&drink=&power=&weapon=&comments=
 
 
 // *******2.) Make functions for every form element.

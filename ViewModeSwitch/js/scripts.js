@@ -34,20 +34,21 @@
 var targetDiv = document.getElementById('cbp-vm'); //targeting parent of the div elements
 console.log(targetDiv);
 
-var gridView = document.querySelector('a.cbp-vm-icon.cbp-vm-grid'); //captures href
+//BUTTONS
+var gridView = document.querySelector('a.cbp-vm-icon.cbp-vm-grid'); //captures href (buttons)
 var listView = document.querySelector('a.cbp-vm-icon.cbp-vm-list'); //^^class attribute in the anchor element
 
 // capture href, add an event listener, and add a class - for grid (buttons)
 // when grid button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-grid"
 // and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-list cbp-vm-selected" (list)
 
-var clickGrid = function (event){
+function clickGrid (event){ //`event` is the identifier
   targetDiv.className = 'cbp-vm-switcher cbp-vm-view-grid';
   gridView.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
   listView.className = 'cbp-vm-icon cbp-vm-list';
-};
+}
 
-gridView.addEventListener('click', clickGrid);
+gridView.addEventListener('click', clickGrid); //when the gridButton is clicked..
 
 // capture href, add an event listener, and add a class - for list (buttons)
 // when list button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-list"
@@ -59,13 +60,13 @@ gridView.addEventListener('click', clickGrid);
 //
 //  });
 
-var clickList = function (event){
+function clickList (event){
   targetDiv.className = 'cbp-vm-switcher cbp-vm-view-list';
   gridView.className = 'cbp-vm-icon cbp-vm-grid';
   listView.className = 'cbp-vm-icon cbp-vm-list cbp-vm-selected';
-};
+}
 
-listView.addEventListener('click', clickList);
+listView.addEventListener('click', clickList); //when the listButton is clicked..
 
 
 // sad... because I thought this was gonna work -_-
