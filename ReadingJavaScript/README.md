@@ -340,7 +340,9 @@ for (var i = 0; i < cities.length; i++) {
     console.log("I would like to visit " + cities[i]);
 ```
 ###Document Object Model (DOM)
-is a programming interface for HTML, XML and SVG documents.
+- is the model of the HTML inside the document.
+- JS gives us a DOM
+- DOM is where the document lives.
 
 ####Window Object
 represents a window containing a DOM document.  a window for a given document can be obtained using the document.defaultView property. a brief reference for all of the methods, properties, and events available through the DOM window object. The window object implements the Window interface, which in turn inherits from the AbstractView interface.
@@ -357,7 +359,7 @@ represents a window containing a DOM document.  a window for a given document ca
 	ex: location.reload(true); //forcing reloading the current page from the server
 ```
 
-- DOCUMENT: Returns a reference to the document contained in the window.
+- DOCUMENT: Returns a reference to the document contained in the window. Represented by HTML tags.
 	
 ```
 		doc = window.document
@@ -486,7 +488,7 @@ Each web page loaded in the browser has its own document object. The Document in
 - `querySelector`: Returns the first element within the document that matches the specified group of selectors. ex-the first element in the document with the class "myclass" is returned:
 	- `var el = document.querySelector(".myclass");`
 	
-- `querySelectorAll`: The object returned is a NodeList. ex-returns a list of all div elements within the document with a class of either "note" or "alert":
+- `querySelectorAll`: The object returned is a NodeList. ex- returns a list of all div elements within the document with a class of either "note" or "alert":
 	- `var matches = document.querySelectorAll("div.note, div.alert");` 
 	
 - `appendChild`: 
