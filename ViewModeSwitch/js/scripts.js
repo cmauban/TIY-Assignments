@@ -15,10 +15,6 @@
 // the link goes to)
 // I think including this would allow us to select the list?
 //
-// we are missing the <div> element with the id and style attributes
-// at the end of the DOM. this will probably help the layout of the
-// web page.
-//
 // TO FIX:
 // establish a connection between JavaScript and HTML to make the
 // website come alive. ex: linking the js file in the .html file.
@@ -32,95 +28,48 @@
 //
 // use the window object to change orientation in the browser?
 //
-// execute two different loops: grid and list
+// execute two different loops: grid and list???
 
+//1. CREATE THE VARIABLES FOR ALL OF THE ELEMENTS TO USE:
+var targetDiv = document.getElementById('cbp-vm'); //targeting parent of the div elements
+console.log(targetDiv);
 
-var divVm = document.querySelector("div#cbp-vm");
-var aGrid = document.querySelector('a.cbp-vm-icon.cbp-vm-grid');
-var aList = document.querySelector('a.cbp-vm-icon.cbp-vm-list');
+var gridView = document.querySelector('a.cbp-vm-icon.cbp-vm-grid'); //captures href
+var listView = document.querySelector('a.cbp-vm-icon.cbp-vm-list'); //^^class attribute in the anchor element
 
-console.log (divVm);
-console.log (aGrid);
-console.log (aList);
+// capture href, add an event listener, and add a class - for grid (buttons)
+// when grid button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-grid"
+// and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-list cbp-vm-selected" (list)
 
-function clickGrid (clickButton) {
- var curButton = clickButton.currentTarget;
- divVm.className = "cbp-vm-switcher cbp-vm-view-grid";
- curButton.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
- aList.className = "cbp-vm-icon cbp-vm-list";
-}
+var clickGrid = function (event){
+  targetDiv.className = 'cbp-vm-switcher cbp-vm-view-grid';
+  gridView.className = 'cbp-vm-icon cbp-vm-grid cbp-vm-selected';
+  listView.className = 'cbp-vm-icon cbp-vm-list';
+};
 
-function clickList (clickButton) {
- var curButton = clickButton.currentTarget;
- divVm.className = "cbp-vm-switcher cbp-vm-view-list";
- curButton.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
- aGrid.className = "cbp-vm-icon cbp-vm-grid";
-}
+gridView.addEventListener('click', clickGrid);
 
-aGrid.addEventListener('click', clickGrid);
-aList.addEventListener('click', clickList);
-
-
-
-
+// capture href, add an event listener, and add a class - for list (buttons)
+// when list button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-list"
+// and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-grid cbp-vm-selected" (grid)
 //
-// // capture href, add an event listener, and add a class - for grid (buttons)
-// var grid = document.getElementsByClassName('.cbp-vm-grid');
+//    listView.addEventListener('click', function(){
+//     listView.className += ' cbp-vm-selected';
+//     console.log("TRACER BULLET!!!");
 //
-// grid.addEventListener('click', function() {
-//   // grid.className = 'cbp-vm-selected';
-//   grid.className.replace ( /(?:^|\s)'cbp-vm-selected'(?!\S)/g , '' );
-//
-// });
+//  });
 
-//when grid button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-grid"
-//and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-list cbp-vm-selected" (list)
+var clickList = function (event){
+  targetDiv.className = 'cbp-vm-switcher cbp-vm-view-list';
+  gridView.className = 'cbp-vm-icon cbp-vm-grid';
+  listView.className = 'cbp-vm-icon cbp-vm-list cbp-vm-selected';
+};
 
-
-
+listView.addEventListener('click', clickList);
 
 
-
-
-// IDENTIFY THE PAGE YOURE ON
-
-// var targetDiv = document.getElementById('.cbp-vm'); //targeting parent of the div elements
-// var targetClass = document.querySelectorAll('div.cbp-vm-options, targetDiv.cbp-vm-switcher'); //targeting the A element tags. Creates NodeList
-//
-// var gridView = document.querySelectorAll('a.cbp-vm-grid');
-// var listView = document.querySelectorAll('a.cbp-vm-list');
-// //
-// console.log(gridView);
-//
-// gridView.initEvent('click', true, true);
-
-
-
-
-//
-// listView.addEventListener('click', function (e){
-//   if(listView.className !== 'cbp-vm-icon cbp-vm-list cbp-vm-selected'){
-//     listView.className = 'cbp-vm-icon cbp-vm-list cbp-vm-selected';
-//     return true;
-//   }
-//   if(targetClass.className !== 'cbp-vm-switcher cbp-vm-view-list');
-//     targetClass.className = 'cbp-vm-switcher cbp-vm-view-list';
-//     return true;
-// });
-// console.log(e);
-//
-// // listView.addEventListener('click', function(){
-// //     listView.className += ' cbp-vm-selected';
-// //     console.log("TRACER BULLET!!!");
-// //
-// // });
-
-
-
-
-
+// sad... because I thought this was gonna work -_-
 //SWITCH VIEWS IN ELEMENT HREF
-// var page = window.location.href;
 //
 // document.addEventListener( "click", function(){ //add an event method and assigns the event type, 'click' to it.
 //   document.removeEventListener( "click", listView.callee, false); //
@@ -139,38 +88,3 @@ aList.addEventListener('click', clickList);
 // }, false );
 //
 // console.log(page);
-
-
-
-// capture href, add an event listener, and add a class - for list (buttons)
-// var list = document.getElementsByClassName('cbp-vm-list');
-//
-//   list.addEventListener('click', function(){
-//     list.className += ' cbp-vm-selected';
-//     console.log("TRACER BULLET!!!");
-//
-// });
-
-
-
-//when list button is selected, add 'cbp-vm-selected' to className "cbp-vm-icon cbp-vm-list"
-//and delete 'cbp-vm-selected' from className "cbp-vm-icon cbp-vm-grid cbp-vm-selected" (grid)
-
-
-
-
-
-
-
-
-
-//figure out how to get the class unadded when the other is selected
-// for the div.. toggle between view grid and view list classes
-//      *if grid is selected, then the view grid class is added to div
-//      *if list is selected, then view list class added to div
-//      *when grid is added, list is removed
-//      *when list is added, grid is removed
-
-//1. give grid control flow - priority as default?
-//2. when list is selected it gains priority (how?)
-//3.
