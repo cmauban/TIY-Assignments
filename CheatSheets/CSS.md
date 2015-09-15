@@ -6,14 +6,14 @@ A CSS rule contains 2 parts: a selector and declaration.
 
 ## Selectors
 allows you to target rules to specific elements in an HTML document.
-- UNIVERSAL SELECTOR
-- TYPE SELECTOR
-- CLASS SELECTOR
-- ID SELECTOR
-- CHILD SELECTOR
-- DESCENDANT SELECTOR
-- ADJACENT SIBLING SELECTOR
-- GENERAL SIBLING SELECTOR
+- **UNIVERSAL SELECTOR:** applies to all. targets all elements on the page ex: `* []`
+- **TYPE SELECTOR:** matches element names. targets the h1, h2, h3 elements ex: `h1, h2, h3 []`
+- **CLASS SELECTOR:** matches an element whose class attribute has a value that matches the one specified after the period operator. ex: `note []` targets an el whose class att has value of note. `p.note []` targets p elements whose class att has value of note.
+- **ID SELECTOR:** matches an el whose id attribute has a value that matches the one specified after the `#` symbol. ex: `#introduction []`
+- **CHILD SELECTOR:** matches an el that is a direct child of another ex: `li>a []` targets an <a> el that are children of an <li> element. but not other <a> el in the page
+- **DESCENDANT SELECTOR:** matches an el that is a descendent of another specified element, not jsut a direct child of that element. ex: `p a []` targets any a elements that sit inside a p element, even if there are other elements nested bw them.
+- **ADJACENT SIBLING SELECTOR:** matches an element that is the next sibling of another ex: `h1+p []` targets the first p element after any h1 element, but not other p elements.
+- **GENERAL SIBLING SELECTOR:** matches an el that is a sibling of another, although it does not have to be the directly preceding element ex: `h1-p []` if you had 2 p elements that are siblings of an h1 element, this rule would appy to both.
 
 
 ## Properties
