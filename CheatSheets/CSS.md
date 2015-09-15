@@ -8,6 +8,30 @@
   - `block-level element`: starts on a new line. `div` is the standard block-level element. `p` and `form` are common block elements.
   - `inline element`: `span` is the standard inline element. can wrap text inside a paragraph `<span> like this </span>` without disrupting the flow of that paragraph. `a` element is common.
   - `none`: `script` use this as their default. It is commonly used with JavaScript to hide and show elements without really deleting and recreating them. will render the page as though the element does not exist.
+  - `inline-block` element: just like inline but with `width` and `height`. USE THIS INSTEAD OF FLOAT FOR GRID OF BOXES. (DONT NEED TO USE CLEAR) ex:
+```
+        .box2 {
+          display: inline-block;
+          width: 200px;
+          height: 100px;
+          margin: 1em;
+        }
+```
+  - `inline-block` elements can also be used for LAYOUTS. affected by the `vertical-align` property, which you probably want set to `top`. need to set width of each column. There will be a gap between the columns if there is any whitespace between them in the HTML. ex:
+      
+```
+      nav {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+      }
+      .column {
+        display: inline-block;
+        vertical-align: top;
+        width: 75%;
+      }
+```
+
 - **`box-sizing`**: When you set `box-sizing: border-box;` on an element, the padding and border of that element no longer increase its width. use: use the `-webkit-` and `-moz-` prefixes.
 - **`position`**: for more complex layouts. a "positioned" element is one whose position is anything except `static`.
   - VALUES:
@@ -22,6 +46,23 @@
 ```
         .clearfix {
           overflow: auto;
+```
+- **`Media queries`**: for mobile devices. The `and` keyword is used for combining multiple media features together, as well as combining media features with media types. "Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on. ex: Let's take our layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar:
+```
+    @media screen and (min-width:600px) {
+      nav {
+        float: left;
+        width: 25%;
+  }
+     section {
+       margin-left: 25%;
+  }
+}
+    @media screen and (max-width:599px) {
+     nav li {
+       display: inline;
+  }
+}
 ```
 
 
