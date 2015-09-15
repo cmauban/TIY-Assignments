@@ -51,7 +51,6 @@ allows you to target rules to specific elements in an HTML document.
   - VALUES:
   - `hidden` blank space will appear in its place. if you DONT want the blank space, USE DISPLAY PROPERTY W/ A VALUE OF NONE.
   - `visible`
-- **`box-sizing`**: When you set `box-sizing: border-box;` on an element, the padding and border of that element no longer increase its width. use: use the `-webkit-` and `-moz-` prefixes.
 - **`position`**: for more complex layouts. a "positioned" element is one whose position is anything except `static`.
   - VALUES:
   - `static`/`normal flow` is the default value. vertically down the page. *not positioned*
@@ -86,6 +85,17 @@ allows you to target rules to specific elements in an HTML document.
 - **`column`**: make multi-column text. (ex: `.three-column`)
 - **`z-index`**: allows you to control which box appears on top. fixes overlapping elements.
 
+
+####Box Model Properties
+- **`box-sizing`**: used to alter the default CSS box model. When you set `box-sizing: border-box;` on an element, the padding and border of that element no longer increase its width. use: use the `-webkit-` and `-moz-` prefixes.
+  - VALUES:
+  - content box: default style. width and height properties are measured including only the content, but not the padding, border or margin. Note: Padding, border & margin will be outside of the box EX: IF `.box {width: 350px};` THEN you apply `{border: 10px solid black;}` RESULT {rendered in the browser} `.box {width: 370px;}`
+  - border box: width and height properties include the padding and border, but not the margin. Note that padding and border will be inside of the box EX:  `.box {width: 350px; border: 10px solid black;}` lead to a box rendered in the browser of `width: 350px`. 
+
+
+
+
+
 **EXAMPLE STYLES**
 
 BOXES
@@ -93,10 +103,23 @@ BOXES
 - borders (color, width and style)
 - background color and images
 - position in the browser window
-- every box has 3 available properties:
+
+- **every box has 3 available properties:**
   - 1. border: separates the edge of one box from another. 0 pixels wide
   - 2. margin: sit outside the edge of the border. gaps.
-  - 3. padding: space bw the border of a box and any content contained within it.
+  - 3. padding: think of the padding as extending the content. space bw the border of a box and any content contained within it.
+- **..with a `min` or `max` property:**
+  - `min-width/height` property is used to set the minimum width of a given element.
+    - VALUES of min overrides both max-width/height and width/height.
+    - length, percentage
+  - `max-width/height` property is used to set the maximum width of a given element.
+    - VALUES of max overrides the width/height, BUT NOT the min width/height.
+    - none, length, percentage
+
+####CSS units & dots-per-inch
+- `1in is always 96px`
+- `3pt is always 4px`
+- `25.4mm is always 96px`
 
 TEXT
 - typeface
