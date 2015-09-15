@@ -83,7 +83,7 @@ allows you to target rules to specific elements in an HTML document.
 }
 ```
 - **`column`**: make multi-column text. (ex: `.three-column`)
-- **`z-index`** allows you to control which box appears on top. fixes overlapping elements.
+- **`z-index`**: allows you to control which box appears on top. fixes overlapping elements.
 
 **EXAMPLE STYLES**
 
