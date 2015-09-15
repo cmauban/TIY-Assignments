@@ -15,26 +15,8 @@ allows you to target rules to specific elements in an HTML document.
 - ADJACENT SIBLING SELECTOR
 - GENERAL SIBLING SELECTOR
 
+
 ## Properties
-
-**EXAMPLE STYLES**
-
-BOXES
-- width and height
-- borders (color, width and style)
-- background color and images
-- position in the browser window
-- every box has 3 available properties:
-  - 1. border: separates the edge of one box from another. 0 pixels wide
-  - 2. margin: sit outside the edge of the border. gaps.
-  - 3. padding: space bw the border of a box and any content contained within it.
-
-TEXT
-- typeface
-- size
-- color
-- italics, bold, uppercase, lowercase and small-caps
-
 
 - **`display`**: most important property for controlling layout. used to turn an inline el, into an block-level el, or vice versa. used to hide an element from the page. Every element has a default display value, most being either `block` (block-level element) or `inline` (inline elemet).
   - VALUES:
@@ -102,6 +84,24 @@ TEXT
 ```
 - **`column`**: make multi-column text. (ex: `.three-column`)
 - **`z-index`** allows you to control which box appears on top. fixes overlapping elements.
+
+**EXAMPLE STYLES**
+
+BOXES
+- width and height
+- borders (color, width and style)
+- background color and images
+- position in the browser window
+- every box has 3 available properties:
+  - 1. border: separates the edge of one box from another. 0 pixels wide
+  - 2. margin: sit outside the edge of the border. gaps.
+  - 3. padding: space bw the border of a box and any content contained within it.
+
+TEXT
+- typeface
+- size
+- color
+- italics, bold, up/low case, small-caps
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
 
