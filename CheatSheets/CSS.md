@@ -22,7 +22,8 @@ allows you to target rules to specific elements in an HTML document.
   - VALUES:
   - `block-level element`: starts on a new line. `div` is the standard block-level element. `<h1>-<h6>`, `<p>`, `<form>`, `<li>` are common block elements.
   - `inline element`: flow within the text. `span` is the standard inline element. can wrap text inside a paragraph `<span> like this </span>` without disrupting the flow of that paragraph. `a` element is common.
-  - `none`: `script` use this as their default. It is commonly used with JavaScript to hide and show elements without really deleting and recreating them. will render the page as though the element does not exist.
+  - `none`: no layout. `script` use this as their default. It is commonly used with JavaScript to hide and show elements without really deleting and recreating them. will render the page as though the element does not exist.
+  - `flex`: 
   - `inline-block` element: just like inline but with `width` and `height`. USE THIS INSTEAD OF FLOAT FOR GRID OF BOXES. (DONT NEED TO USE CLEAR) ex:
 ```
         .box2 {
@@ -57,7 +58,7 @@ allows you to target rules to specific elements in an HTML document.
   - `relative` same as static but with `top, right, bottom, left`.
   - `absolute` move as users scroll up and down. behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport.
   - `fixed` positioned relative to the viewport. stays in same place even when page is scrolled. `top, right, bottom, left` properties are used. PERCENTS used
-- **`float`**: wrapping text around images. you can take the element out of the normal flow. the floated el becomes a block-level el around which other content can flow. (like text wrap)
+- **`float`**: left and right. wrapping text around images. you can take the element out of the normal flow. the floated el becomes a block-level el around which other content can flow. (like text wrap)
 - **`clear`**: controlling the behavior of floats. no element should touch the left or right hand sides of a box. so the elements don't overlap.
 - **`clearfix`**: the clearfix hack will fix floats when the image is taller than the element so it's overflowing outside of its container.
   - ex: 
