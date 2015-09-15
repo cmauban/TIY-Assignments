@@ -1,4 +1,5 @@
-# Reading CSS
+# Reading CSS 
+Cascading Style Sheets describes how the structured elements in the document are to be rendered on screen, on paper, in speech, or on other media.
 
 ## Selectors
 
@@ -64,7 +65,7 @@
   }
 }
 ```
-
+- **`column`**: make multi-column text. (ex: `.three-column`)
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
 
