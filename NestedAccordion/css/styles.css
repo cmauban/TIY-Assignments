@@ -5,6 +5,35 @@
 }*/
 
 
+h3::before {  /* make arrows work */
+  content: '\27b5';
+  color: #D0D2D6;
+  margin: 5px;
+  }
+
+
+h3:hover::before {
+  content: '\27b4';
+  color: cornflowerblue;
+  margin: 5px;
+  }
+
+
+  h4::before {  /* make arrows work */
+    content: '\27b5';
+    color: #D0D2D6;
+    margin: 5px;
+    }
+
+
+  h4:hover::before {
+    content: '\27b4';
+    color: cornflowerblue;
+    margin: 4px;
+    }
+
+
+
 h1 {
     color: #7ECCC4;
     font-size: 50pt;
@@ -13,7 +42,7 @@ h1 {
 
 .cbp-ntaccordion h3 {
     font-family: Arial, Verdana, sans-serif;
-    color: #ADCC7E;
+    color: cornflowerblue;
     font-size: 30pt;
     }
 
@@ -24,11 +53,11 @@ p {
 
 h4 {
     font-family: Arial, Verdana, sans-serif;
-    color: #9D7ECC;
+    color: cornflowerblue;
 
   }
 
 h5 {
     font-family: Arial, Verdana, sans-serif;
-    color: #CC7E86;
+    color: cornflowerblue;
     }
