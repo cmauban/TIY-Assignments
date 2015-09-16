@@ -1,20 +1,25 @@
 /*color of font #47a3da*/
 
+/*.cbp-ntaccordion .cbp-nttrigger { FOR ALL HEADINGS AND SUBHEADINGS
+  color: #47a3da;
+}*/
+
+
 h1 {
     color: #7ECCC4;
-    font-size: 50px;
+    font-size: 50pt;
     font-family: Helvetica;
   }
 
-h3 {
+.cbp-ntaccordion h3 {
     font-family: Arial, Verdana, sans-serif;
     color: #ADCC7E;
-    font-size: 30px;
+    font-size: 30pt;
     }
 
 p {
   font-family: Arial, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 14pt;
   }
 
 h4 {
