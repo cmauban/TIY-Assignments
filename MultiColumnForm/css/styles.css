@@ -1,20 +1,23 @@
-span.bp-icon .bp-icon-about {
-      text-align: center;
-      color: #ffffff;
-      font-family: Helvetica;
-    }
+form.cbp-mc-form {
+    display: table;
+    text-align: left;
+    background: #47A3C4;
+}
 
 h1 {
     display: block;
     text-align: center;
     color: #ffffff;
     font-family: Helvetica;
+    background: #47A3C4;
   }
 
-form.cbp-mc-form {
-    display: table;
-    text-align: left;
-}
+span.bp-icon .bp-icon-about {
+      text-align: center;
+      color: #ffffff;
+      font-family: Helvetica;
+    }
+
 
 .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
     border: 3px solid #ffffff;
@@ -23,7 +26,6 @@ form.cbp-mc-form {
     text-align: start;
 }
 
-}
 
 body {
       font-family: Helvetica;
@@ -41,7 +43,7 @@ div.cbp-mc-column { /**the capital headings**/
 }
 
 select {
-  background-color: #47A3C4;
+  background: #47A3C4;
   color: #ffffff;
 }
 
