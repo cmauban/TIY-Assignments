@@ -18,6 +18,8 @@ allows you to target rules to specific elements in an HTML document.
 
 ## Properties
 
+*to get layout to do something different: display(block or inline), float, and position(top,right,bottom,left)*
+
 - **`display`**: most important property for controlling layout. used to turn an inline el, into an block-level el, or vice versa. used to hide an element from the page. Every element has a default display value, most being either `block` (block-level element) or `inline` (inline elemet).
   - VALUES:
   - `block-level element`: starts on a new line. `div` is the standard block-level element. `<h1>-<h6>`, `<p>`, `<form>`, `<li>` are common block elements.
@@ -57,7 +59,7 @@ allows you to target rules to specific elements in an HTML document.
   - `relative` same as static but with `top, right, bottom, left`.
   - `absolute` move as users scroll up and down. behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport.
   - `fixed` positioned relative to the viewport. stays in same place even when page is scrolled. `top, right, bottom, left` properties are used. PERCENTS used
-- **`float`**: left and right. wrapping text around images. you can take the element out of the normal flow. the floated el becomes a block-level el around which other content can flow. (like text wrap)
+- **`float`**: 1. changes the width of an element. 2. other ajacent elements move. 3. adjacent text "floats" around the element. left and right. wrapping text around images. you can take the element out of the normal flow. the floated el becomes a block-level el around which other content can flow. (like text wrap)
 - **`clear`**: controlling the behavior of floats. no element should touch the left or right hand sides of a box. so the elements don't overlap.
 - **`clearfix`**: the clearfix hack will fix floats when the image is taller than the element so it's overflowing outside of its container.
   - ex: 
