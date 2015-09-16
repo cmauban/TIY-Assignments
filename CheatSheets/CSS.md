@@ -118,10 +118,7 @@ BOXES
     - VALUES of max overrides the width/height, BUT NOT the min width/height.
     - none, length, percentage
 
-####CSS units & dots-per-inch
-- `1in is always 96px`
-- `3pt is always 4px`
-- `25.4mm is always 96px`
+
 
 TEXT
 - typeface
@@ -129,14 +126,98 @@ TEXT
 - color
 - italics, bold, up/low case, small-caps
 
+####CSS units & dots-per-inch
+- `1in is always 96px`
+- `3pt is always 4px`
+- `25.4mm is always 96px`
+
+```
+TWELEVE PIXEL SCALE:
+
+pixels = percentages = ems
+
+24px = 200% = 1.5em
+18px = 150% = 1.3em
+14px = 117% = 0.875em
+32px = 200% = 2em
+
+SIXTEEN PIXEL SCALE:
+
+32px = 200% = 2em
+24px = 150% = 1.5em
+18px = 112.5% = 1.125em
+```
 
 ###Typographic Elements
-- font-*
-- text-*
-- line-*
+#####FONT PROPERTIES:
+- **`font-family`**: allows you to specifiy the typeface that should be used for any text inside the element. The VALUE is the name of the typeface. list of fonts for alternative fonts if not installed on cpu. end with a generic font name such as sans serif. if font name is more than one word, it needs to be in "Courier New".
+- **`font-size`**: enables you to specify a size for the font.
+  - PIXELS: default size of text is `16px`. appears the size you intend it to be. relative (will look larger on a smaller screen) very precise control over how much space their text takes up. `px`
+  - PERCENTAGES: default size of text is `16px`. 75% of that would be 12px, 200% would be 32px. EX: if you create a rule to make all text inside `body` element 75% of default size (12px), then make another rule that indicates the content of an element inside the `body` element should be 75%, it will be 9%.
+  - EMS: equivalent to the width of a letter m. allow you to change the size of text relative to the size of the text in the parent element. EX: `16px = 100; 18xpx = 1.125em`
+- **`@font-face`**: allows you to use a font, even if its not installed on the computer by specifying a path to a copy of the font (which would be downloaded) ex:
+```
+      @font-face {
+        font-family: 'ChunkFiveRegular';
+        src: url('fonts/chunkfive.eot');}
+```
+    - font formats should appear in this order:
+      1. eot
+      2. woff
+      3. ttf/otf
+      4. svg
+
+- **`font-weight`**: allows you to create bold text. 2 VALUES: normal and bold.
+- **`font-style`**: create italics. 3 VALUES: normal, italic, oblique.
+
+#####TEXT PROPERTIES:
+- **`text-transform`**: change the case of text. 3 VALUES: uppercase, lowercase, capitalize(only first letter).
+- **`text-decoration`**: specifys the VALUES of:
+    - `none`- removes any decoration already applied
+    - `underline`- adds a line underneath
+    - `overline`- adds a line over the top of text
+    - `line-through`- adds a line through words
+    - `blink`- animates the text to make it flash on and off
+- **`text-align`**: control the alignment of text. VALUES: left, right, center, justify (every line except last should take up th full width of the containing box. creates equal gaps)
+- **`text-indent`**: allows you to indent the first line of text within the element.
+- **`text-shadow`**: creates a dark version of the word just behind it and slightly offset. creates an embossed effect by adding a shadow that is slightly lighter than the text.
+- **`vertical-align`**:
+
+#####Pseudo-Elements
+*put at the end of the selector. acts like an extra element in the code.
+
+- `:first-letter`: only affects the first letter of text.
+- `:first-line`: only affects the first line of text.
+```
+    p.intro:first-letter {
+      font-size: 200%; }
+    p.intro:first-line {
+      font-weight: bold; }
+```
+#####Pseudo-Classes
+*acts like an extra value for a class attribute.
+
+*When pseudo-classes are used, they appear in this order:*
+
+- `:link`: allows you to set styles for links that have NOT yet been visited.
+- `:visited`: allows you to have diff styles for links that HAVE BEEN visited/clicked on.
+- `:hover`: changes appearance. allows you to style elements diff when a user hovers over them.
+- `:focus`: applied when an element has focus. any element that you can interact with like a link you can click on or any form control can have focus. occurs when a browser discovers that you are ready to interact with an element on the page. ex: when your cursor is in a form input ready to accept typing. that element has focus.
+- `:active`: applied when an element is being activated by a user. ex: when a button is being pressed or a link being being clicked.
+
+
+#####LINE PROPERTIES:
+*LEADING: vertical space bw lines of text. measured by the bottom of the desecender to the top of the ascender.*
+*KERNING: space bw each letter.*
+
+**VALUES for these properties are in `ems` and added on top of the default value**
+- **`line-height`**: sets the height of the entire line of text so the diff bw the font-size and line-height is equivalent to the leading.
+- **`letter-spacing`**: controls the kerning (space bw each letter). do ths when heading is all uppercase.
+- **`word-spacing`**: control the gap bw words. the default gap is often after `0.25em` and prob need to change regularly. if bold, increase.
+
 - color
 
-*pay attention to units that you can  employ when defining rules for font-size and line-height and document what the percentage values are relative to.
+*pay attention to units that you canemploy when defining rules for font-size and line-height and document what the percentage values are relative to.
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
 
