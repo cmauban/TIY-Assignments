@@ -105,9 +105,9 @@ BOXES
 - position in the browser window
 
 - **every box has 3 available properties:**
-  - 1. border: separates the edge of one box from another. 0 pixels wide
-  - 2. margin: sit outside the edge of the border. gaps.
-  - 3. padding: think of the padding as extending the content. space bw the border of a box and any content contained within it.
+  - 1. **border:** separates the edge of one box from another. 0 pixels wide
+  - 2. **margin:** sit outside the edge of the border. gaps.
+  - 3. **padding:** think of the padding as extending the content. space bw the border of a box and any content contained within it.
 - **..with a `min` or `max` property:**
   - `min-width/height` property is used to set the minimum width of a given element.
     - VALUES of min overrides both max-width/height and width/height.
