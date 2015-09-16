@@ -129,6 +129,15 @@ TEXT
 - color
 - italics, bold, up/low case, small-caps
 
+
+###Typographic Elements
+- font-*
+- text-*
+- line-*
+- color
+
+*pay attention to units that you can  employ when defining rules for font-size and line-height and document what the percentage values are relative to.
+
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
 
 The text color of an element and its decorations (??)
