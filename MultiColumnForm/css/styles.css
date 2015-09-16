@@ -20,7 +20,8 @@ span.bp-icon .bp-icon-about {
 
 
 .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1px;
     background: #47A3C4;
     width: 100%;
     text-align: start;
@@ -42,12 +43,14 @@ div.cbp-mc-column { /**the capital headings**/
   font-family: arial;
 }
 
-select {
+select { /*drop-down*/
   background: #47A3C4;
   color: #ffffff;
 }
 
-
+input[type="text"] {
+  line-height: 25px;
+}
 
 input.cbp-mc-submit { /* SUBMIT BUTTON */
   background-color: #10689a;
@@ -58,7 +61,6 @@ input.cbp-mc-submit { /* SUBMIT BUTTON */
   font-size: 11px;
   max-width: 30%;
   text-transform: uppercase;
-  display: block;
   padding: 20px 15px;
 
 }
