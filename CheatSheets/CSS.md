@@ -60,6 +60,8 @@ allows you to target rules to specific elements in an HTML document.
   - `absolute` move as users scroll up and down. behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport.
   - `fixed` positioned relative to the viewport. stays in same place even when page is scrolled. `top, right, bottom, left` properties are used. PERCENTS used
 - **`float`**: 1. changes the width of an element. 2. other ajacent elements move. 3. adjacent text "floats" around the element. left and right. wrapping text around images. you can take the element out of the normal flow. the floated el becomes a block-level el around which other content can flow. (like text wrap)
+    - it affects the width of an element by the width becoming dependent on the contained content.
+    - height is still the same of the containing element
 - **`clear`**: controlling the behavior of floats. no element should touch the left or right hand sides of a box. so the elements don't overlap.
 - **`clearfix`**: the clearfix hack will fix floats when the image is taller than the element so it's overflowing outside of its container.
   - ex: 
