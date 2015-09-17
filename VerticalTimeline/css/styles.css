@@ -1,6 +1,21 @@
+body {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+header span {
+  color: #47a3da;
+  text-align:center;
+}
+
+
+h1 {
+  color: #47a3da;
+  text-align: center;
+}
+
 div.main {
 display: block;
-background: #ffffff;
+width: 90%;
 }
 
 /**** target all li (the entire box including time and icon)
@@ -8,6 +23,7 @@ display: block;
 vertical-align: top;
 width: %;**/
 
+.cbp_tmlabel
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
   color: #ffffff;
@@ -37,6 +53,10 @@ time.cbp_tmtime {
   background: white
   color: #3594cb;
 }
+
+span { /*blocks the span together*/
+  display: block;
+    }
 
 /*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
 display: block;
