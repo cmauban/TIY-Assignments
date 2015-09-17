@@ -1,3 +1,9 @@
+div.main {
+  -webkit-columns: 3 100%;
+     -moz-columns: 3 100%;
+          columns: 3 100%;
+}
+
 form.cbp-mc-form {
     display: block;
     text-align: left;
@@ -35,6 +41,12 @@ body {
       background: #47A3C4;
 
     }
+
+
+
+
+
+
 div.cbp-mc-column { /**the capital headings**/
   text-transform: uppercase;
   color: #ffffff;
@@ -64,13 +76,12 @@ input.cbp-mc-submit { /* SUBMIT BUTTON */
   max-width: 30%;
   text-transform: uppercase;
   padding: 20px 15px;
-
 }
 
-.cbp-mc-column { //creating 3 columns
+/*.cbp-mc-column { //creating 3 columns
   position: absolute;
   width: 155px;
   float: left;
   margin: 10px;
 
-}
+}*/

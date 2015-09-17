@@ -1,0 +1,70 @@
+div.main {
+display: block;
+background: #ffffff;
+}
+
+/**** target all li (the entire box including time and icon)
+display: block;
+vertical-align: top;
+width: %;**/
+
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding: 0 0 10px 0;
+
+}
+
+ul.cbp_tmtimeline > li:nth-child(2n+1) { /*FULL BOX WITH ALL TEXT*/
+  display: block;
+  vertical-align: top;
+  width: 50%;
+  text-align: justify;
+  background-color: #6cbfee;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.cbp_tmtimeline {
+  margin: 30px 0 0 0;
+  position: relative;
+}
+
+time.cbp_tmtime {
+  display: inline-block;
+  float: left;
+  background: white
+  color: #3594cb;
+}
+
+/*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
+display: block;
+position: absolute;
+left: 100px;
+width: 600px;
+}*/
+
+/*:nth-child(2n+1) ..to change the colors*/
+
+/*time.cbp_tmtime (time and date) parent of 2 span elements: date and time
+display: inline block;
+width: ;
+height: 17px 29px;
+vertical-align: top;
+width: %;
+float??: left*/
+.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+
+/*h2 (main headings)
+height: 43px;
+
+p (paragraphs)
+display: block;
+
+colors: #3594cb (light blue), #47a3da (dark blue), #bdd0db (light grey)*//*/

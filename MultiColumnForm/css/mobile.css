@@ -1,8 +1,9 @@
+@media only screen and (min-device-width: 480px){
+
 form.cbp-mc-form {
     display: table;
     text-align: left;
     background: #47A3C4;
-    position: relative;
     }
 
 
@@ -39,7 +40,6 @@ div.cbp-mc-column { /**the capital headings**/
       letter-spacing: 1px;
       font-family: arial;
       }
-
 
 .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
     border: 2px solid #ffffff;
@@ -78,4 +78,5 @@ input.cbp-mc-submit { /* SUBMIT BUTTON */
   text-transform: uppercase;
   padding: 20px 15px;
 
+}
 }
