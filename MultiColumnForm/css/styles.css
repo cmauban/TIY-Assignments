@@ -1,8 +1,15 @@
-div.cbp-mc-column {
-  -webkit-columns: 3 100%;
-     -moz-columns: 3 100%;
-          columns: 3 100%;
-}
+/**, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
+  /*.cbp-mc-column {
+    -webkit-columns: 3 100%;
+      -moz-columns: 3 100%;
+            columns: 3 100%;
+          }*/
+
 
 
 h1 {
@@ -36,6 +43,7 @@ body {
       width: 90%;
       top: 40px;
       bottom: 40px;
+      display: block;
       }
 
 
@@ -58,8 +66,10 @@ span.bp-icon .bp-icon-about {
       font-family: 'Lato', sans-serif;
     }
 
+
+
 div.cbp-mc-column {
-      display: block;
+      display: inline-block;
       text-transform: uppercase;
       color: #ffffff;
       margin-left: auto;
@@ -71,7 +81,7 @@ div.cbp-mc-column {
       font-size: 15px;
       letter-spacing: 1px;
       font-family: 'Lato', sans-serif;
-}
+    }
 
 label {
   display: block;
@@ -110,6 +120,12 @@ label {
 }
 
 
+.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
+  color: #10689a;
+  font-family: "Lato", sans-serif;
+}
+
+
 input[type="text"] {
   line-height: 25px;
   font-size: 16;
@@ -124,6 +140,7 @@ input[type="text"] {
   width: 30%;
   height: 97px;
   text-align: center;
+  clear: both;
 }
 
 
@@ -135,7 +152,7 @@ input.cbp-mc-submit { /* SUBMIT BUTTON */
   color: #ffffff;
   box-sizing: border-box;
   font-size: 11px;
-  max-width: 30%;
+  min-width: 30%;
   text-transform: uppercase;
   padding: 20px 15px;
 }

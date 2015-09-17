@@ -1,30 +1,10 @@
-div.main {
-  -webkit-columns: 3 100%;
-     -moz-columns: 3 100%;
-          columns: 3 100%;
-}
+@media screen
+ and (min-device-width: 1200px)
+ and (max-device-width: 1600px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (min-resolution: 192dpi) {
 
 
 
-
-
-
-
-.cbp-mc-submit-wrap {
-  width: 634px;
-  height: 97px;
-  text-align: center;
-}
-
-input.cbp-mc-submit { /* SUBMIT BUTTON */
-  background-color: #10689a;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  box-sizing: border-box;
-  font-size: 11px;
-  max-width: 30%;
-  text-transform: uppercase;
-  padding: 20px 15px;
 
 }
