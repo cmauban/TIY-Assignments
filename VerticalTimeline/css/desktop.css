@@ -1,30 +1,3 @@
-body {
-  font-family: Calibri, Arial, sans-serif;
-}
-
-header span {
-  color: #47a3da;
-  text-align:center;
-}
-
-
-h1 {
-  color: #47a3da;
-  text-align: center;
-}
-
-div.main {
-display: block;
-width: 90%;
-}
-
-/**** target all li (the entire box including time and icon)
-display: block;
-vertical-align: top;
-width: %;**/
-
-.cbp_tmlabel
-
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
   color: #ffffff;
   border-bottom: 1px solid rgba(255,255,255,0.4);

@@ -1,0 +1,15 @@
+/* grid based layout */
+
+row {
+  margin-left: auto;
+  margin-right: auto;
+  border:
+  padding:
+  width: %; /* percentage of containing element at least 80%*/
+}
+
+/*width: auto; height: auto; AUTO is default for width */
+
+row > column {
+  width: %; /* relative to viewport (responsive) percentage of containing element */
+}
