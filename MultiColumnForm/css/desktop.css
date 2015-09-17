@@ -4,84 +4,11 @@ div.main {
           columns: 3 100%;
 }
 
-form.cbp-mc-form {
-    display: block;
-    text-align: left;
-    background: #47A3C4;
-    position: relative;
-}
-
-body {
-      font-family: Helvetica;
-      color: #ffffff;
-      background: #47a3da;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      position: relative;
-      }
-
-h1 {
-    display: block;
-    text-align: left;
-    margin-left: 5%;
-  }
-
-span {
-    text-align: left;
-    margin-left: 5%;
-}
-
-a {
-  display: inline-block;
-  text-align: right;
-}
-
-span.bp-icon .bp-icon-about {
-      display: inline-block;
-      text-align: left;
-      color: #ffffff;
-      font-family: Helvetica;
-    }
 
 
-.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
-    border: 2px solid #ffffff;
-    padding: 1px;
-    background: #47A3C4;
-    width: 100%;
-    text-align: start;
-}
 
 
-body {
-      font-family: Helvetica;
-      color: #ffffff;
-      background: #47A3C4;
 
-    }
-div.cbp-mc-column { /**the capital headings**/
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #47A3C4;
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-family: arial;
-  float: left;
-  padding: 2%;
-  width: 26%;
-  }
-
-select { /*drop-down*/
-  background: #47A3C4;
-  color: #ffffff;
-}
-
-input[type="text"] {
-  line-height: 25px;
-
-}
 
 .cbp-mc-submit-wrap {
   width: 634px;
@@ -99,13 +26,5 @@ input.cbp-mc-submit { /* SUBMIT BUTTON */
   max-width: 30%;
   text-transform: uppercase;
   padding: 20px 15px;
-
-}
-
-.cbp-mc-column { //creating 3 columns
-  position: absolute;
-  width: 155px;
-  float: left;
-  margin: 10px;
 
 }
