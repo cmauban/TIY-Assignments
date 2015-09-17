@@ -1,7 +1,8 @@
 form.cbp-mc-form {
-    display: table;
+    display: block;
     text-align: left;
     background: #47A3C4;
+    position: relative;
 }
 
 h1 {
@@ -50,6 +51,7 @@ select { /*drop-down*/
 
 input[type="text"] {
   line-height: 25px;
+
 }
 
 input.cbp-mc-submit { /* SUBMIT BUTTON */
