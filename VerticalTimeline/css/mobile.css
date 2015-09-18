@@ -16,9 +16,8 @@ header.clearfix {
 }
 
 header > nav { /*icons*/
-  text-algin: ;
-  display: ;
-  float: ;
+  text-align: right;
+  display: inline-block;
 }
 
 .main, .container > header {

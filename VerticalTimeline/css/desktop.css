@@ -58,6 +58,8 @@
 
    }
 
+
+
    div.cbp_tmlabel { /*BOXES*/
      color: #ffffff;
      padding: 20px;
@@ -91,6 +93,36 @@
      padding: 10px;
    }
 
+
+   .cbp_tmlabel:after, .cbp_tmlabel:before {
+   	right: 100%;
+   	top: 9%;
+   	border: solid transparent;
+   	content: " ";
+   	height: 0;
+   	width: 0;
+   	position: absolute;
+   	pointer-events: none;
+    left: 23%;
+   }
+
+   .cbp_tmlabel:after {
+   	border-color: rgba(136, 183, 213, 0);
+   	border-right-color: #3594cb;
+   	border-width: 10px;
+   	margin-top: -10px;
+   }
+   .cbp_tmlabel:before {
+   	border-color: rgba(194, 225, 245, 0);
+   	border-right-color: #3594cb;
+   	border-width: 10px;
+   	margin-top: -10px;
+   }
+
+
+
+
+
    time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
      display: inline-block;
      float: left;
@@ -98,6 +130,13 @@
      color: #3594cb;
    }
 
+   ul.cbp_tmtimeline::before { /*VERTICAL LINE*/
+      content:'';
+      background: #afdcf8;
+      position: absolute;
+      margin-left: 50%;
+      width: 30px;
 
+   }
 
 }
