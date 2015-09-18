@@ -3,10 +3,11 @@
   .cbp-mc-column {
     max-width: 480px;
     min-width: 320px;
-    content: "";
+    content: " ";
     display: table;
     clear: both;
   }
+
 
 
 header.clearfix {
@@ -15,6 +16,7 @@ header.clearfix {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    font-size: 20px;
     }
 
 span { /* blueprint and icons */
@@ -35,45 +37,60 @@ span { /* blueprint and icons */
         box-sizing: border-box;
         }
 
+
+  form.cbp-mc-column {
+      display: block;
+      text-align: left;
+      background: #47a3da;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      clear: both;
+      border: 3px solid #ffffff;
+      box-sizing: border-box;
+  }
+
+
   div.cbp-mc-column {
-        display: table;
+        align-content: center;
+        box-sizing: border-box;
+        display: block;
         text-transform: uppercase;
         color: #ffffff;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        padding: 2%;
+        width: 100%;
+        padding: 35px;
         background: #47a3da;
-        font-size: 15px;
+        font-size: 21px;
         letter-spacing: 1px;
         font-family: 'Lato', sans-serif;
+
       }
 
 
 
 .cbp-mc-submit-wrap {
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+  margin-left: 17%;
+  margin-right: 2%;
+  width: 70%;
   height: 97px;
   text-align: center;
   display: inline-block;
+  clear: both;
 }
 
 
-input.cbp-mc-submit { /* SUBMIT BUTTON */
+input.cbp-mc-submit {
   background-color: #10689a;
   text-align: center;
   border: none;
   color: #ffffff;
   box-sizing: border-box;
-  font-size: 11px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  font-size: 20px;
+  width: 100%; /*need*/
   text-transform: uppercase;
-  padding: 2px 6px 3px;
-  align-items: flex-start;
-
+  padding: 20px 15px;
   }
 }
