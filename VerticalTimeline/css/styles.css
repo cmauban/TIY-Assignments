@@ -1,50 +1,68 @@
+div.container {
+  padding: 2.875em 1.875em 1.875em;
+}
+
+
 body {
-  font-family: Calibri, Arial, sans-serif;
-}
+  font-family: "Lato", sans-serif;
+  top: 100px;
 
-header span {
-  color: #47a3da;
-  text-align:center;
-}
-
-
-h1 {
-  color: #47a3da;
-  text-align: center;
 }
 
 div.main {
-display: block;
-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: block;
 }
 
-/**** target all li (the entire box including time and icon)
-display: block;
-vertical-align: top;
-width: %;**/
+h1 {
+  color: #47a3da;
+  text-align: left;
+  margin-left: 5%;
+}
 
-.cbp_tmlabel
+span { /*blueprint*/
+  color: #47a3da;
+  text-align:left;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 5%;
+}
 
-.cbp_tmtimeline > li .cbp_tmlabel h2 {
+
+a.bp-icon- {
+  display: inline-block;
+  float: right;
+}
+
+
+div.cbp_tmlabel {
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 25%;
+  background-color: #6cbfee;
+}
+
+.cbp_tmtimeline > li {
+  position: relative;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE*/
   color: #ffffff;
   border-bottom: 1px solid rgba(255,255,255,0.4);
   padding: 0 0 10px 0;
-
 }
 
-ul.cbp_tmtimeline > li:nth-child(2n+1) { /*FULL BOX WITH ALL TEXT*/
+ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
+  float: right;
   display: block;
   vertical-align: top;
-  width: 50%;
-  text-align: justify;
-  background-color: #6cbfee;
+  width: 100%;
   color: #ffffff;
   padding: 10px;
-}
-
-.cbp_tmtimeline {
-  margin: 30px 0 0 0;
-  position: relative;
 }
 
 time.cbp_tmtime {
@@ -54,9 +72,12 @@ time.cbp_tmtime {
   color: #3594cb;
 }
 
-span { /*blocks the span together*/
-  display: block;
-    }
+/*.cbp_tmtimeline {
+  margin: 30px 0 0 0;
+  position: relative;
+}*/
+
+
 
 /*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
 display: block;
@@ -74,11 +95,11 @@ height: 17px 29px;
 vertical-align: top;
 width: %;
 float??: left*/
-.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
+/*.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
   display: inline-block;
   vertical-align: top;
   float: left;
-}
+}*/
 
 
 /*h2 (main headings)
