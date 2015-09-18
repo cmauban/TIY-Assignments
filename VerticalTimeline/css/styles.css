@@ -5,11 +5,10 @@ div.container {
 
 body {
   font-family: "Lato", sans-serif;
-  top: 100px;
-
+  display: block;
 }
 
-div.main {
+div.main { /*margin heading*/
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -22,7 +21,7 @@ h1 {
   margin-left: 5%;
 }
 
-span { /*blueprint*/
+header > span:first-child { /*BLUE PRINT*/
   color: #47a3da;
   text-align:left;
   text-transform: uppercase;
@@ -30,19 +29,38 @@ span { /*blueprint*/
   margin-left: 5%;
 }
 
-
-a.bp-icon- {
+header > nav { /*icons*/
+  text-algin: right;
   display: inline-block;
   float: right;
 }
 
+.cbp_tmtimeline > li span { /*BLOCK AND ALIGN TIME/DATE*/
+  display: block;
+  text-align: right;
+  position: relative;
+}
 
-div.cbp_tmlabel {
+time > span:first-child { /*DATE SPAN*/
+  color: #bdd0db;
+}
+
+time > span:last-child { /*TIME SPAN*/
+  color: #6cbfee;
+  font-size: 40px;
+
+}
+
+div.cbp_tmlabel { /*BOXES*/
   color: #ffffff;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 15px;
   margin-left: 25%;
+  background-color: #3594cb;
+}
+
+li:nth-child(odd) .cbp_tmlabel { /*CHANGES COLORS*/
   background-color: #6cbfee;
 }
 
@@ -50,10 +68,11 @@ div.cbp_tmlabel {
   position: relative;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE*/
+.cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE. BOXES DATES/TIMES*/
   color: #ffffff;
   border-bottom: 1px solid rgba(255,255,255,0.4);
   padding: 0 0 10px 0;
+
 }
 
 ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
@@ -65,7 +84,7 @@ ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
   padding: 10px;
 }
 
-time.cbp_tmtime {
+time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
   display: inline-block;
   float: left;
   background: white
@@ -88,13 +107,7 @@ width: 600px;
 
 /*:nth-child(2n+1) ..to change the colors*/
 
-/*time.cbp_tmtime (time and date) parent of 2 span elements: date and time
-display: inline block;
-width: ;
-height: 17px 29px;
-vertical-align: top;
-width: %;
-float??: left*/
+
 /*.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
   display: inline-block;
   vertical-align: top;
