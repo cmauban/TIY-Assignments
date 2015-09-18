@@ -11,33 +11,31 @@ body {
 div.main { /*margin heading*/
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  display: block;
+  /*width: 90%;*/
+  /*display: block;*/
 }
 
 h1 {
   color: #47a3da;
-  text-align: left;
-  margin-left: 5%;
+
 }
 
 header > span:first-child { /*BLUE PRINT*/
   color: #47a3da;
-  text-align:left;
+  text-align:;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-left: 5%;
+  letter-spacing: 7px;
+  /*margin-left: 5%;*/
 }
 
 header > nav { /*icons*/
-  text-algin: right;
-  display: inline-block;
-  float: right;
+  text-algin: ;
+  display: ;
+  float: ;
 }
 
 .cbp_tmtimeline > li span { /*BLOCK AND ALIGN TIME/DATE*/
   display: block;
-  text-align: right;
   position: relative;
 }
 
@@ -47,16 +45,15 @@ time > span:first-child { /*DATE SPAN*/
 
 time > span:last-child { /*TIME SPAN*/
   color: #6cbfee;
-  font-size: 40px;
 
 }
 
 div.cbp_tmlabel { /*BOXES*/
   color: #ffffff;
-  padding: 20px;
+  /*padding: 20px;*/
   border-radius: 5px;
-  margin-bottom: 15px;
-  margin-left: 25%;
+  /*margin-bottom: 15px;*/
+  /*margin-left: 25%;*/
   background-color: #3594cb;
 }
 
@@ -64,14 +61,11 @@ li:nth-child(odd) .cbp_tmlabel { /*CHANGES COLORS*/
   background-color: #6cbfee;
 }
 
-.cbp_tmtimeline > li {
-  position: relative;
-}
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE. BOXES DATES/TIMES*/
   color: #ffffff;
   border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding: 0 0 10px 0;
+  /*padding: 0 0 10px 0;*/
 
 }
 
@@ -81,44 +75,11 @@ ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
   vertical-align: top;
   width: 100%;
   color: #ffffff;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
   display: inline-block;
-  float: left;
   background: white
   color: #3594cb;
 }
-
-/*.cbp_tmtimeline {
-  margin: 30px 0 0 0;
-  position: relative;
-}*/
-
-
-
-/*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
-display: block;
-position: absolute;
-left: 100px;
-width: 600px;
-}*/
-
-/*:nth-child(2n+1) ..to change the colors*/
-
-
-/*.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}*/
-
-
-/*h2 (main headings)
-height: 43px;
-
-p (paragraphs)
-display: block;
-
-colors: #3594cb (light blue), #47a3da (dark blue), #bdd0db (light grey)*//*/

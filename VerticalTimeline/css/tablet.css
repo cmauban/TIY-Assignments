@@ -1,0 +1,17 @@
+@media only screen and (min-device-width: 768px){
+
+  .cbp-mc-column {
+    max-width: 1024px;
+    min-width: 768px;
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+}

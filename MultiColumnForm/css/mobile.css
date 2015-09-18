@@ -1,13 +1,12 @@
 @media only screen and (min-device-width: 320px){
 
-  .cbp-mc-column {
-    max-width: 480px;
+.cbp-mc-column {
+    max-width: 568px;
     min-width: 320px;
     content: " ";
     display: table;
     clear: both;
   }
-
 
 
 header.clearfix {
@@ -35,6 +34,7 @@ span { /* blueprint and icons */
         bottom: 40px;
         display: block;
         box-sizing: border-box;
+        vertical-align: center;
         }
 
 
@@ -74,7 +74,7 @@ span { /* blueprint and icons */
 .cbp-mc-submit-wrap {
   margin-left: 17%;
   margin-right: 2%;
-  width: 70%;
+  width: 90%;
   height: 97px;
   text-align: center;
   display: inline-block;
