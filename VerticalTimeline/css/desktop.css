@@ -94,7 +94,7 @@
    }
 
 
-   .cbp_tmlabel:after, .cbp_tmlabel:before {
+   .cbp_tmlabel::after, .cbp_tmlabel::before { /*ARROWS*/
    	right: 100%;
    	top: 9%;
    	border: solid transparent;
@@ -106,19 +106,25 @@
     left: 23%;
    }
 
-   .cbp_tmlabel:after {
+   .cbp_tmlabel::after {
    	border-color: rgba(136, 183, 213, 0);
    	border-right-color: #3594cb;
    	border-width: 10px;
    	margin-top: -10px;
    }
-   .cbp_tmlabel:before {
+   .cbp_tmlabel::before {
    	border-color: rgba(194, 225, 245, 0);
    	border-right-color: #3594cb;
    	border-width: 10px;
    	margin-top: -10px;
    }
 
+   li:nth-child(odd) .cbp_tmlabel::after { /*CHANGES COLORS*/
+     border-right-color: #6cbfee;
+   }
+   li:nth-child(odd) .cbp_tmlabel::before { /*END ARROWS*/
+     border-right-color: #6cbfee;
+   }
 
 
 

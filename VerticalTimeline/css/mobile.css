@@ -58,7 +58,37 @@ div.cbp_tmlabel { /*BOXES*/
   padding-top: 5px;
 }
 
+}
+.cbp_tmlabel::after, .cbp_tmlabel::before { /*ARROWS*/
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
 
+.cbp_tmlabel::after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #3594cb;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.cbp_tmlabel::before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #3594cb;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/*li:nth-child(odd) .cbp_tmlabel::after {
+  border-right-color: #6cbfee;
+}
+li:nth-child(odd) .cbp_tmlabel::before {
+  border-right-color: #6cbfee;
+}*/
 
 
 
