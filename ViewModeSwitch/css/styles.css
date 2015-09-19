@@ -1,4 +1,32 @@
 /* grid based layout */
+body {
+  font-family: "Lato", sans-serif;
+  color: #47a3da;
+}
+
+
+.clearfix, .main {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 46px 30px 30px 30px;
+}
+
+header {
+  font-size: 17px;
+  float: left;
+}
+
+header > span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header > nav {
+  display: inline-block;
+  float: right;
+}
 
 
 [class*='col-'] { /* selects all columns and makes them next to each other */
@@ -17,7 +45,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 [class*='col-'] { /* applied fixed padding to right side of all columns except the last one */
@@ -57,4 +84,4 @@
 
 /*row > column {
   width: %; /* relative to viewport (responsive) percentage of containing element */
-/*}*/
+/*}*
