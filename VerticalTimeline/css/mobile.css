@@ -1,4 +1,5 @@
 @media only screen and (min-device-width: 320px){
+/* IPHONE 5 */
 
 .body {
     max-width: 568px;
@@ -60,8 +61,8 @@ div.cbp_tmlabel { /*BOXES*/
 
 }
 .cbp_tmlabel::after, .cbp_tmlabel::before { /*ARROWS*/
-	bottom: 100%;
-	left: 50%;
+	bottom: 90%;
+	left: 17%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -71,13 +72,11 @@ div.cbp_tmlabel { /*BOXES*/
 }
 
 .cbp_tmlabel::after {
-	border-color: rgba(136, 183, 213, 0);
 	border-bottom-color: #3594cb;
 	border-width: 10px;
 	margin-left: -10px;
 }
 .cbp_tmlabel::before {
-	border-color: rgba(194, 225, 245, 0);
 	border-bottom-color: #3594cb;
 	border-width: 10px;
 	margin-left: -10px;
