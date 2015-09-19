@@ -1,15 +1,60 @@
 /* grid based layout */
 
-row {
+
+[class*='col-'] { /* selects all columns and makes them next to each other */
+  float: left;
+  background: #DEDEDE;
+  width: 33.3%;
+}
+
+.grid::after { /* clearing context. parent el collapses to 0 since it has floated children. */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *::after, *:before { /*now setting a width, the element stays that width despite padding/borders being applied to it */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+[class*='col-'] { /* applied fixed padding to right side of all columns except the last one */
+  padding-right: 20px;
+
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.grid-gutters { /*adding left padding to the grid parent*/
+  padding: 20px 0 20px 20px;
+  background-color: #ffffff;
+
+}
+
+.grid-gutters > [class*='col-']:last-of-type { /*restore right padding to the last column*/
+  padding-right: 20px;
+
+}
+
+
+
+
+
+
+/*row {
   margin-left: auto;
   margin-right: auto;
   border:
   padding:
   width: %; /* percentage of containing element at least 80%*/
-}
+/*}*/
 
 /*width: auto; height: auto; AUTO is default for width */
 
-row > column {
+/*row > column {
   width: %; /* relative to viewport (responsive) percentage of containing element */
-}
+/*}*/
