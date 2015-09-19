@@ -9,13 +9,13 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
   padding: 46px 30px 30px 30px;
 }
 
 header {
   font-size: 17px;
-  float: left;
+
 }
 
 header > span {
@@ -27,6 +27,87 @@ header > nav {
   display: inline-block;
   float: right;
 }
+
+
+.cbp-vm-switcher ul {
+  padding: 0px;
+  clear: both;
+}
+
+div.cbp-vm-options { /*icons*/
+  padding-top: 10px;
+  float: right;
+}
+
+
+ul > li {
+  float: left;
+  width: 33.3%;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+
+
+
+*, *::after, *:before { /*now setting a width, the element stays that width despite padding/borders being applied to it */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.main::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+
+li { /* applied fixed padding to right side of all columns except the last one */
+  margin-top: 20px;
+  padding: 25px;
+
+}
+
+.cbp-vm-switcher ul:last-of-type {
+  padding-right: 0;
+}
+
+.cbp-vm-switcher { /*line below icons*/
+  padding: 18px;
+  border-bottom: 3px solid #47a3da;
+}
+
+.main { /*adding padding to the grid parent*/
+  padding: 0px 30px 50px 30px;
+  border: 3px solid #47a3da;
+
+}
+
+.cbp-vm-grid::before {
+  content: "\f00a";
+  right: 100%;
+  font-family: "fontawesome";
+  color: #d0d0d0;
+  font-size: 40px;
+}
+
+.cbp-vm-list::before {
+  content: "\f00a";
+  right: 100%;
+  font-family: "fontawesome";
+  color: #d0d0d0;
+  font-size: 40px;
+}
+
+
+
+
 
 
 [class*='col-'] { /* selects all columns and makes them next to each other */
