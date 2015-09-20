@@ -1,24 +1,38 @@
-(function (window) { //represents a window containing a DOM document and implements the Window interface.
-	'use strict';
-
-	// Your starting point. Enjoy the ride!
-
-})(window); //calls the window.
+// (function (window) { //represents a window containing a DOM document and implements the Window interface.
+// 	'use strict';
+//
+// 	// Your starting point. Enjoy the ride!
+//
+// })(window); //calls the window.
 
 
 // User Stories
-/**
-	*I can add a task to my todo list so that I can remember to do it later.
-	*
+	//I can add a task to my todo list so that I can remember to do it later.
+//
 //	- how do i (a user) add a task to the list?
 //		-select the form field for a new task (<input type="text" id="new_task">)
 //		- type in the name of your task? what you want to remember..
 // 		- press the "enter"	key.. what does this do in JS?
 // 		- then the task "appears"	in the list of tasks.
 //	- what happens once i complete these steps?
-
 			//make variables for the elements to manipulate
+
+
 				//*create NodeList for all of the data-id attributes in the li element
+	// var inputIds = document.querySelectorAll('.todo-list');
+	// console.log(inputIds);
+	//
+	// var enter = document.querySelector('.new-todo');
+
+
+	var todoInput = document.querySelector('.new-todo'); //
+
+	todoInput.addEventListener('keypress', function (event) { //captures input when typed in field
+	  var addedItem = todoInput.value; //returns the text input in field
+	  console.log(addedItem);
+	});
+
+
 				//*create variable to submit the users input
 			//create function
 				//*log the users input by adding .value
