@@ -1,63 +1,149 @@
-.cbp_tmtimeline > li .cbp_tmlabel h2 {
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding: 0 0 10px 0;
+@media screen
+ and (min-device-width: 1200px)
+ and (max-device-width: 1600px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (min-resolution: 192dpi) {
+
+   div.container {
+     padding: 2.875em 1.875em 1.875em;
+   }
+
+
+   body {
+     font-family: "Lato", sans-serif;
+     display: block;
+   }
+
+   div.main { /*margin heading*/
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+     display: block;
+   }
+
+   h1 {
+     color: #47a3da;
+     text-align: left;
+     margin-left: 5%;
+     margin-top: 8px;
+   }
+
+   header > span:first-child { /*BLUE PRINT*/
+     color: #47a3da;
+     text-align:left;
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     margin-left: 5%;
+   }
+
+   header > nav { /*icons*/
+     text-algin: right;
+     display: inline-block;
+     float: right;
+   }
+
+   .cbp_tmtimeline > li span { /*BLOCK AND ALIGN TIME/DATE*/
+     display: block;
+     text-align: right;
+     position: relative;
+   }
+
+   time > span:first-child { /*DATE SPAN*/
+     color: #bdd0db;
+   }
+
+   time > span:last-child { /*TIME SPAN*/
+     color: #6cbfee;
+     font-size: 40px;
+
+   }
+
+
+
+   div.cbp_tmlabel { /*BOXES*/
+     color: #ffffff;
+     padding: 20px;
+     border-radius: 5px;
+     margin-bottom: 15px;
+     margin-left: 25%;
+     background-color: #3594cb;
+   }
+
+   li:nth-child(odd) .cbp_tmlabel { /*CHANGES COLORS*/
+     background-color: #6cbfee;
+   }
+
+   .cbp_tmtimeline > li {
+     position: relative;
+   }
+
+   .cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE. BOXES DATES/TIMES*/
+     color: #ffffff;
+     border-bottom: 1px solid rgba(255,255,255,0.4);
+     padding: 0 0 10px 0;
+
+   }
+
+   ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
+     float: right;
+     display: block;
+     vertical-align: top;
+     width: 100%;
+     color: #ffffff;
+     padding: 10px;
+     font-size: 20px;
+   }
+
+
+   .cbp_tmlabel::after, .cbp_tmlabel::before { /*ARROWS*/
+   	right: 100%;
+   	top: 9%;
+   	border: solid transparent;
+   	content: " ";
+   	height: 0;
+   	width: 0;
+   	position: absolute;
+   	pointer-events: none;
+    left: 23.1%;
+   }
+
+   .cbp_tmlabel::after {
+   	border-color: rgba(136, 183, 213, 0);
+   	border-right-color: #3594cb;
+   	border-width: 10px;
+   	margin-top: -10px;
+   }
+   .cbp_tmlabel::before {
+   	border-color: rgba(194, 225, 245, 0);
+   	border-right-color: #3594cb;
+   	border-width: 10px;
+   	margin-top: -10px;
+   }
+
+   li:nth-child(odd) .cbp_tmlabel::after { /*CHANGES COLORS*/
+     border-right-color: #6cbfee;
+   }
+   li:nth-child(odd) .cbp_tmlabel::before { /*END ARROWS*/
+     border-right-color: #6cbfee;
+   }
+
+
+
+
+   time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
+     display: inline-block;
+     float: left;
+     background: white
+     color: #3594cb;
+   }
+
+   ul.cbp_tmtimeline::before { /*VERTICAL LINE*/
+      content:'';
+      background: #afdcf8;
+      position: absolute;
+      margin-left: 50%;
+      width: 30px;
+
+   }
 
 }
-
-ul.cbp_tmtimeline > li:nth-child(2n+1) { /*FULL BOX WITH ALL TEXT*/
-  display: block;
-  vertical-align: top;
-  width: 50%;
-  text-align: justify;
-  background-color: #6cbfee;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.cbp_tmtimeline {
-  margin: 30px 0 0 0;
-  position: relative;
-}
-
-time.cbp_tmtime {
-  display: inline-block;
-  float: left;
-  background: white
-  color: #3594cb;
-}
-
-span { /*blocks the span together*/
-  display: block;
-    }
-
-/*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
-display: block;
-position: absolute;
-left: 100px;
-width: 600px;
-}*/
-
-/*:nth-child(2n+1) ..to change the colors*/
-
-/*time.cbp_tmtime (time and date) parent of 2 span elements: date and time
-display: inline block;
-width: ;
-height: 17px 29px;
-vertical-align: top;
-width: %;
-float??: left*/
-.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}
-
-
-/*h2 (main headings)
-height: 43px;
-
-p (paragraphs)
-display: block;
-
-colors: #3594cb (light blue), #47a3da (dark blue), #bdd0db (light grey)*//*/

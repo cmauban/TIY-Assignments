@@ -91,7 +91,7 @@ allows you to target rules to specific elements in an HTML document.
 
 
 ####Box Model Properties
-- **`box-sizing`**: used to alter the default CSS box model. When you set `box-sizing: border-box;` on an element, the padding and border of that element no longer increase its width. use: use the `-webkit-` and `-moz-` prefixes.
+- **[`box-sizing`]** (https://css-tricks.com/almanac/properties/b/box-sizing/): used to alter the default CSS box model. When you set `box-sizing: border-box;` on an element, the padding and border of that element no longer increase its width. use: use the `-webkit-` and `-moz-` prefixes.
   - VALUES:
   - content box: default style. width and height properties are measured including only the content, but not the padding, border or margin. Note: Padding, border & margin will be outside of the box EX: IF `.box {width: 350px};` THEN you apply `{border: 10px solid black;}` RESULT {rendered in the browser} `.box {width: 370px;}`
   - border box: width and height properties include the padding and border, but not the margin. Note that padding and border will be inside of the box EX:  `.box {width: 350px; border: 10px solid black;}` lead to a box rendered in the browser of `width: 350px`. 

@@ -1,90 +1,96 @@
+div.container {
+  padding: 2.875em 1.875em 1.875em;
+}
+
+
 body {
-  font-family: Calibri, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+  display: block;
 }
 
-header span {
-  color: #47a3da;
-  text-align:center;
+div.main { /*margin heading*/
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 90%;*/
+  /*display: block;*/
 }
-
 
 h1 {
   color: #47a3da;
-  text-align: center;
-}
-
-div.main {
-display: block;
-width: 90%;
-}
-
-/**** target all li (the entire box including time and icon)
-display: block;
-vertical-align: top;
-width: %;**/
-
-.cbp_tmlabel
-
-.cbp_tmtimeline > li .cbp_tmlabel h2 {
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  padding: 0 0 10px 0;
 
 }
 
-ul.cbp_tmtimeline > li:nth-child(2n+1) { /*FULL BOX WITH ALL TEXT*/
+header > span:first-child { /*BLUE PRINT*/
+  color: #47a3da;
+  text-align:;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  /*margin-left: 5%;*/
+}
+
+header > nav { /*icons*/
+  text-algin: ;
+  display: ;
+  float: ;
+}
+
+.cbp_tmtimeline > li span { /*BLOCK AND ALIGN TIME/DATE*/
   display: block;
-  vertical-align: top;
-  width: 50%;
-  text-align: justify;
-  background-color: #6cbfee;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.cbp_tmtimeline {
-  margin: 30px 0 0 0;
   position: relative;
 }
 
-time.cbp_tmtime {
+time > span:first-child { /*DATE SPAN*/
+  color: #bdd0db;
+}
+
+time > span:last-child { /*TIME SPAN*/
+  color: #6cbfee;
+
+}
+
+div.cbp_tmlabel { /*BOXES*/
+  color: #ffffff;
+  /*padding: 20px;*/
+  border-radius: 5px;
+  /*margin-bottom: 15px;*/
+  /*margin-left: 25%;*/
+  background-color: #3594cb;
+}
+
+li:nth-child(odd) .cbp_tmlabel { /*CHANGES COLORS*/
+  background-color: #6cbfee;
+}
+
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE. BOXES DATES/TIMES*/
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  /*padding: 0 0 10px 0;*/
+
+}
+
+ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
+  float: right;
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  color: #ffffff;
+  /*padding: 10px;*/
+}
+
+time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
   display: inline-block;
-  float: left;
   background: white
   color: #3594cb;
 }
 
-span { /*blocks the span together*/
-  display: block;
-    }
-
-/*div.cbp_tmlabel:nth-child(2n+1) {(JUSTBOX)
-display: block;
-position: absolute;
-left: 100px;
-width: 600px;
-}*/
-
-/*:nth-child(2n+1) ..to change the colors*/
-
-/*time.cbp_tmtime (time and date) parent of 2 span elements: date and time
-display: inline block;
-width: ;
-height: 17px 29px;
-vertical-align: top;
-width: %;
-float??: left*/
-.cbp_tmtimeline > li:nth-child(2n+1) .cbp_tmtime span:last-child {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
+/* vertical line
+  ul {
+   border-left:
+   left: %;
 }
+   li {
+   maring-left: - %;
+ }
 
-
-/*h2 (main headings)
-height: 43px;
-
-p (paragraphs)
-display: block;
-
-colors: #3594cb (light blue), #47a3da (dark blue), #bdd0db (light grey)*//*/
+ icons - amp website content: /"";

@@ -1,120 +1,133 @@
 div.main {
-  -webkit-columns: 3 100%;
-     -moz-columns: 3 100%;
-          columns: 3 100%;
+  padding: 0 2em 3em;
 }
 
-
 h1 {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    background: #47a3da;
     display: block;
-    text-align: left;
+    letter-spacing: 1px;
   }
 
+span { /* blueprint and icons */
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
+
+a span {
+    display: inline-block;
+}
+
 body {
-      font-family: Helvetica;
+      font-family: 'Lato', sans-serif;
       color: #ffffff;
       background: #47a3da;
-      text-align: left;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
+      width: 100%;
+      top: 40px;
+      vertical-align: center;
+
       }
 
 
 form.cbp-mc-form {
     display: block;
     text-align: left;
-    background: #47A3C4;
+    background: #47a3da;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    clear: both;
 }
 
-h1 {
-    display: block;
-    text-align: center;
-    color: #ffffff;
-    font-family: Helvetica;
-    background: #47A3C4;
-  }
 
 span.bp-icon .bp-icon-about {
-      text-align: center;
+      display: inline-block;
+      text-align: left;
       color: #ffffff;
-      font-family: Helvetica;
+      font-family: 'Lato', sans-serif;
     }
 
+div.cbp-mc-column {
+      /*display: block; /*or inline block??*/*/
+      text-transform: uppercase;
+      color: #ffffff;
+      /*margin-left: auto;
+      margin-right: auto;*/
+      width: 100%;
+      /*float: left;*/
+      background: #47a3da;
+      /*font-size: 15px;*/
+      letter-spacing: 1px;
+      font-family: 'Lato', sans-serif;
+}
 
 label {
+  display: block;
   text-transform: uppercase;
-  font-size: 15px;
+  /*font-size: 15px;*/
   letter-spacing: 1px;
-  font-family: arial;
+  font-family: 'Lato', sans-serif;
   padding: 40px 5px 5px 2px;
 }
 
-input {
-  padding: 5px 10px;
+.cbp-mc-column input {
+  /*padding: 5px 10px;*/
   width: 100%;
-  border: 2px solid #ffffff;
+  height: 40px;
+  border: 3px solid #ffffff;
+  /*font-size: 17px;*/
+  background: #47a3da;
 }
 
-.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
-
-    padding: 1px;
-    background: #47A3C4;
-
-    text-align: start;
+.cbp-mc-column textarea {
+  /*padding: 5px 10px;*/
+  width: 100%;
+  height: 150px;
+  border: 3px solid #ffffff;
+  /*font-size: 17px;*/
+  background: #47a3da;
 }
 
-
-body {
-      font-family: Helvetica;
-      color: #ffffff;
-      background: #47A3C4;
-
-    }
-
-
-
-div.cbp-mc-column { /**the capital headings**/
+.cbp-mc-column select {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(166, 166, 166);
+  /*font-size: 17px;*/
   color: #ffffff;
-  background: #47A3C4;
+  background: #47a3da;
 }
 
-select { /*drop-down*/
-  background: #47A3C4;
-  color: #ffffff;
-}
 
-input[type="text"] {
+/*input[type="text"] {
   line-height: 25px;
+  font-size: 16;
 
-}
+}*/
 
 
 .cbp-mc-submit-wrap {
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
   height: 97px;
   text-align: center;
+  clear: both;
 }
 
 
 input.cbp-mc-submit { /* SUBMIT BUTTON */
   background-color: #10689a;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   border: none;
   color: #ffffff;
   box-sizing: border-box;
-  font-size: 11px;
-  max-width: 30%;
+  /*font-size: 11px;*/
+  /*max-width: 30%;*/
   text-transform: uppercase;
-  padding: 20px 15px;
+  padding: 20px 15px; /*need*/
 }
-
-/*.cbp-mc-column { //creating 3 columns
-  position: absolute;
-  width: 155px;
-  float: left;
-  margin: 10px;
-
-}*/

@@ -1,111 +1,148 @@
-div.main {
-  -webkit-columns: 3 100%;
-     -moz-columns: 3 100%;
-          columns: 3 100%;
-}
+@media screen
+ and (min-device-width: 1200px)
+ and (max-device-width: 1600px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (min-resolution: 192dpi) {
 
-form.cbp-mc-form {
-    display: block;
-    text-align: left;
-    background: #47A3C4;
-    position: relative;
-}
+   h1 {
+       display: block;
+       text-align: left;
+       letter-spacing: 1px;
+       margin-left: 7%;
+     }
 
-body {
-      font-family: Helvetica;
-      color: #ffffff;
-      background: #47a3da;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      position: relative;
-      }
+   span { /* blueprint and icons */
+         text-align: left;
+         margin-left: 7%;
+         text-transform: uppercase;
+         letter-spacing: 6px;
+       }
 
-h1 {
-    display: block;
-    text-align: left;
-    margin-left: 5%;
-  }
+   a span {
+     display: inline-block;
+     text-align: right;
 
-span {
-    text-align: left;
-    margin-left: 5%;
-}
+   }
 
-a {
-  display: inline-block;
-  text-align: right;
-}
-
-span.bp-icon .bp-icon-about {
-      display: inline-block;
-      text-align: left;
-      color: #ffffff;
-      font-family: Helvetica;
-    }
+   body {
+         font-family: 'Lato', sans-serif;
+         color: #ffffff;
+         background: #47a3da;
+         text-align: left;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         width: 100%;
+         top: 40px;
+         bottom: 40px;
+         }
 
 
-.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
-    border: 2px solid #ffffff;
-    padding: 1px;
-    background: #47A3C4;
-    width: 100%;
-    text-align: start;
-}
+   form.cbp-mc-form {
+       display: block;
+       text-align: left;
+       background: #47a3da;
+       position: relative;
+       margin-left: auto;
+       margin-right: auto;
+       width: auto;
+   }
 
 
-body {
-      font-family: Helvetica;
-      color: #ffffff;
-      background: #47A3C4;
 
-    }
-div.cbp-mc-column { /**the capital headings**/
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #47A3C4;
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-family: arial;
-  float: left;
-  padding: 2%;
-  width: 26%;
-  }
+   span.bp-icon .bp-icon-about {
+         display: inline-block;
+         text-align: left;
+         color: #ffffff;
+         font-family: 'Lato', sans-serif;
+       }
 
-select { /*drop-down*/
-  background: #47A3C4;
-  color: #ffffff;
-}
 
-input[type="text"] {
-  line-height: 25px;
+   div.cbp-mc-column {
+         display: block; /*or inline block??*/
+         text-transform: uppercase;
+         color: #ffffff;
+         margin-left: auto;
+         margin-right: auto;
+         width: 28%;
+         float: left;
+         padding: 2.5%;
+         background: #47a3da;
+         font-size: 15px;
+         letter-spacing: 1px;
+         font-family: 'Lato', sans-serif;
+   }
 
-}
+   label {
+     display: block;
+     text-transform: uppercase;
+     font-size: 15px;
+     letter-spacing: 1px;
+     font-family: 'Lato', sans-serif;
+     padding: 40px 5px 5px 2px;
+   }
 
-.cbp-mc-submit-wrap {
-  width: 634px;
-  height: 97px;
-  text-align: center;
-}
+   .cbp-mc-column input {
+     padding: 5px 10px;
+     width: 100%;
+     height: 40px;
+     border: 3px solid #ffffff;
+     font-size: 17px;
+     background: #47a3da;
+   }
 
-input.cbp-mc-submit { /* SUBMIT BUTTON */
-  background-color: #10689a;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  box-sizing: border-box;
-  font-size: 11px;
-  max-width: 30%;
-  text-transform: uppercase;
-  padding: 20px 15px;
+   .cbp-mc-column textarea {
+     padding: 5px 10px;
+     width: 100%;
+     height: 150px;
+     border: 3px solid #ffffff;
+     font-size: 17px;
+     background: #47a3da;
+   }
 
-}
+   .cbp-mc-column select {
+     width: 100%;
+     height: 30px;
+     border: 1px solid rgb(166, 166, 166);
+     font-size: 17px;
+     color: #ffffff;
+     background: #47a3da;
+   }
 
-.cbp-mc-column { //creating 3 columns
-  position: absolute;
-  width: 155px;
-  float: left;
-  margin: 10px;
+
+   input[type="text"] {
+     line-height: 25px;
+     font-size: 16;
+
+   }
+
+   .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
+     color: #10689a;
+     font-family: "Lato", sans-serif;
+   }
+
+   .cbp-mc-submit-wrap {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     height: 97px;
+     text-align: center;
+     clear: both;
+   }
+
+
+   input.cbp-mc-submit { /* SUBMIT BUTTON */
+     background-color: #10689a;
+     font-family: 'Lato', sans-serif;
+     text-align: center;
+     border: none;
+     color: #ffffff;
+     box-sizing: border-box;
+     font-size: 20px;
+     max-width: 30%;
+     text-transform: uppercase;
+     padding: 20px 15px;
+   }
+
 
 }
