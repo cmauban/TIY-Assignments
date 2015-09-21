@@ -18,7 +18,8 @@
   "homepage": "https://github.com/cmauban/TIY-Assignments#readme",
   "dependencies": {
     "chai": "^3.2.0",
-    "mocha": "^2.3.2"
+    "mocha": "^2.3.2",
+    "node-sass": "^3.3.3"
   },
   "devDependencies": {
     "mocha": "^2.3.0"
