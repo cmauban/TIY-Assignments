@@ -40,16 +40,12 @@ div.cbp-vm-options { /*icons*/
 }
 
 
-ul > li {
+.cbp-vm-view-grid li { /* set up grid */
   float: left;
   width: 33.3%;
   list-style-type: none;
   text-align: center;
-
 }
-
-
-
 
 *, *::after, *:before { /*now setting a width, the element stays that width despite padding/borders being applied to it */
   -webkit-box-sizing: border-box;
@@ -68,7 +64,7 @@ ul > li {
   }
 
 
-li { /* applied fixed padding to right side of all columns except the last one */
+li { /* STYLES applied fixed padding to right side of all columns except the last one */
   margin-top: 20px;
   padding: 25px;
 
@@ -83,10 +79,9 @@ li { /* applied fixed padding to right side of all columns except the last one *
   border-bottom: 3px solid #47a3da;
 }
 
-.main { /*adding padding to the grid parent*/
+.main { /* STYLES adding padding to the grid parent*/
   padding: 0px 30px 50px 30px;
   border: 3px solid #47a3da;
-
 }
 
 .cbp-vm-grid::before {
@@ -105,28 +100,54 @@ li { /* applied fixed padding to right side of all columns except the last one *
   font-size: 40px;
 }
 
-clickGrid {
 
+.cbp-vm-view-list li { /* set up list */
+  position: relative;
+  display: block;
+  list-style-type: none;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-clickList {
+.cbp-vm-view-list li > a.cbp-vm-image > img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+}
 
+.cbp-vm-view-list li > h3.cbp-vm-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cbp-vm-view-list li > div.cbp-vm-price {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cbp-vm-view-list li > div.cbp-vm-details {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cbp-vm-view-list li > a. {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
-
-
-
-
+/* SET MIN HEIGHT TO FIX BOXES
+ * ICONS- @FONT-FACE
+   - .OPTIONS .ICONS : FONT-SIZE 0 (TURN OFF TEXT)
+ * .cbp-vm-view-grid li (grid setup)
+    * .viewgrid li > a.image > img
+    * .viewgird li > h3.title
 
 
 
 
 [class*='col-'] { /* selects all columns and makes them next to each other */
-  float: left;
-  background: #DEDEDE;
-  width: 33.3%;
-}
 
 .grid::after { /* clearing context. parent el collapses to 0 since it has floated children. */
   content: "";
@@ -159,6 +180,10 @@ clickList {
   padding-right: 20px;
 
 }
+
+
+
+
 
 
 
