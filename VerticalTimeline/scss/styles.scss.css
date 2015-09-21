@@ -1,0 +1,96 @@
+div.container {
+  padding: 2.875em 1.875em 1.875em;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  display: block;
+}
+
+div.main { /*margin heading*/
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 90%;*/
+  /*display: block;*/
+}
+
+h1 {
+  color: #47a3da;
+
+}
+
+header > span:first-child { /*BLUE PRINT*/
+  color: #47a3da;
+  text-align:;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  /*margin-left: 5%;*/
+}
+
+header > nav { /*icons*/
+  text-algin: ;
+  display: ;
+  float: ;
+}
+
+.cbp_tmtimeline > li span { /*BLOCK AND ALIGN TIME/DATE*/
+  display: block;
+  position: relative;
+}
+
+time > span:first-child { /*DATE SPAN*/
+  color: #bdd0db;
+}
+
+time > span:last-child { /*TIME SPAN*/
+  color: #6cbfee;
+
+}
+
+div.cbp_tmlabel { /*BOXES*/
+  color: #ffffff;
+  /*padding: 20px;*/
+  border-radius: 5px;
+  /*margin-bottom: 15px;*/
+  /*margin-left: 25%;*/
+  background-color: #3594cb;
+}
+
+li:nth-child(odd) .cbp_tmlabel { /*CHANGES COLORS*/
+  background-color: #6cbfee;
+}
+
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 { /*TITLE LINE. BOXES DATES/TIMES*/
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  /*padding: 0 0 10px 0;*/
+
+}
+
+ul.cbp_tmtimeline  { /*FULL BOX WITH ALL TEXT*/
+  float: right;
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  color: #ffffff;
+  /*padding: 10px;*/
+}
+
+time.cbp_tmtime { /*also boxes time and date? ALIGNED*/
+  display: inline-block;
+  background: white
+  color: #3594cb;
+}
+
+/* vertical line
+  ul {
+   border-left:
+   left: %;
+}
+   li {
+   maring-left: - %;
+ }
+
+ icons - amp website content: /"";
