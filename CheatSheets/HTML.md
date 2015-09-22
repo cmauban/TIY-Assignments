@@ -1,12 +1,20 @@
-## `<html>`
+## `<html>` HyperText Markup Language
 
-the main enchilada, the whole `document`, that which wraps all the others... except for [`<!DOCTYPE>`](#doctype), for some reason.
+used for creating and visually representing a webpage. it determines the content of the webpage, but NOT its functionality. the main enchilada, the whole `document`, that which wraps all the others... except for [`<!DOCTYPE>`](#doctype), for some reason.
+
+####Structure of an HTML tag:
+Tags act like containers. they tell you something about the info that lies between their opening and closing tags. Elements are made up of two tags (an opening and closing tag). tag and element are often used interchangeably.
+
+- `<p>`: OPENING TAG- left-angle bracket, character, right-angle bracket.
+- `</p>`: CLOSING TAG- left-angle bracket, forward slash, character, right-angle bracket.
+
 
 * _parents_: none, it's the top
 * _content_: _only_ [`<head>`](#head) and [`<body>`](#body)
 * _display_: `block`, maybe? I mean, I can see it... RESEARCH!
 
 ### Attributes
+tell us more about the contents of an element. They appear on the opening tag of the element and are made up of two parts: a name & a value (separated by an equal sign.)
 
 * `class` -- a space-separated list of category names
 * . . .
