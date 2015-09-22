@@ -30,16 +30,16 @@ anything between the tag is HTML code. the main enchilada, the whole `document`,
 * _display_: `block`
 
 ## `<!DOCTYPE>`
-Bc their are so amny versions of HTML, each webpage should begin with a DOCTYPE. Doctype is a declaration, NOT a tag. it informs the browswer which version of HTML (or XML) you used to write the document.
+Bc their are so many versions of HTML, each webpage should begin with a DOCTYPE. Doctype is a declaration, NOT a tag. it informs the browswer which version of HTML (or XML) you used to write the document.
 * _parents_: nothing before it, not even a space.
 * _content_: entire html
-* _display_: inline?
+* _display_: block
 
 ## `<head>`
 before the body element. contains info about the page. usually a `<title>` is inside of the head.
 * _parents_: `<html>`
 * _content_: flow content
-* _display_: inline?
+* _display_: block
 
 ## `<body>`
 everything inside of the body tag is shown inside the main browser window.
@@ -51,7 +51,7 @@ everything inside of the body tag is shown inside the main browser window.
 defines the title of the doc. the contents of the title element are either shown in the top of the browser, above where you type in the URL of the page (browswer's title bar).
 * _parents_: `<head>` that contains no other `<title>` element.
 * _content_: Metadata content
-* _display_: inline?
+* _display_: block
 
 ## `<p>`
 to create a paragraph. by default, a browser will show each paragraph on a new line with some space between it and any subsequent paragraphs.
@@ -88,6 +88,12 @@ represents a clickable button.
 * _parents_: any element that accepts phrasing content
 * _content_: phrasing content, flow content, listed, palpable..
 * _display_: inline
+
+## `<nav>`
+represents a section of a page that links to other pages or parts within the page: a section with navigation links.
+* _parents_: any element that accepts flow content
+* _content_: flow content
+* _display_: block
 
 ###### Footnotes
 
