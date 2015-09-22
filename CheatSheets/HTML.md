@@ -75,12 +75,6 @@ adding a comment to your code that will not be visible in the user's browser.
 * _content_: n/a
 * _display_: block
 
-## `<ul>`
-unordered list element. 
-* _parents_: any element that accepts flowing content
-* _content_: flow content
-* _display_: block
-
 ## `<span>`
 generic inline container for phrasing content that does not inherently represent anything. used to group elements for styling purposes or because they share the same attribute values. kind of like the `<div>` element but `<div>` is block-level. you will usually see a `class` or `id` attribute with span.
 * _parents_: any element that accepts phrasing or flow content
@@ -105,7 +99,15 @@ represents a section of a page that links to other pages or parts within the pag
 * _content_:
 * _display_: 
 
-## `<tag>`
+**LIST ELEMENTS**
+
+## `<ul>`
+unordered list element. 
+* _parents_: any element that accepts flowing content
+* _content_: flow content
+* _display_: block
+
+## `<li>`
 
 * _parents_: 
 * _content_:
