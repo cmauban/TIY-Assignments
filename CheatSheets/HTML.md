@@ -100,41 +100,42 @@ represents a section of a page that links to other pages or parts within the pag
 * _display_: 
 
 **-----LIST ELEMENTS-----**
+use the `list-style-type` property.
 
 ## `<ul>`
 unordered list element. uses bullets.
 * _parents_: any element that accepts flowing content
-* _content_: flow content
+* _content_: flow content. zero or more `<li>` elements, eventually mixed with `<ol>` and `<ul>` elements.
+* _display_: block
+
+## `<ol>`
+ordered list. uses numbers.
+* _parents_: Any element that accepts flow content.
+* _content_: Zero or more `<li>` elements
 * _display_: block
 
 ## `<li>`
 list item. each item in the list is placed between an opening and closing tag. browsers indent lists by default.
-* _parents_: `<ul>` and `<ol>`
-* _content_:
-* _display_: block
-
-## `<ol>`
-ordered list. uses numbers
-* _parents_: 
-* _content_:
+* _parents_: `<ul>` and `<ol>` OR `<menu>`
+* _content_: none.
 * _display_: block
 
 ## `<dl>`
-definition list. usually consists of a series of terms and their definitions.
+definition list. encloses a list of pairs of terms and descriptions. usually consists of a series of terms and their definitions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).
 * _parents_: 
 * _content_: inside dl you usually see pairs of `<dt>` and `<dd>` elements.
 * _display_:
 
 ## `<dt>`
-used to contain the term being defined (the definition term)
+used to contain the term being defined (the definition term). This element can occur only as a child element of a <dl>. It is usually followed by a <dd> element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next <dd> element.
 * _parents_: `<dl>`
-* _content_:
+* _content_: none
 * _display_:
 
 ## `<dd>`
-used to contain the definition.
-* _parents_: `<dl>`
-* _content_:
+used to contain the definition. This element can occur only as a child element of a definition list and it must follow a <dt> element.
+* _parents_: After a `<dt>` or a `<dd>` element, inside a `<dl>`
+* _content_: n/a
 * _display_:
 
 **-----FORM ELEMENTS-----**
