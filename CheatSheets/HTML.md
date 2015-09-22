@@ -15,14 +15,6 @@ Tags act like containers. they tell you something about the info that lies betwe
 - 2. Form- describe content rules common to form-related elements
 - 3. Specific- describe rare categories shared only by a few elements
 
-## `<html>`
-anything between the tag is HTML code. the main enchilada, the whole `document`, that which wraps all the others... except for `<!DOCTYPE>`
-
-* _parents_: none, it's the top
-* _content_: _only_ `<head>` and `<body>`
-* _display_: `block`
-
-
 ### Attributes
 tell us more about the contents of an element. They appear on the opening tag of the element and are made up of two parts: a name & a value (separated by an equal sign.)
 
@@ -30,6 +22,12 @@ global attributes common to all HTML elements:
 * `class` -- a space-separated list of category names
 * `id` -- defines a unique identifier which must be unique in the whole document.
 * `style` -- contains styling declarations to be applied to the element. Styles are defined in separate files. allows for quick styling and testing purposes.
+
+## `<html>`
+anything between the tag is HTML code. the main enchilada, the whole `document`, that which wraps all the others... except for `<!DOCTYPE>`
+* _parents_: none, it's the top
+* _content_: _only_ `<head>` and `<body>`
+* _display_: `block`
 
 ## `<!DOCTYPE>`
 Bc their are so amny versions of HTML, each webpage should begin with a DOCTYPE. Doctype is a declaration, NOT a tag. it informs the browswer which version of HTML (or XML) you used to write the document.
@@ -62,9 +60,7 @@ to create a paragraph. by default, a browser will show each paragraph on a new l
 * _display_: block
 
 ## `<div>`
-
 or HTML Document Division Element. it could be used to group elements for styling purposes (using `class` or `id` attributes.A generic page division that should only be used if no other, more semantic choice is appropriate... and because @al-the-x might kill me if I do when I could use [`<section>`](#section) instead. 
-
 * _parents_: anything that accepts [Flow Content][1], which is apparently a lot of things.
 * _content_: any [Flow Contant][1], palpable content (WTF?)
 * _display_: `block`
@@ -85,6 +81,12 @@ unordered list element.
 generic inline container for phrasing content that does not inherently represent anything. used to group elements for styling purposes or because they share the same attribute values. kind of like the `<div>` element but `<div>` is block-level. you will usually see a `class` or `id` attribute with span.
 * _parents_: any element that accepts phrasing or flow content
 * _content_: phrasing content
+* _display_: inline
+
+## `<button>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
 * _display_: inline
 
 ###### Footnotes
