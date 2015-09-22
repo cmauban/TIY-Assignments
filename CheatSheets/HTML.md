@@ -102,32 +102,38 @@ represents a section of a page that links to other pages or parts within the pag
 **-----LIST ELEMENTS-----**
 
 ## `<ul>`
-unordered list element. 
+unordered list element. uses bullets.
 * _parents_: any element that accepts flowing content
 * _content_: flow content
 * _display_: block
 
 ## `<li>`
-
-* _parents_: 
+list item. each item in the list is placed between an opening and closing tag. browsers indent lists by default.
+* _parents_: `<ul>` and `<ol>`
 * _content_:
-* _display_:
+* _display_: block
 
 ## `<ol>`
-
+ordered list. uses numbers
 * _parents_: 
 * _content_:
-* _display_:
+* _display_: block
 
 ## `<dl>`
-
+definition list. usually consists of a series of terms and their definitions.
 * _parents_: 
-* _content_:
+* _content_: inside dl you usually see pairs of `<dt>` and `<dd>` elements.
 * _display_:
 
 ## `<dt>`
+used to contain the term being defined (the definition term)
+* _parents_: `<dl>`
+* _content_:
+* _display_:
 
-* _parents_: 
+## `<dd>`
+used to contain the definition.
+* _parents_: `<dl>`
 * _content_:
 * _display_:
 
