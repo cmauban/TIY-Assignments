@@ -1,7 +1,7 @@
 #HyperText Markup Language
 used for creating and visually representing a webpage. it determines the content of the webpage, but NOT its functionality. HTML allows you to create links that allow visitors to move from one page to another quickly and easily.
 
-**Block-level Elements**: occupies the entire space of its parent element (container). formatting- begins on new line. contains inline elements and other block-level elements. `<h1> <p> <ul> <li>`
+**Block-level Elements**: formatting- begins on new line. occupies the entire space of its parent element (container).  contains inline elements and other block-level elements. `<h1> <p> <ul> <li>`
 
 **Inline Elements**: formatting- start anywhere in a line. continue on same line. occupies only space bounded by the tags that define the inline element. `<a> <b> <em> <img>`
 
@@ -9,18 +9,22 @@ used for creating and visually representing a webpage. it determines the content
 Tags act like containers. they tell you something about the info that lies between their opening and closing tags. Elements are made up of two tags (an opening and closing tag). tag and element are often used interchangeably.
 - `<p>`: OPENING TAG- left-angle bracket, character, right-angle bracket.
 - `</p>`: CLOSING TAG- left-angle bracket, forward slash, character, right-angle bracket.
+- "self-closing" tag- closes itself. no children. ex: `<img> <link> <meta> <hr>`
 
 **Three Types of Content Categories:**
 - 1. main- describe common content rules shared by many elements
 - 2. Form- describe content rules common to form-related elements
 - 3. Specific- describe rare categories shared only by a few elements
+- 4. flow- flows to fill the container
 
 ### Attributes
 tell us more about the contents of an element. They appear on the opening tag of the element and are made up of two parts: a name & a value (separated by an equal sign.)
 
 global attributes common to all HTML elements:
-* `class` -- a space-separated list of category names
-* `id` -- defines a unique identifier which must be unique in the whole document.
+* `class` -- a space-separated list of semantic category names for that element.
+* `id` -- a unique identifier which MUST be unique in the whole document.
+* `title` -- a short textual description of purpose
+* `lang` -- describe what language it should read
 * `style` -- contains styling declarations to be applied to the element. Styles are defined in separate files. allows for quick styling and testing purposes.
 
 ## `<html>`
@@ -94,6 +98,18 @@ represents a section of a page that links to other pages or parts within the pag
 * _parents_: any element that accepts flow content
 * _content_: flow content
 * _display_: block
+ 
+## `<meta>`
+
+* _parents_: `<head>`
+* _content_:
+* _display_: 
+
+## `<tag>`
+
+* _parents_: 
+* _content_:
+* _display_:
 
 ###### Footnotes
 
