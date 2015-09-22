@@ -99,7 +99,7 @@ represents a section of a page that links to other pages or parts within the pag
 * _content_:
 * _display_: 
 
-**LIST ELEMENTS**
+**-----LIST ELEMENTS-----**
 
 ## `<ul>`
 unordered list element. 
@@ -108,6 +108,56 @@ unordered list element.
 * _display_: block
 
 ## `<li>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<ol>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<dl>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<dt>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+**-----FORM ELEMENTS-----**
+
+## `<form>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<input>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<label>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<fieldgroup>`
+
+* _parents_: 
+* _content_:
+* _display_:
+
+## `<legend>`
 
 * _parents_: 
 * _content_:
