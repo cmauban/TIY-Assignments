@@ -119,21 +119,42 @@ li { /* STYLES applied fixed padding to right side of all columns except the las
 .cbp-vm-view-list li > h3.cbp-vm-title {
   display: inline-block;
   vertical-align: middle;
+  font-size: 16pt;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .cbp-vm-view-list li > div.cbp-vm-price {
   display: inline-block;
   vertical-align: middle;
+  color: #c0c0c0;
+  font-size: 16pt;
+  width: 10%;
 }
 
 .cbp-vm-view-list li > div.cbp-vm-details {
   display: inline-block;
   vertical-align: middle;
+  width: 30%;
+  white-space: normal;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 15pt;
 }
 
-.cbp-vm-view-list li > a. {
+.cbp-vm-view-list li > a.cbp-vm-add {
   display: inline-block;
   vertical-align: middle;
+  color: #ffffff;
+  background-color: #47a3da;
+  font-size: 15pt;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 
@@ -180,9 +201,6 @@ li { /* STYLES applied fixed padding to right side of all columns except the las
   padding-right: 20px;
 
 }
-
-
-
 
 
 
