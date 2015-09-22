@@ -121,19 +121,19 @@ list item. each item in the list is placed between an opening and closing tag. b
 * _display_: block
 
 ## `<dl>`
-definition list. encloses a list of pairs of terms and descriptions. usually consists of a series of terms and their definitions. Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).
+definition list. encloses a list of pairs of terms and descriptions. usually consists of a series of terms and their definitions. Common uses for this element are to implement a glossary or to display metadata, a list of key-value pairs.
 * _parents_: 
 * _content_: inside dl you usually see pairs of `<dt>` and `<dd>` elements.
 * _display_:
 
 ## `<dt>`
-used to contain the term being defined (the definition term). This element can occur only as a child element of a <dl>. It is usually followed by a <dd> element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next <dd> element.
+used to contain the term being defined. This element can occur only as a child element of a `<dl>`. It is usually followed by a `<dd>` element; however, multiple `<dt>` elements in a row indicate several terms that are all defined by the immediate next `<dd>` element.
 * _parents_: `<dl>`
 * _content_: none
 * _display_:
 
 ## `<dd>`
-used to contain the definition. This element can occur only as a child element of a definition list and it must follow a <dt> element.
+used to contain the definition. This element can occur only as a child element of a definition list and it must follow a `<dt>` element.
 * _parents_: After a `<dt>` or a `<dd>` element, inside a `<dl>`
 * _content_: n/a
 * _display_:
