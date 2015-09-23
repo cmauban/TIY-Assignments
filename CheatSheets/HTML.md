@@ -153,7 +153,9 @@ used to contain the definition. This element can occur only as a child element o
 * _display_:
 
 ## `<label>`
-
+each form control should have its own label element as this makes the form accessible to vision-impaired users. it can be used in two ways:
+ - 1. wrap around both the text description and the form input
+ - 2. be kept separate from the form control and use the for attribute to indicate which form control it is a label for.
 * _parents_: 
 * _content_:
 * _display_:
@@ -165,8 +167,8 @@ used to contain the definition. This element can occur only as a child element o
 * _display_:
 
 ## `<legend>`
-
-* _parents_: 
+comes directly aftr the opening fieldset tag and contains a caption which helps identify the purpose of that group of form controls.
+* _parents_: `<fieldset>`
 * _content_:
 * _display_:
 
