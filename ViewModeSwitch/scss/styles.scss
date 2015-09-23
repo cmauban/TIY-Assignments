@@ -16,17 +16,16 @@ body {
 header {
   font-size: 17px;
 
+  span {
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+
+  nav {
+    display: inline-block;
+    float: right; }
+
 }
 
-header > span {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-header > nav {
-  display: inline-block;
-  float: right;
-}
 
 
 .cbp-vm-switcher ul {
@@ -108,54 +107,50 @@ li { /* STYLES applied fixed padding to right side of all columns except the las
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
+
+    a.cbp-vm-image > img {
+      display: inline-block;
+      width: 10%;}
+
+    h3.cbp-vm-title {
+      display: inline-block;
+      font-size: 16pt;
+      padding-right: 10px;
+      padding-left: 10px;}
+
+    div.cbp-vm-price {
+      display: inline-block;
+      color: #c0c0c0;
+      font-size: 16pt;
+      width: 10%;}
+
+    div.cbp-vm-details {
+      display: inline-block;
+      width: 30%;
+      white-space: normal;
+      box-sizing: border-box;
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 15pt;}
+
+    a.cbp-vm-add {
+      display: inline-block;
+      color: #ffffff;
+      background-color: #47a3da;
+      font-size: 15pt;
+      box-sizing: border-box;
+      text-decoration: none;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;}
+
 }
 
-.cbp-vm-view-list li > a.cbp-vm-image > img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 10%;
-}
 
-.cbp-vm-view-list li > h3.cbp-vm-title {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16pt;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
-.cbp-vm-view-list li > div.cbp-vm-price {
-  display: inline-block;
-  vertical-align: middle;
-  color: #c0c0c0;
-  font-size: 16pt;
-  width: 10%;
-}
 
-.cbp-vm-view-list li > div.cbp-vm-details {
-  display: inline-block;
-  vertical-align: middle;
-  width: 30%;
-  white-space: normal;
-  box-sizing: border-box;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 15pt;
-}
 
-.cbp-vm-view-list li > a.cbp-vm-add {
-  display: inline-block;
-  vertical-align: middle;
-  color: #ffffff;
-  background-color: #47a3da;
-  font-size: 15pt;
-  box-sizing: border-box;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
 
 
 /* SET MIN HEIGHT TO FIX BOXES
@@ -201,23 +196,3 @@ li { /* STYLES applied fixed padding to right side of all columns except the las
   padding-right: 20px;
 
 }
-
-
-
-
-
-
-
-/*row {
-  margin-left: auto;
-  margin-right: auto;
-  border:
-  padding:
-  width: %; /* percentage of containing element at least 80%*/
-/*}*/
-
-/*width: auto; height: auto; AUTO is default for width */
-
-/*row > column {
-  width: %; /* relative to viewport (responsive) percentage of containing element */
-/*}*
