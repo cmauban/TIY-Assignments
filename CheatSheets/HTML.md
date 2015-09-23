@@ -145,6 +145,7 @@ used to contain the definition. This element can occur only as a child element o
 * _display_:
 
 **-----FORM ELEMENTS-----**
+each form control is given a name, and the text the user types in, or the values of the options they select are sent to the server.
 
 ## `<form>`
 represents a document section that contains interactive controls to submit information to a web server. `::valid` and `::invalid` CSS pseudo-classes to style. should always carry the action attribute and will usually have a method and id attribute too.
@@ -160,18 +161,22 @@ represents a document section that contains interactive controls to submit infor
 used to create several different form controls. the value of the type attribute determines what kind of input they will be creating.
 - types.. type="x"
  - text: creates a single line text input
-  - maxlength attribute
+   - maxlength attribute
  - password: creates a textbox but characters are hidden
-  - size, maxlength attributes
+   - size, maxlength attributes
  - radio: allow users to pick just one of a number of options. cannot deselect
-  - value and checked attributes
+   - value and checked attributes
  - checkbox: allow users to select and deselect one or more options in answer to a question.
-  - value and checked attributes
+   - value and checked attributes
  - file
  - submit
  - image
  - button
  - hidden
+ - date
+ - email
+ - url
+ - search
  
 * _parents_: 
 * _content_: type=" ", name, maxlength..
@@ -185,14 +190,20 @@ each form control should have its own label element as this makes the form acces
 * _content_: for attribute which states which form control the label belongs too.
 * _display_: inline
 
+## `<fieldset>`
+group related form controls together inside the fieldset element. helpful for longer forms. first child is `<legend>`
+* _parents_: 
+* _content_: legend, label, input
+* _display_:
+
 ## `<fieldgroup>`
 
 * _parents_: 
-* _content_:
+* _content_: 
 * _display_:
 
 ## `<legend>`
-comes directly aftr the opening fieldset tag and contains a caption which helps identify the purpose of that group of form controls.
+comes directly aftr the opening fieldset tag and contains a caption which helps identify the purpose of that group of form controls. represents a caption for the content of its parent.
 * _parents_: `<fieldset>`
 * _content_:
 * _display_:
@@ -203,6 +214,23 @@ represents a clickable button.
 * _content_: phrasing content, flow content, listed, palpable..
 * _display_: inline
 
+## `<datalist>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
+
+## `<menu>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
+
+## `<dialog>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
 
 ###### Footnotes
 
