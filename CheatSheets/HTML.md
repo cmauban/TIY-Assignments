@@ -158,7 +158,7 @@ each form control should have its own label element as this makes the form acces
  - 2. be kept separate from the form control and use the for attribute to indicate which form control it is a label for.
 * _parents_: 
 * _content_:
-* _display_:
+* _display_: inline
 
 ## `<fieldgroup>`
 
