@@ -1,9 +1,9 @@
 #HyperText Markup Language
 used for creating and visually representing a webpage. it determines the content of the webpage, but NOT its functionality. HTML allows you to create links that allow visitors to move from one page to another quickly and easily.
 
-**Block-level Elements**: formatting- begins on new line. occupies the entire space of its parent element (container).  contains inline elements and other block-level elements. `<h1> <p> <ul> <li>`
+**Block-level Elements**: formatting- begins on new line. takes up the full width of the window or whatever container they are in. occupies the entire space of its parent element (container).  contains inline elements and other block-level elements. `<h1> <p> <ul> <li>`
 
-**Inline Elements**: formatting- start anywhere in a line. continue on same line. occupies only space bounded by the tags that define the inline element. `<a> <b> <em> <img>`
+**Inline Elements**: formatting- start anywhere in a line. continue on same line. occupies only space bounded by the tags that define the inline element. takes as much space as it needs. `<a> <b> <em> <img> <strong> <span>`
 
 ####Structure of an HTML tag:
 Tags act like containers. they tell you something about the info that lies between their opening and closing tags. Elements are made up of two tags (an opening and closing tag). tag and element are often used interchangeably.
@@ -40,9 +40,21 @@ Bc their are so many versions of HTML, each webpage should begin with a DOCTYPE.
 * _display_: block
 
 ## `<head>`
-before the body element. contains info about the page. usually a `<title>` is inside of the head.
+before the body element. only once as a immediate child of the html elemeent contains info, metadada, about the page. usually a `<title>` is inside of the head.
 * _parents_: `<html>`
 * _content_: flow content
+* _display_: block
+
+## `<header>`
+a semantic block containing metadata for a part of the doc, usually with a section or article.
+* _parents_: 
+* _content_: flow content
+* _display_: block. no parent, default styles
+
+## `<h3>`
+a semantic block representing the title for a part of the doc, usually with a section or article. default style: bigger and stronger, bold. 
+* _parents_: 
+* _content_: flow content, text
 * _display_: block
 
 ## `<body>`
