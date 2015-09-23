@@ -15,12 +15,61 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <span>Blueprint</span>
+      <h1>Responsive Multi-Column Form</h1>
+      <section class="col-1">
+        <label>first name <input type="text" name="firstname"/></label>
+        <br/>
+        <label>last name <input type="text" name="lastname" /></label>
+        <br/>
+        <label>email address <input type="text" name="emailaddress"/><label>
+        <br/>
+        <p>country</p> <!-- drop-down menu -->
+        <select name="country">
+          <option value="choose a country">Choose a country</option>
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Canada">Canada</option>
+        </select> <!-- END drop-down menu -->
+        <p>biography</p>
+        <textarea name="comments" cols="20" rows="4">biography comments...</textarea>
+      </section>
+      <section class="col-2">
+          <label>phone number <input type="text" name="phonenumber"/><label>
+          <p>affiliations</p>
+          <textarea name="comments" cols="20" rows="4">affiliations comments...</textarea>
+          <p>type of dog</p> <!-- drop-down menu -->
+          <select name="dog">
+            <option value="choose a dog">Choose a dog</option>
+            <option value="shih tzu">shih tzu</option>
+            <option value="beagle">beagle</option>
+            <option value="german shepherd">german shepherd</option>
+          </select> <!-- END drop-down menu -->
+          <label>dog's name <input type="text" name="dog'sname"/><label>
+          </br>
+          <label>favorite color <input type="text" name="favoritecolor"/><label>
+      </section>
+      <section class="col-3">
+          <p>type of talent</p> <!-- drop-down menu -->
+          <select name="talent">
+            <option value="choose a talent">Choose a talent</option>
+            <option value="sing">sing</option>
+            <option value="dance">dance</option>
+            <option value="drink">drink</option>
+          </select> <!-- END drop-down menu -->
+          <label>favorite sports team <input type="text" name="favoritesportsteam"/><label>
+          </br>
+          <label>special power <input type="text" name="specialpower"/><label>
+          </br>
+          <label>age <input type="text" name="age"/><label>
+            <p>comments</p>
+            <textarea name="comments" cols="20" rows="4">comments...</textarea>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+      </section>
+      <button>send yo data</button>
+
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
