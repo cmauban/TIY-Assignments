@@ -289,6 +289,24 @@ the contents of the table are written out row by row.
 * _display_: displayed in bold and in the middle of the cell.
 
 ##LONG TABLES----
+for long tables you can split the table into 3 elements: thead, tbody, tfoot. 3 elements that help distinguish between the main content of the table, and the first and last rows. They help people who use screen readers and also allow you to style these sections in a different manner than the rest of the table with CSS.
+
+### `<thead>`
+table headings for long tables with only one `<th>`. the headings of the table sit inside the thead element.
+* _parents_: `<table>`
+* _content_: `<tr>`, `<th>`
+
+### `<tbody>`
+the body sits inside the tbody element
+* _parents_: `<table>`
+* _content_: `<tr>`, `<th>`
+
+### `<tfoot>`
+the footer belongs inside the tfoot element.
+* _parents_: `<table>`
+* _content_: `<tr>`, `<td>`
+
+
 
 ###### Footnotes
 
