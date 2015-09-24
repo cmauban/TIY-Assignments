@@ -232,6 +232,57 @@ represents a clickable button.
 * _content_: phrasing content, flow content, listed, palpable..
 * _display_: inline
 
+**-----TABLE STRUCTURE-----**
+a table represents info in a grid format. each block in a grid is referred to as a table cell. in HTML, a table is written out row by row.
+
+```
+<table>
+ <tr> //begin row
+   <td>xxxx<td> // 1 cell in row
+   <td>xxxx<td> // 2 cell in row
+   <td>xxxx<td> // 3 cell in row
+ </tr> //end row
+</table>
+```
+
+## `<table>`
+the contents of the table are written out row by row.
+* _parents_: 
+* _content_: 
+* _display_: 
+
+## `<tr>`
+"table row". the start of each row using the opening tr tag. followed by td elements. then the closing tr tag.
+* _parents_: `<table>`
+* _content_: `<td>` one for each cell in that row
+* _display_: 
+
+## `<td>`
+"table data". each cell of the table. 
+* _parents_: 
+* _content_: even if a cell has no content, still use a `td` or `th` to represent the presence of an empty cell.
+* _display_: 
+
+## `<th>`
+"table heading". used just like the td element but its purpose is to represent the heading for either a column or row. helps people who use screen readers, improves the ability for search engines to index your pages, and gives you greater control over the appearance of tables when you start to use CSS.
+
+   - SCOPE attribute: indicates whether its a heading for a column or row. VALUES: `row` and `col`.
+
+```
+<table>
+ <tr> //begin row
+  <th></th> //heading
+  <th scope="col">saturday</th>
+  <th scope="col">sunday</th>
+ </tr> //end row
+</table>
+```
+
+* _parents_: `<tr>`, `<table>`
+* _content_: even if a cell has no content, still use a `td` or `th` to represent the presence of an empty cell.
+* _display_: displayed in bold and in the middle of the cell.
+
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
