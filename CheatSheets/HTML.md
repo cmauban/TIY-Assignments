@@ -93,12 +93,6 @@ generic inline container for phrasing content that does not inherently represent
 * _content_: phrasing content
 * _display_: inline
 
-## `<button>`
-represents a clickable button.
-* _parents_: any element that accepts phrasing content
-* _content_: phrasing content, flow content, listed, palpable..
-* _display_: inline
-
 ## `<nav>`
 represents a section of a page that links to other pages or parts within the page: a section with navigation links.
 * _parents_: any element that accepts flow content
@@ -151,17 +145,41 @@ used to contain the definition. This element can occur only as a child element o
 * _display_:
 
 **-----FORM ELEMENTS-----**
+each form control is given a name, and the text the user types in, or the values of the options they select are sent to the server.
 
 ## `<form>`
-
+represents a document section that contains interactive controls to submit information to a web server. `::valid` and `::invalid` CSS pseudo-classes to style. should always carry the action attribute and will usually have a method and id attribute too.
+ - `<action>`: every form element requires an action attribute. VALUE- URL for the page on the server that will receive the info on the form when it is submitted.
+ - `<method>`: forms can be sent using one of the 2 methods: `get` or `post`
+  - `get` method- DEFAULT. the values from the form are added to the end of the URL specified in the action. IDEAL FOR short forms such as search boxes, and just retrieving data from web server. not sending info.
+  - `post` method- values ar esent in what are known as HTTP headers. IDEAL FOR users to upload a file, very long forms, passwords, or adding info to or deleting info from a database.
 * _parents_: 
-* _content_:
+* _content_: flow content
 * _display_:
 
 ## `<input>`
-
+used to create several different form controls. the value of the type attribute determines what kind of input they will be creating.
+- types.. type="x"
+ - text: creates a single line text input
+   - maxlength attribute
+ - password: creates a textbox but characters are hidden
+   - size, maxlength attributes
+ - radio: allow users to pick just one of a number of options. cannot deselect
+   - value and checked attributes
+ - checkbox: allow users to select and deselect one or more options in answer to a question.
+   - value and checked attributes
+ - file
+ - submit
+ - image
+ - button
+ - hidden
+ - date
+ - email
+ - url
+ - search
+ 
 * _parents_: 
-* _content_:
+* _content_: type=" ", name, maxlength..
 * _display_:
 
 ## `<label>`
@@ -169,20 +187,50 @@ each form control should have its own label element as this makes the form acces
  - 1. wrap around both the text description and the form input
  - 2. be kept separate from the form control and use the for attribute to indicate which form control it is a label for.
 * _parents_: 
-* _content_:
+* _content_: for attribute which states which form control the label belongs too.
 * _display_: inline
+
+## `<fieldset>`
+group related form controls together inside the fieldset element. helpful for longer forms. first child is `<legend>`
+* _parents_: 
+* _content_: legend, label, input
+* _display_:
 
 ## `<fieldgroup>`
 
 * _parents_: 
-* _content_:
+* _content_: 
 * _display_:
 
 ## `<legend>`
-comes directly aftr the opening fieldset tag and contains a caption which helps identify the purpose of that group of form controls.
+comes directly aftr the opening fieldset tag and contains a caption which helps identify the purpose of that group of form controls. represents a caption for the content of its parent.
 * _parents_: `<fieldset>`
 * _content_:
 * _display_:
+
+## `<button>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
+
+## `<datalist>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
+
+## `<menu>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
+
+## `<dialog>`
+represents a clickable button.
+* _parents_: any element that accepts phrasing content
+* _content_: phrasing content, flow content, listed, palpable..
+* _display_: inline
 
 ###### Footnotes
 

@@ -6,7 +6,8 @@
         <title>Responsive Multi-Column Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -15,8 +16,17 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+      <header>
       <span>Blueprint</span>
       <h1>Responsive Multi-Column Form</h1>
+      <nav class="nav-group">
+        <a class="nav-group-icon" href="#"><i class="fa fa-arrow-circle-o-left fa-2x"></i>previous</a>
+        <a class="nav-group-icon" href="#"><i class="fa fa-arrow-circle-o-right fa-2x"></i>next</a>
+        <a class="nav-group-icon" href="#"><i class="fa fa-circle-o fa-2x"></i>circle</a>
+        <a class="nav-group-icon" href="#"><i class="fa fa-archive fa-2x"></i>archive</a>
+      </nav>
+    </header>
+    <form>
       <section class="col-1">
         <label>first name <input type="text" name="firstname"/></label>
         <label>last name <input type="text" name="lastname" /></label>
@@ -58,10 +68,11 @@
           <label>age <input type="text" name="age"/><label>
             <p>comments</p>
             <textarea name="comments" cols="20" rows="4">comments...</textarea>
-
       </section>
+      <section class="row-button">
       <button>send yo data</button>
-
+    </section>
+    </form>
 
 
 
