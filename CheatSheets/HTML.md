@@ -288,6 +288,39 @@ the contents of the table are written out row by row.
 * _content_: even if a cell has no content, still use a `td` or `th` to represent the presence of an empty cell.
 * _display_: displayed in bold and in the middle of the cell.
 
+### `<colgroup>`
+table column group element. defines a group of columns within a table.
+* _parents_: `<table>`, MUST be after `<caption>`
+* _content_: MUST be before any long table elements: `<thead> <tbody> <tfoot>`
+* _display_: 
+
+### `<col>`
+table column element. the contents of the table are written out row by row. defines a column within a table and is used for defining common semantics on all common cells. allows styling columns using CSS, but only a few attributes will have an effect on the column.
+* _parents_: found within `<colgroup>`
+* _content_: 
+* _display_: 
+
+### `<caption>`
+optional table caption element. represents the title of a table.
+* _parents_: MUST be first descendent of table if used.
+* _content_: 
+
+###CONTENT ORDER
+```
+<table>
+//optional <caption>
+// 0 or more <colgroup>
+//optional <thead>
+(2 alternatives)
+ // one <tfoot> followed by:
+       // 0 or more <tbody>
+      // or 0 or more <tr>
+ // <tfoot>
+      // 0 or more <tbody>
+      // 1 or more <tr>
+
+```
+
 ##LONG TABLES----
 for long tables you can split the table into 3 elements: thead, tbody, tfoot. 3 elements that help distinguish between the main content of the table, and the first and last rows. They help people who use screen readers and also allow you to style these sections in a different manner than the rest of the table with CSS.
 
