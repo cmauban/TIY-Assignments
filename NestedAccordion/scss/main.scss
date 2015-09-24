@@ -125,6 +125,33 @@ textarea {
 
    }
 
+   h3::before {  /* make arrows work */
+     content: '\27b5';
+     color: #D0D2D6;
+     margin: 5px;
+     }
+
+
+   h3:hover::before {
+     content: '\27b4';
+     color: #47a3da;
+     margin: 5px;
+     }
+
+
+   h4::before {  /* make arrows work */
+     content: '\27b5';
+     color: #D0D2D6;
+     margin: 5px;
+     }
+
+
+   h4:hover::before {
+     content: '\27b4';
+     color: #47a3da;
+     margin: 4px;
+     }
+
 
 
    ul.main-accordion {
