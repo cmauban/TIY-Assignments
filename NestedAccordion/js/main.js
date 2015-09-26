@@ -5,5 +5,19 @@ $('section').on('click', function() { //sets an event listener on section so whe
 
 
 $('h3').on('click', function() {
-  $('li').addClass('open');
+  if ($(this).next().is(':hidden')) {
+      $(this).next().show();
+  } else {
+     $(this).next().hide();
+  }
 });
+
+// $('h3').on('click', function() {
+//   if ($(this).next().is(':hidden')) {
+//       $(this).next().show();
+//   } else {
+//      $(this).next().hide();
+//   }
+// });
+
+// $('').toggleClass('open');
