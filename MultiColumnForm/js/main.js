@@ -1,15 +1,18 @@
 var inputElements = $('input, select, textarea');
+console.log(inputElements);
 
-var submitForm = $('row-button');
+// var $submitForm = $('submit');
+$('inputElements').each(function(event) {
+var output = $('inputElements').val();
 
-submitForm.on('click', function(event){
-  inputElements.each(function() {
-  var output = inputElements.val();
+output.submit();
+  event.preventDefault();
+
   console.log(output);
-  });
+
 });
 
-event.preventDefault();
+
 
 
 
