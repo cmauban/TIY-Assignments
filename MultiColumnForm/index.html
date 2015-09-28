@@ -20,13 +20,14 @@
       <span>Blueprint</span>
       <h1>Responsive Multi-Column Form</h1>
       <nav class="nav-group">
-        <a class="nav-group-icon" href="#"><i class="fa fa-arrow-circle-o-left fa-2x"></i>previous</a>
-        <a class="nav-group-icon" href="#"><i class="fa fa-arrow-circle-o-right fa-2x"></i>next</a>
-        <a class="nav-group-icon" href="#"><i class="fa fa-circle-o fa-2x"></i>circle</a>
-        <a class="nav-group-icon" href="#"><i class="fa fa-archive fa-2x"></i>archive</a>
+        <a class="nav-group-icon"><i class="fa fa-arrow-circle-o-left fa-2x"></i></a>
+        <a class="nav-group-icon"><i class="fa fa-arrow-circle-o-right fa-2x"></i></a>
+        <a class="nav-group-icon"><i class="fa fa-circle-o fa-2x"></i></a>
+        <a class="nav-group-icon"><i class="fa fa-archive fa-2x"></i></a>
       </nav>
     </header>
-    <form>
+    <section class="main">
+    <form id="mcf-submit" method="post">
       <section class="col-1">
         <label>first name <input type="text" name="firstname"/></label>
         <label>last name <input type="text" name="lastname" /></label>
@@ -70,13 +71,14 @@
             <textarea name="comments" cols="20" rows="4">comments...</textarea>
       </section>
       <section class="row-button">
-      <button>send yo data</button>
+        <input class="submit" type="submit" value="send your data">
     </section>
     </form>
+  </section>
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

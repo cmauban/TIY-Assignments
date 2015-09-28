@@ -4,7 +4,6 @@ body {
   color: #47a3da;
 }
 
-
 .clearfix, .main {
   text-align: left;
   margin-left: auto;
@@ -15,78 +14,73 @@ body {
 
 header {
   font-size: 17px;
-
-  span {
-    text-transform: uppercase;
-    letter-spacing: 5px; }
-
-  nav {
-    display: inline-block;
-    float: right; }
-
 }
 
+header span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
+header nav {
+  display: inline-block;
+  float: right;
+}
 
 .cbp-vm-switcher ul {
   padding: 0px;
   clear: both;
 }
 
-
-.cbp-vm-view-grid li { /* set up grid */
+.cbp-vm-view-grid li {
+  /* set up grid */
   float: left;
   width: 33.3%;
   list-style-type: none;
   text-align: center;
 }
 
-*, *::after, *:before { /*now setting a width, the element stays that width despite padding/borders being applied to it */
+*, *::after, *:before {
+  /*now setting a width, the element stays that width despite padding/borders being applied to it */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
 .main::after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
-  }
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
 
-
-li { /* STYLES applied fixed padding to right side of all columns except the last one */
+li {
+  /* STYLES applied fixed padding to right side of all columns except the last one */
   margin-top: 20px;
   padding: 25px;
-
 }
 
 .cbp-vm-switcher ul:last-of-type {
   padding-right: 0;
 }
 
-.cbp-vm-switcher { /*line below icons*/
+.cbp-vm-switcher {
+  /*line below icons*/
   padding: 18px;
   border-bottom: 3px solid #47a3da;
 }
 
-.main { /* STYLES adding padding to the grid parent*/
+.main {
+  /* STYLES adding padding to the grid parent*/
   padding: 0px 30px 50px 30px;
   border: 3px solid #47a3da;
 }
 
-
-.cbp-vm-options { /* grid icons */
+.cbp-vm-options .cbp-vm-icon {
+  /* grid icons */
   text-align: right;
   padding-bottom: 10px;
-
-  // border-bottom: 3px solid #47a3da;
-}
-
-.cbp-vm-options .cbp-vm-icon {
   font-family: 'fontawesome';
   font-size: 30px;
   display: inline-block;
@@ -110,41 +104,43 @@ li { /* STYLES applied fixed padding to right side of all columns except the las
   text-align: right;
 }
 
-
-
-.cbp-vm-view-list li { /* set up list */
+.cbp-vm-view-list li {
+  /* set up list */
   position: relative;
   display: block;
   list-style-type: none;
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
+}
 
-    a.cbp-vm-image > img {
-      display: inline-block;
-      width: 10%;}
+.cbp-vm-view-list li a.cbp-vm-image > img {
+  display: inline-block;
+  width: 10%;
+}
 
-    h3.cbp-vm-title {
-      display: inline-block;
-      font-size: 16pt;
-      padding-right: 10px;
-      padding-left: 10px;}
+.cbp-vm-view-list li h3.cbp-vm-title {
+  display: inline-block;
+  font-size: 16pt;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-    div.cbp-vm-price {
-      display: inline-block;
-      color: #c0c0c0;
-      font-size: 16pt;
-      width: 10%;}
+.cbp-vm-view-list li div.cbp-vm-price {
+  display: inline-block;
+  color: #c0c0c0;
+  font-size: 16pt;
+  width: 10%;
+}
 
-    div.cbp-vm-details {
-      display: inline-block;
-      width: 30%;
-      white-space: normal;
-      box-sizing: border-box;
-      padding-right: 15px;
-      padding-left: 15px;
-      font-size: 15pt;}
-
+.cbp-vm-view-list li div.cbp-vm-details {
+  display: inline-block;
+  width: 30%;
+  white-space: normal;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 15pt;
 }
 
 a.cbp-vm-add {
@@ -157,11 +153,8 @@ a.cbp-vm-add {
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
-  padding-left: 20px;}
-
-
-
-
+  padding-left: 20px;
+}
 
 /* SET MIN HEIGHT TO FIX BOXES
  * ICONS- @FONT-FACE
@@ -174,35 +167,36 @@ a.cbp-vm-add {
 
 
 [class*='col-'] { /* selects all columns and makes them next to each other */
-
-.grid::after { /* clearing context. parent el collapses to 0 since it has floated children. */
+.grid::after {
+  /* clearing context. parent el collapses to 0 since it has floated children. */
   content: "";
   display: table;
   clear: both;
 }
 
-*, *::after, *:before { /*now setting a width, the element stays that width despite padding/borders being applied to it */
+*, *::after, *:before {
+  /*now setting a width, the element stays that width despite padding/borders being applied to it */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-[class*='col-'] { /* applied fixed padding to right side of all columns except the last one */
+[class*='col-'] {
+  /* applied fixed padding to right side of all columns except the last one */
   padding-right: 20px;
-
 }
 
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
 
-.grid-gutters { /*adding left padding to the grid parent*/
+.grid-gutters {
+  /*adding left padding to the grid parent*/
   padding: 20px 0 20px 20px;
   background-color: #ffffff;
-
 }
 
-.grid-gutters > [class*='col-']:last-of-type { /*restore right padding to the last column*/
+.grid-gutters > [class*='col-']:last-of-type {
+  /*restore right padding to the last column*/
   padding-right: 20px;
-
 }
