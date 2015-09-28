@@ -8,13 +8,17 @@ Application Programming Interfaces (APIs) lets programs (including scripts) talk
 
 > Do I need to authenticate?
 
+  You don't need too, but to get more requests or do anything interesting with GitHub API requires authentication.
+
 > What can I do with an unauthenticated request?
+
+  
 
 > What _can't_ I do with an unauthenticated request?
 
 > How can I authenticate my request?
 
-there are three ways to authenticate. requests that require authentication will return `404 Not Found` instead of `403 Forbidden`. This prevents accidental leakage of private repos to unauthorized users.
+  there are three ways to authenticate. requests that require authentication will return `404 Not Found` instead of `403 Forbidden`. This prevents accidental leakage of private repos to unauthorized users.
 
 1. First way -- with some description of what that is
 ```
@@ -39,11 +43,11 @@ there are three ways to authenticate. requests that require authentication will 
 
 > Is there a limit to the number of requests I can make?
 
-yes. authenticated: up to 5,000 requests per hour. unauthenticated: up to 60 requests per hour.
+  Yes. authenticated: up to 5,000 requests per hour. unauthenticated: up to 60 requests per hour.
 
 > Is there a way of extending that limit?
 
-Yes. You can fix the issue by caching API responses and using conditional requests.
+  Yes. You can fix the issue by caching API responses and using conditional requests.
 
 > What happens when I hit the limit?
 
