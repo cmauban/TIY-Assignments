@@ -126,3 +126,33 @@ You will receive an error response. `X-RateLimit-Remaining:0`
 > How can I ask for more (or less) data from a request?
 
 > How do I know that there is more data available?
+
+
+###Fetching
+- What are the endpoints for fetching…
+
+- the profile data for a user?
+
+- the organizations a user belongs to? GET /users/:username/orgs
+
+- the repositories a user has created?  GET /users/:username/repors
+
+- a filtered list of repositories?
+
+- a sorted list of repositories?
+
+- public events for a user?
+
+- When fetching public events for a user…
+
+- How many results are returned by default?
+
+- What limitations exist on fetching more results?
+
+- What is the basic structure of the results?
+
+- What fields are included in each result?
+
+- What are the data types for each field?
+
+- What are some of the different values for the type field?
