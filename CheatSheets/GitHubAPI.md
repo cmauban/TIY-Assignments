@@ -1,8 +1,32 @@
 # [GitHub API](https://developer.github.com/v3/)
-Application Programming Interfaces (APIs) lets programs (including scripts) talk to each other.
+Application Programming Interfaces (APIs) allows programs (including scripts) talk to each other.
+Versus- User inferfaces that allow humans to interact with the program.
+
+APIs used in browsers, scripts and websites that share functionailty with other programs or sites so that programmers can interact with them rather than writing something from scratch.
+
+APIs let you write code that will make a request asking another program or script to do something. They also specify the format in which the response will be given (so that the response can be understood).
+
+1. What the API can do
+2. How to access it
+3. How to ask the API to do something and the format in which you should expect any replies (the syntax)
 
 - The DOM is an API
 - jQuery is a JavaScript file with an API
+- the DOM and jQuery APIs allow you to access and update a webpage that is loaded in the browser and respond to events.
+- JavaScript API: create an obj, call its methods, access its properties, and respond to its events.
+- Facebook, Google+ and Twitter APIs let you access and update profiles and create status updates on their platforms.
+- MODERNIZER: a script you can use in your pages to tell whether the browser supports features of HTML, CSS, and JS. When you include modernizr script in your page, it adds an object called `Modernizer` which tests whether the browser supports the features that you specified that it should test for. Each feature you want to test becomes a property of that modernizr object and their values are a Boolean that tell you if a feature is supported.
+
+- `geolocation`: how to tell where the user is located
+- `localStorage`: store info in the browser (even when user closes tab/window)
+- `sessionStorage`: store info in the browser while a tab/window is open
+
+- any headers beginning with `X-` are custom headers and are not included in the HTTP spec. Headers tell you everything you need to know about your current rate limit status.
+ - `X-RateLimit-Limit`: the max number of requests that the consumer is permitted to make per hour
+ - `X-RateLimit-Remaining`: the number of requests remaining in the current rate limit window
+ - `X-RateLimit-Reset`: the time at which the current rate limit window resets in UTC epoch seconds
+ 
+- USER AGENT REQUIRED: all API requests MUST include a valid `User-Agent` header. Requests with no user-agent header will be rejected. ex: `User-Agent: Awesome-Octocat-App`
 
 ## [Authentication](https://developer.github.com/v3/#authentication)
  - Authentication is hte key to reading and writing private information via the API.
@@ -13,7 +37,7 @@ Application Programming Interfaces (APIs) lets programs (including scripts) talk
 
 > What can I do with an unauthenticated request?
 
-  
+  You can make up to 60 requests per hour. Unauthenticated requests are associated with your IP address and not the user making requests.
 
 > What _can't_ I do with an unauthenticated request?
   
@@ -93,7 +117,7 @@ Normally, tokens are created via a web flow. An application sends users to GitHu
 
 > What happens when I hit the limit?
 
-You will receive an error response.
+You will receive an error response. `X-RateLimit-Remaining:0`
 
 > What if there is a lot of data returned?
 
