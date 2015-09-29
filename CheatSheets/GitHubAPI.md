@@ -6,10 +6,6 @@ APIs used in browsers, scripts and websites that share functionailty with other 
 
 APIs let you write code that will make a request asking another program or script to do something. They also specify the format in which the response will be given (so that the response can be understood).
 
-1. What the API can do
-2. How to access it
-3. How to ask the API to do something and the format in which you should expect any replies (the syntax)
-
 - The DOM is an API
 - jQuery is a JavaScript file with an API
 - the DOM and jQuery APIs allow you to access and update a webpage that is loaded in the browser and respond to events.
@@ -109,7 +105,7 @@ Normally, tokens are created via a web flow. An application sends users to GitHu
 
 > Is there a limit to the number of requests I can make?
 
-  Yes. authenticated: up to 5,000 requests per hour. unauthenticated: up to 60 requests per hour.
+  Yes. authenticated: up to 5,000 requests per hour. unauthenticated: up to 60 requests per hour. Get your current rate limit status- `GET /rate_limit` Accessing this endpoint does not count againt your rate limit.
 
 > Is there a way of extending that limit?
 
