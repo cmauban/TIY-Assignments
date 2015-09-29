@@ -41,15 +41,17 @@ APIs let you write code that will make a request asking another program or scrip
 
 > How can I authenticate my request?
 
-  there are three ways to authenticate. requests that require authentication will return `404 Not Found` instead of `403 Forbidden`. This prevents accidental leakage of private repos to unauthorized users.
+  there are three ways to authenticate. requests that require authentication will return `404 Not Found` instead of `403 Forbidden`. This prevents accidental leakage of private repos to unauthorized users. 3 forms:
 
-1. First way -- Basic: using your GitHub username and password via Basic Authentication. `-u` flag sets the username, and cURL will prompt you for the password. 
+###1. First way -- HTTP Basic:
+using your GitHub username and password via Basic Authentication. `-u` flag sets the username, and cURL will prompt you for the password. `https://USERNAME:PASSWORD@api.github.com/`
 ```
 $ curl -i -u <your_username> https://api.github.com/users/defunkt
 
 Enter host password for user '<your_username>':
 ```
-2. Second way -- Two-factor: the API will return a `401 Unauthorized` error code for the above request. The easiest way to get around that error is to create an OAuth token and use OAuth authentication instead of Basic Authentication.
+###2. Second way -- Two-factor:
+the API will return a `401 Unauthorized` error code for the above request. The easiest way to get around that error is to create an OAuth token and use OAuth authentication instead of Basic Authentication.
 ```
 $ curl -i -u <your_username> https://api.github.com/users/defunkt
 
@@ -63,7 +65,8 @@ X-GitHub-OTP: required; :2fa-type
   "documentation_url": "https://developer.github.com/v3/auth#working-with-two-factor-authentication"
 }
 ```
-3. Third way -- Get your own user profile: When properly authenticated, you can take advantage of the permissions associated with your GitHub account. In addition to the same set of public info you received, you also see the non-public info for your user profile.For example, you’ll see a plan object in the response which gives details about the GitHub `plan` for the account.
+###3. Third way -- Get your own user profile:
+When properly authenticated, you can take advantage of the permissions associated with your GitHub account. In addition to the same set of public info you received, you also see the non-public info for your user profile.For example, you’ll see a plan object in the response which gives details about the GitHub `plan` for the account.
 ```
 $ curl -i -u <your_username> https://api.github.com/user
 
