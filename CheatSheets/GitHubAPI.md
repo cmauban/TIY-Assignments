@@ -7,9 +7,12 @@ APIs used in browsers, scripts and websites that share functionailty with other 
 APIs let you write code that will make a request asking another program or script to do something. They also specify the format in which the response will be given (so that the response can be understood).
 
 - The DOM is an API
+- DOM API: pieces- `.querySelector`
 - jQuery's interface is written in a JavaScript file with an API
 - the DOM and jQuery APIs allow you to access and update a webpage that is loaded in the browser and respond to events.
-- JavaScript API: create an obj, call its methods, access its properties, and respond to its events.
+- jQuery API: functions invoked in a JS function.
+- JavaScript API: it's an API for the HTML content. create an obj, call its methods, access its properties, and respond to its events.
+- HTML API: angle brackets, = "", all pieces to tell the browser what to do.
 - Facebook, Google+ and Twitter APIs let you access and update profiles and create status updates on their platforms.
 - MODERNIZER: a script you can use in your pages to tell whether the browser supports features of HTML, CSS, and JS. When you include modernizr script in your page, it adds an object called `Modernizer` which tests whether the browser supports the features that you specified that it should test for. Each feature you want to test becomes a property of that modernizr object and their values are a Boolean that tell you if a feature is supported.
 
