@@ -7,7 +7,7 @@ APIs used in browsers, scripts and websites that share functionailty with other 
 APIs let you write code that will make a request asking another program or script to do something. They also specify the format in which the response will be given (so that the response can be understood).
 
 - The DOM is an API
-- jQuery is a JavaScript file with an API
+- jQuery's interface is written in a JavaScript file with an API
 - the DOM and jQuery APIs allow you to access and update a webpage that is loaded in the browser and respond to events.
 - JavaScript API: create an obj, call its methods, access its properties, and respond to its events.
 - Facebook, Google+ and Twitter APIs let you access and update profiles and create status updates on their platforms.
