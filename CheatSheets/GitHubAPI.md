@@ -162,7 +162,7 @@ What limitations exist on fetching more results?
 - only events created within the past 90 days will be included in timelimes. events older than 90 days wont be included.
 
 What is the basic structure of the results?
-- 
+- x
 
 What fields are included in each result?
 - type, public, payload, repo(id,name,URL), actor (id, login, gravatar_id, avatar_url, url) org(id, login, gravatar_id, url, avatar_url), created_at and id.
