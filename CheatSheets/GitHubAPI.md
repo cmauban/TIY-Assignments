@@ -53,36 +53,14 @@ $ curl -i -u <your_username> https://api.github.com/users/defunkt
 
 Enter host password for user '<your_username>':
 ```
-###2. Second way -- Two-factor:
-the API will return a `401 Unauthorized` error code for the above request. The easiest way to get around that error is to create an OAuth token and use OAuth authentication instead of Basic Authentication.
+###2. Second way -- OAuth2 Token (sent as a parameter):
 ```
-$ curl -i -u <your_username> https://api.github.com/users/defunkt
-
-Enter host password for user '<your_username>':
-
-HTTP/1.1 401 Unauthorized
-X-GitHub-OTP: required; :2fa-type
-
-{
-  "message": "Must specify two-factor authentication OTP code.",
-  "documentation_url": "https://developer.github.com/v3/auth#working-with-two-factor-authentication"
-}
+$ curl https://api.github.com/?access_token=OAUTH-TOKEN
 ```
-###3. Third way -- Get your own user profile:
+###3. Third way -- OAuth2 Token (sent in a header)
 When properly authenticated, you can take advantage of the permissions associated with your GitHub account. In addition to the same set of public info you received, you also see the non-public info for your user profile.For example, you’ll see a plan object in the response which gives details about the GitHub `plan` for the account.
 ```
-$ curl -i -u <your_username> https://api.github.com/user
-
-{
-  ...
-  "plan": {
-    "space": 2516582,
-    "collaborators": 10,
-    "private_repos": 20,
-    "name": "medium"
-  }
-  ...
-}
+$ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
 ```
 
 ##OAuth:
