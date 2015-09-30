@@ -133,9 +133,11 @@ You will receive an error response. `X-RateLimit-Remaining:0`
 
 - the profile data for a user?
 
-- the organizations a user belongs to? GET /users/:username/orgs
+the organizations a user belongs to?
+- GET /users/:username/orgs
 
-- the repositories a user has created?  GET /users/:username/repors
+the repositories a user has created?
+- GET /users/:username/repors
 
 - a filtered list of repositories?
 
