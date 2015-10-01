@@ -228,7 +228,7 @@ _.map([1, 2, 3], function(n) { return n * 3; });
 
 ##How can I use the Lodash API to...
 replace placeholders with values from an object?
--
+- `_.values(object)` Creates an array of the own enumerable property values of object. Arguments- the object to query. Returns- array of property values.
 
 repeat code for every item of an array?
--
+- ah, couldn't find this one.
