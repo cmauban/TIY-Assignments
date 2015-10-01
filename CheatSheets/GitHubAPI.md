@@ -53,36 +53,14 @@ $ curl -i -u <your_username> https://api.github.com/users/defunkt
 
 Enter host password for user '<your_username>':
 ```
-###2. Second way -- Two-factor:
-the API will return a `401 Unauthorized` error code for the above request. The easiest way to get around that error is to create an OAuth token and use OAuth authentication instead of Basic Authentication.
+###2. Second way -- OAuth2 Token (sent as a parameter):
 ```
-$ curl -i -u <your_username> https://api.github.com/users/defunkt
-
-Enter host password for user '<your_username>':
-
-HTTP/1.1 401 Unauthorized
-X-GitHub-OTP: required; :2fa-type
-
-{
-  "message": "Must specify two-factor authentication OTP code.",
-  "documentation_url": "https://developer.github.com/v3/auth#working-with-two-factor-authentication"
-}
+$ curl https://api.github.com/?access_token=OAUTH-TOKEN
 ```
-###3. Third way -- Get your own user profile:
+###3. Third way -- OAuth2 Token (sent in a header)
 When properly authenticated, you can take advantage of the permissions associated with your GitHub account. In addition to the same set of public info you received, you also see the non-public info for your user profile.For example, you’ll see a plan object in the response which gives details about the GitHub `plan` for the account.
 ```
-$ curl -i -u <your_username> https://api.github.com/user
-
-{
-  ...
-  "plan": {
-    "space": 2516582,
-    "collaborators": 10,
-    "private_repos": 20,
-    "name": "medium"
-  }
-  ...
-}
+$ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
 ```
 
 ##OAuth:
@@ -126,3 +104,80 @@ You will receive an error response. `X-RateLimit-Remaining:0`
 > How can I ask for more (or less) data from a request?
 
 > How do I know that there is more data available?
+
+
+##Fetching
+
+###What are the endpoints for fetching…
+- An endpoint is any URL that the API understands and will return info back
+
+the profile data for a user?
+- https://api.github.com/users/USERNAME
+
+the organizations a user belongs to?
+- https://api.github.com/users/USERNAME/orgs
+- GET /users/USERNAME/orgs
+
+the repositories a user has created?
+- https://api.github.com/users/USERNAME/repos
+- GET /users/USERNAME/repors
+
+a filtered list of repositories?
+- you can use parameters such as `visibility`, `affilitiation`, `type` and `direction` to filter results.
+
+a sorted list of repositories?
+- use the `sort` parameter to sort the results into `created`, `updated pushed`, and `full_name`
+
+public events for a user?
+- https://api.github.com/users/USERNAME/events/public
+
+###When fetching public events for a user…
+
+How many results are returned by default?
+- the fixed page size is 30 items. Fetching up to 10 pages is supported, for a total of 300 events.
+
+What limitations exist on fetching more results?
+- only events created within the past 90 days will be included in timelimes. events older than 90 days wont be included.
+
+What is the basic structure of the results?
+- x
+
+What fields are included in each result?
+- type, public, payload, repo(id,name,URL), actor (id, login, gravatar_id, avatar_url, url) org(id, login, gravatar_id, url, avatar_url), created_at and id.
+
+What are the data types for each field?
+- all data types are represented as Strings expect for the id field. id is represented as a number and the "public" filed which is a Boolean.
+
+What are some of the different values for the type field?
+- links, file paths, strings, empty strings, string of numbers, Numbers
+```
+[
+  {
+    "type": "Event",
+    "public": true,
+    "payload": {
+    },
+    "repo": {
+      "id": 3,
+      "name": "octocat/Hello-World",
+      "url": "https://api.github.com/repos/octocat/Hello-World"
+    },
+    "actor": {
+      "id": 1,
+      "login": "octocat",
+      "gravatar_id": "",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+      "url": "https://api.github.com/users/octocat"
+    },
+    "org": {
+      "id": 1,
+      "login": "github",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/github",
+      "avatar_url": "https://github.com/images/error/octocat_happy.gif"
+    },
+    "created_at": "2011-09-06T17:26:27Z",
+    "id": "12345"
+  }
+]
+```
