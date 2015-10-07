@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browser-sync start --server --directory --files='index.html'",
+    "sass": "node-sass --output-style expanded --output css/ scss/main.scss"
   },
   "author": "cmauban",
   "license": "MIT",
