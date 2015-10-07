@@ -1,0 +1,51 @@
+body {
+  background: #ffffff;
+}
+
+.page-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-top: 3%;
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 1px solid #000000;
+  padding-bottom: 7%;
+  margin-bottom: 2%;
+}
+
+.tabs {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000000;
+  padding-bottom: 5%;
+  width: 90%;
+}
+
+.main {
+  border-top: 3px solid #47a3da;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  // padding-bottom: 80%;
+
+.module {
+    padding-left: 14%;
+}
+
+
+    li {
+      width: 29%;
+      list-style-type: none;
+      display: inline-block;
+      margin-top: 1%;
+      // background: #47a3da;
+    }
+
+}
