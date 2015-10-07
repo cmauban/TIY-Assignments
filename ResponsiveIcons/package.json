@@ -1,0 +1,15 @@
+{
+  "name": "responsiveicons",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cmauban",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "node-sass": "^3.3.3"
+  }
+}
