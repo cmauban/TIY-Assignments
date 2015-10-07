@@ -1,0 +1,16 @@
+{
+  "name": "dropdownmenu",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --directory --files='index.html'",
+    "sass": "node-sass --output-style expanded --output css/ /scss/main.scss"
+  },
+  "author": "cmauban",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "node-sass": "^3.3.3"
+  }
+}
