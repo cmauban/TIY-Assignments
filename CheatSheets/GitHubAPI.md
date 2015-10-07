@@ -181,3 +181,54 @@ What are some of the different values for the type field?
   }
 ]
 ```
+##How can I use the Github API to...
+get all the comments for a particular issue?
+- GET /repos/OWNER/REPO/issues/NUMBER/comments
+
+add a comment to an issue?
+- POST /repos/OWNER/REPO/issues/NUMBER/comments
+
+##How can I use the jQuery API to...
+get the HTML contents of an element?
+- `.html();` does NOT accept arguments. first element match is returned. uses the browsers innerHTML property.
+- ex: `$( "div.demo-container" ).html();`
+
+create a new HTML element?
+- `.html( htmlString );` any content that was in that element is completely replaced by the new content.
+- ex:
+```
+HTML:
+<div class="demo-container">
+  <div class="demo-box">Demonstration Box</div>
+</div>
+
+JQUERY:
+$( "div.demo-container" )
+  .html( "<p>All new content. <em>You bet!</em></p>" );
+
+```
+
+add an HTML element to the page?
+- `.add();` creates a new set and leaves the original set unchanged.
+- ex:
+```
+$( "p" ).add( "div" ).addClass( "widget" );
+var pdiv = $( "p" ).add( "div" );
+```
+
+**LODASH** is a JavaScript utility library delivering consistency, modularity, performance, & extras.
+installation in browser: `<script src="lodash.js"></script>` 
+ex:
+```
+_.assign({ 'a': 1 }, { 'b': 2 }, { 'c': 3 });
+// → { 'a': 1, 'b': 2, 'c': 3 }
+_.map([1, 2, 3], function(n) { return n * 3; });
+// → [3, 6, 9]
+```
+
+##How can I use the Lodash API to...
+replace placeholders with values from an object?
+- `_.values(object)` Creates an array of the own enumerable property values of object. Arguments- the object to query. Returns- array of property values.
+
+repeat code for every item of an array?
+- ah, couldn't find this one.
