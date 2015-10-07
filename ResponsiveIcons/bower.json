@@ -1,0 +1,22 @@
+{
+  "name": "ResponsiveIcons",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cmauban/TIY-Assignments",
+  "authors": [
+    "Camille Mauban <camille.mauban@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.*"
+  }
+}
