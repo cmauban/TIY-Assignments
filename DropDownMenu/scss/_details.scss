@@ -1,0 +1,41 @@
+header {
+  display: block;
+  font-family: 'Lato';
+  color: #47a3da;
+
+    h1 {
+      font-size: 21pt;
+      padding-top: 0;
+    }
+
+    h3 {
+      font-size: 12pt;
+      letter-spacing: 6pt;
+      text-transform: uppercase;
+    }
+}
+
+a {
+  padding: 1%;
+
+
+    &:link { //TAB LINKS
+        text-decoration:  none;
+        color: #666;
+        font-size: 12pt;
+    }
+
+    &:visited {
+      text-decoration:  none;
+      color: #666;
+      font-size: 12pt;
+    }
+
+    &:active {
+      text-decoration:  none;
+      color: #ffffff;
+      background-color: #47a3da;
+      font-size: 12pt;
+    }
+
+}
