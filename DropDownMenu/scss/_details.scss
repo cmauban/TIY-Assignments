@@ -17,7 +17,7 @@ header {
       }
 
       nav.icons {
-        color: #47a3da !important; 
+        color: #47a3da !important;
         // display: inline-block;
         // position: relative;
         // float: right;
@@ -27,42 +27,45 @@ header {
 
 
 
-a { //TAB LINKS
+a[href] { //TAB LINKS
   padding: 1% 2%;
   font-size: 11pt;
   font-weight:bold;
   text-decoration: none;
 
-    &:link {
-      text-decoration:  none;
-      color: #999;
-    }
+        &:link {
+          text-decoration:  none;
+          color: #999;
+        }
 
-    &:hover {
-      display: none;
-      color: #47a3da;
-    }
+        &:hover {
+          display: none;
+          color: #47a3da;
+        }
 
-    &:hover:before {
-      color: #47a3da;
-    }
+        &:hover:before {
+          color: #47a3da;
+        }
 
-    &:visited {
-      color: #999;
-    }
+        &:visited {
+          color: #999;
+        }
 
-    &:visited::before {
-      display: none;
+        &:visited::before {
+          display: none;
 
-    }
+        }
 
-    &:active {
-      text-decoration:  none;
-      color: #ffffff;
-      background-color: #47a3da;
-    }
+        &.active {
+          text-decoration: none;
+          color: #ffffff;
+          background-color: #47a3da;
+        }
 
 }
+
+
+
 
 
 h2 {
@@ -71,10 +74,13 @@ h2 {
 }
 
 
-.panel { //HIDES ALL PANELS
+.panel { //HIDES/ACTIVATES PANELS
   display: none;
-}
 
-.active { //SHOWS ACTIVE PANEL
-  display: inherit;
+      &.active { //SHOWS ACTIVE PANEL
+        display: inherit;
+        background-color: #47a3da;
+        padding-bottom: 10%;
+      }
+
 }

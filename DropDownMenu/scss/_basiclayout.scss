@@ -38,20 +38,13 @@ nav.tabs {
   position: absolute;
   left: 0;
   right: 0;
-}
-
-.main.active {
-  border-top: 3px solid #47a3da;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
   background: #47a3da;
+  
 }
 
 
 .tabContent {
-    width: 90%;
+    width: 100%;
 
         [class*="col-"], > * {
           background-color: #47a3da;
