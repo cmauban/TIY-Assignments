@@ -3,9 +3,10 @@ body {
 }
 
 .page-container {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 90%;
   margin-top: 3%;
 }
 
@@ -19,13 +20,13 @@ header {
 .main {
   width: 100%;
   border: 1px solid #000000;
-  // padding-bottom: 80%;
+  list-style-type: none;
 
-    li {
-      width: 32%;
-      list-style-type: none;
-      display: inline-block;
-      margin-top: 1%;
-    }
+    ul li {
+        width: 32%;
+        list-style-type: none;
+        display: inline-block;
+        margin-top: 1%;
+      }
 
 }
