@@ -1,7 +1,9 @@
 .grid {
   width: 100%;
-  // background: #FFFFFF;
-  padding-bottom: 30%;
+}
+
+.grid-row {
+  width: 100%;
 }
 
 .grid::after {
@@ -13,14 +15,19 @@
 [class*='col-'] {
   float: left;
   padding-right: 1%; //NEED! gutters
+  width: 33.33%;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 [class*='col-']:last-of-type {
-  // padding-right: 0;
+  padding-right: 0;
+  width: 33.33%;
+  border-collapse: none;
 }
 
 .module { //height of each list
-  padding: 20%;
+  // padding: 50%;
   background: #EEE;
 }
 
@@ -29,17 +36,4 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.grid-pad {
-  margin-left: auto;
-  margin-right: auto;
-  // padding: 1% 0 1% 1%;
-  [class*='col-']:last-of-type {
-    // padding-right: 5%;
-  }
-}
-
-.grid-pad > [class*='col-']:last-of-type {
-  padding-right: 1%;
 }
