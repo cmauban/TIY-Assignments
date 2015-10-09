@@ -5,23 +5,32 @@ header {
   line-height: 1;
   padding-left: 5%;
 
+      &:after { //clears header for icons to float right and get height
+      content: "";
+      display: table;
+      clear: both;
+    }
+
       h1 {
         font-size: 24pt;
         padding-top: 0;
         line-weight: 100;
+        float: left;
+        margin-top: 1.5%;
       }
 
       h3 { //BLUEPRINT
         font-size: 12pt;
         letter-spacing: 6pt;
         text-transform: uppercase;
+        margin: 0;
+
       }
 
       nav.icons {
         color: #47a3da !important;
-        // display: inline-block;
-        // position: relative;
-        // float: right;
+        float: right;
+        padding-right: 5%;
       }
 
 }
@@ -51,7 +60,7 @@ li {
         padding-top: 15%;
       }
 
-      hr { //LINE
+      hr.blue { //LINE
         display: block;
         border-top: 6px solid #47a3da;
         width: 40%;
@@ -60,6 +69,7 @@ li {
         margin-top: 20%;
         margin-bottom: 3%;
       }
+
 
 }
 
@@ -95,5 +105,27 @@ a[href] { //LI LINKS
         //   color: #ffffff;
         //   background-color: #47a3da;
         // }
+
+        hr.active { //LINE
+          display: block;
+          border-top: 6px solid #ffffff;
+          width: 40%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20%;
+          margin-bottom: 3%;
+        }
+
+}
+
+
+li hr.active { //HIDES/ACTIVATES PANELS
+  display: none;
+
+      // &.active { //SHOWS ACTIVE PANEL
+      //   display: inherit;
+      //   background-color: #47a3da;
+      //   padding-bottom: 10%;
+      // }
 
 }
