@@ -2,41 +2,64 @@ header {
   display: block;
   font-family: 'Lato';
   color: #47a3da;
+  line-height: 1;
 
-    h1 {
-      font-size: 21pt;
-      padding-top: 0;
-      
-    }
+      h1 {
+        font-size: 24pt;
+        padding-top: 0;
+        line-weight: 100;
+      }
 
-    h3 {
-      font-size: 12pt;
-      letter-spacing: 6pt;
-      text-transform: uppercase;
-    }
+      h3 { //BLUEPRINT
+        font-size: 12pt;
+        letter-spacing: 6pt;
+        text-transform: uppercase;
+      }
+
+      nav.icons {
+        color: #47a3da !important; 
+        // display: inline-block;
+        // position: relative;
+        // float: right;
+      }
+
 }
 
-a {
-  padding: 1%;
 
 
-    &:link { //TAB LINKS
-        text-decoration:  none;
-        color: #666;
-        font-size: 12pt;
+a { //TAB LINKS
+  padding: 1% 2%;
+  font-size: 11pt;
+  font-weight:bold;
+  text-decoration: none;
+
+    &:link {
+      text-decoration:  none;
+      color: #999;
+    }
+
+    &:hover {
+      display: none;
+      color: #47a3da;
+    }
+
+    &:hover:before {
+      color: #47a3da;
     }
 
     &:visited {
-      text-decoration:  none;
-      color: #666;
-      font-size: 12pt;
+      color: #999;
+    }
+
+    &:visited::before {
+      display: none;
+
     }
 
     &:active {
       text-decoration:  none;
       color: #ffffff;
       background-color: #47a3da;
-      font-size: 12pt;
     }
 
 }
@@ -45,6 +68,13 @@ a {
 h2 {
   font-weight: 100;
   color: #afdefa;
+}
 
 
+.panel { //HIDES ALL PANELS
+  display: none;
+}
+
+.active { //SHOWS ACTIVE PANEL
+  display: inherit;
 }
