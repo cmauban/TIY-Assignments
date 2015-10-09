@@ -46,8 +46,54 @@ li {
         background:#47a3da;
       }
 
-      i {
+      i { //IMAGES
         font-size: 30pt;
         padding-top: 15%;
       }
+
+      hr { //LINE
+        display: block;
+        border-top: 6px solid #47a3da;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        margin-bottom: 3%;
+      }
+
+}
+
+
+a[href] { //LI LINKS
+  text-decoration: none;
+
+        &:link {
+          text-decoration:  none;
+          color: #999;
+        }
+
+        // &:hover {
+        //   display: none;
+        //   color: #47a3da;
+        // }
+        //
+        // &:hover:before {
+        //   color: #47a3da;
+        // }
+
+        &:visited {
+          color: #999;
+        }
+
+        &:visited::before {
+          display: none;
+
+        }
+
+        // &.active {
+        //   text-decoration: none;
+        //   color: #ffffff;
+        //   background-color: #47a3da;
+        // }
+
 }
