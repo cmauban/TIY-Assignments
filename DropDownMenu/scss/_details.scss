@@ -4,10 +4,17 @@ header {
   color: #47a3da;
   line-height: 1;
 
+      &:after { //clears header for icons to float right and get height
+        content: "";
+        display: table;
+        clear: both;
+      }
+
       h1 {
         font-size: 24pt;
         padding-top: 0;
         line-weight: 100;
+        float: left;
       }
 
       h3 { //BLUEPRINT
@@ -18,9 +25,8 @@ header {
 
       nav.icons {
         color: #47a3da !important;
-        // display: inline-block;
-        // position: relative;
-        // float: right;
+        float: right;
+        width: 20%;
       }
 
 }
