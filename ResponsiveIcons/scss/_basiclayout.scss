@@ -1,5 +1,6 @@
 body {
   background: #ffffff;
+  font-family: 'Lato';
 }
 
 .page-container {
@@ -12,21 +13,24 @@ body {
 
 header {
   width: 100%;
-  border: 1px solid #000000;
-  padding-bottom: 8%;
+  outline: 1px solid #000000;
+  padding-bottom: 2.5%;
   margin-bottom: 2%;
 }
 
 .main {
   width: 100%;
-  border: 1px solid #000000;
+  outline: 1px solid #000000;
   list-style-type: none;
 
     ul li {
-        width: 32%;
+        width: 33%;
         list-style-type: none;
         display: inline-block;
         margin-top: 1%;
+        text-align: center;
+        float: left;
+
       }
 
 }
