@@ -15,7 +15,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  outline: 1px solid #000000;
+  // outline: 1px solid #000000;
   padding-bottom: 3%;
   margin-bottom: 2%;
 }
@@ -41,20 +41,44 @@ nav.tabs {
   position: absolute;
   left: 0;
   right: 0;
+}
 
-  // padding-bottom: 80%;
-
-.module {
-    padding-left: 14%;
+.main.active {
+  border-top: 3px solid #47a3da;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #47a3da;
 }
 
 
-    li {
-      width: 29%;
-      list-style-type: none;
-      display: inline-block;
-      margin-top: 1%;
-      // background: #47a3da;
-    }
+.tabContent {
+    width: 90%;
+
+        [class*="col-"], > * {
+          background-color: #47a3da;
+          float: left;
+          margin-left: 5%;
+          width: 100%;
+          // margin-right: 5%;
+        }
+
+        .col-1, .col-2, .col-3, .col-4 {
+          width: 20%;
+        }
+
+
+    .detail li {
+          // width: 29%;
+          list-style-type: none;
+          display: inline-block;
+          margin-top: 1%;
+          display: block;
+          overflow: auto;
+          padding: 0px;
+          color: #ffffff;
+        }
+
 
 }
