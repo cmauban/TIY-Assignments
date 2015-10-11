@@ -8,7 +8,7 @@ $('.tabs').each(function(){
     $(this).toggleClass('active');
     $(this).addClass('active').siblings().removeClass('active');
     $('.panel').toggleClass('active'); //toggles showing content on and off
-    $('a[#*="panel-"]').toggleClass('panel active');
+    $('[#*="panel-"]').toggleClass('panel active');
     $(this).addClass('active').siblings().removeClass('active');
 
     $('.panel .active').show().siblings().hide();
