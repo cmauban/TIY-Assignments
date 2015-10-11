@@ -28,18 +28,19 @@
             <a href="#" class="fa fa-smile-o fa-2x"></a>
           </nav>
         </header>
-        <nav class="tabs">
+        <!-- <nav class="tabs">
            <a href="#panel-products" class="active">Products</a>
            <a href="#panel-downloads">Downloads</a>
            <a href="#panel-applications">Applications</a>
            <a href="#panel-projects">Projects</a>
            <a href="#panel-freeware">Freeware</a>
-        </nav> <!-- .tabs -->
+        </nav> -->
         <section class="main">
 
-        <div class="tabContent">
-            <section class="panel active" id="panel-products"> <!--PRODUCTS PANEL-->
-            <a href="#panel-products" class="active">Products</a>
+        <ul class="tabContent">
+          <li>
+            <a href="#panel-products" class="">Products</a>
+            <section class="panel" id="panel-products"> <!--PRODUCTS PANEL-->
             <section class="col-1">
             <h2>Learning & Games</h2>
             <ul class="detail">
@@ -80,9 +81,11 @@
             </div>
           </ul>
         </section>
-          </section> <!--END OF PRODUCTS-->
-          <section class="panel" id="panel-downloads"> <!--DOWNLOADS PANEL-->
-            <a href="#panel-downloads">Downloads</a>
+          </section>
+        </li> <!--END OF PRODUCTS-->
+        <li>
+          <a href="#panel-downloads">Downloads</a> <!--DOWNLOADS PANEL-->
+          <section class="panel" id="panel-downloads">
             <section class="col-1">
             <h2>Education & Learning</h2>
             <ul class="detail">
@@ -125,8 +128,10 @@
           </ul>
         </section>
           </section> <!--END DOWNLOADS PANEL-->
+        </li>
+        <li>
+          <a href="#panel-applications">Applications</a>
           <section class="panel" id="panel-applications"> <!--APP PANEL-->
-             <a href="#panel-applications">Applications</a>
             <section class="col-1">
             <h2>Learning & Games</h2>
             <ul class="detail">
@@ -162,8 +167,10 @@
           </ul>
         </section>
           </section> <!--END APP PANEL-->
+        </li>
+        <li>
+          <a href="#panel-projects">Projects</a>
           <section class="panel" id="panel-projects"> <!--PROJECTS PANEL-->
-            <a href="#panel-projects">Projects</a>
             <section class="col-1">
             <h2>Learning & Games</h2>
             <ul class="detail">
@@ -196,8 +203,10 @@
             </ul>
           </section>
           </section> <!--END PROJECTS PANEL-->
+        </li>
+        <li>
+          <a href="#panel-freeware">Freeware</a>
           <section class="panel" id="panel-freeware"> <!--FREEWARE PANEL-->
-            <a href="#panel-freeware">Freeware</a>
             <section class="col-1">
             <h2>Utilities</h2>
             <ul class="detail">
@@ -235,14 +244,14 @@
             </ul>
           </section>
           </section> <!--END FREEWARE PANEL-->
-
+        </li>
 
 
 
 
     </section> <!--END MAIN CONTENT-->
   </section>
-</div>
+</ul>
       </div>
     </main> <!--END PAGE CONTENT-->
 
