@@ -7,20 +7,19 @@ body {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  max-width: 90%;
   margin-top: 3%;
 }
 
 header {
   width: 100%;
-  outline: 1px solid #000000;
+  // outline: 1px solid #000000;
   padding-bottom: 2.5%;
   margin-bottom: 2%;
 }
 
 .main {
   width: 100%;
-  outline: 1px solid #000000;
   list-style-type: none;
 
     ul li {
