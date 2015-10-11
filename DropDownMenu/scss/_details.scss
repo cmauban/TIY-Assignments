@@ -81,7 +81,7 @@ h2 {
 
 
 .panel { //HIDES/ACTIVATES PANELS
-  display: none;
+  display: none; //ONLY 1 PANEL SHOWN
 
       &.active { //SHOWS ACTIVE PANEL
         display: inherit;
