@@ -3,19 +3,17 @@ header {
   font-family: 'Lato';
   color: #47a3da;
   line-height: 1;
-  padding-left: 5%;
 
-      &:after { //clears header for icons to float right and get height
-      content: "";
-      display: table;
-      clear: both;
-    }
+        &:after { //clears header for icons to float right and get height
+        content: "";
+        display: table;
+        clear: both;
+      }
 
       h1 {
         font-size: 24pt;
         padding-top: 0;
         line-weight: 100;
-        float: left;
         margin-top: 1.5%;
       }
 
@@ -29,7 +27,6 @@ header {
 
       nav.icons {
         color: #47a3da !important;
-        float: right;
         padding-right: 5%;
       }
 
@@ -49,6 +46,7 @@ li {
       h4 {
         font-size: 12pt;
         text-transform: uppercase;
+        color: #ffffff;
       }
 
       &:hover {
@@ -82,14 +80,16 @@ a[href] { //LI LINKS
           color: #999;
         }
 
-        // &:hover {
-        //   display: none;
-        //   color: #47a3da;
-        // }
-        //
-        // &:hover:before {
-        //   color: #47a3da;
-        // }
+        &:hover { //CHANGES COLOR WHEN HOVERED
+          h2 {
+            color: #ffffff;
+          }
+
+          i {
+            color: #ffffff;
+          }
+        }
+
 
         &:visited {
           color: #999;

@@ -12,6 +12,19 @@
   clear: both;
 }
 
+
+.module { //height of each list
+  // padding: 50%;
+  // background: #EEE;
+}
+
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 [class*='col-'] {
   float: left;
   padding-right: 1%; //NEED! gutters
@@ -20,20 +33,9 @@
   border-bottom: 1px solid #ddd;
 }
 
+
 [class*='col-']:last-of-type {
   padding-right: 0;
   width: 33.33%;
   border-collapse: none;
-}
-
-.module { //height of each list
-  // padding: 50%;
-  background: #EEE;
-}
-
-
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
