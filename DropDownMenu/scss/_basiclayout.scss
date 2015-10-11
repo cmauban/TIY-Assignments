@@ -1,11 +1,13 @@
 body {
   background: #ffffff;
+  font-family: 'Lato';
 }
 
 .page-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
   margin-top: 3%;
 }
 
@@ -13,18 +15,22 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  border: 1px solid #000000;
-  padding-bottom: 7%;
+  // outline: 1px solid #000000;
+  padding-bottom: 2.5%;
   margin-bottom: 2%;
 }
 
-.tabs {
-  margin-left: auto;
+nav.tabs {
+  a[href] {
+  display: inline-block;
+  margin-left: 5%;
   margin-right: auto;
-  border: 1px solid #000000;
-  padding-bottom: 5%;
-  width: 90%;
+  outline: 1px solid #000000;
+
+  // width: 90%;
+  }
 }
+
 
 .main {
   border-top: 3px solid #47a3da;
@@ -32,20 +38,37 @@ header {
   position: absolute;
   left: 0;
   right: 0;
+  background: #47a3da;
 
-  // padding-bottom: 80%;
-
-.module {
-    padding-left: 14%;
 }
 
 
-    li {
-      width: 29%;
-      list-style-type: none;
-      display: inline-block;
-      margin-top: 1%;
-      // background: #47a3da;
-    }
+.tabContent {
+    width: 100%;
+
+        [class*="col-"], > * {
+          background-color: #47a3da;
+          float: left;
+          margin-left: 5%;
+          width: 100%;
+          // margin-right: 5%;
+        }
+
+        .col-1, .col-2, .col-3, .col-4 {
+          width: 20%;
+        }
+
+
+    .detail li {
+          // width: 29%;
+          list-style-type: none;
+          display: inline-block;
+          margin-top: 1%;
+          display: block;
+          overflow: auto;
+          padding: 0px;
+          color: #ffffff;
+        }
+
 
 }

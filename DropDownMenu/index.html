@@ -3,89 +3,257 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Drop Down Menu</title>
+        <title>Blueprint: Horizontal Drop-Down Menu</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
-      <div class="page-container">
+      <main class="page-container">
         <header>
-          <h3></h2>
-          <h1></h1>
+          <h3>blueprint</h2>
+          <h1>Horizontal Drop-Down Menu</h1>
           <nav class="icons">
-            <a href=#></a>
-            <a href=#></a>
-            <a href=#></a>
-            <a href=#></a>
+            <a href="#" class="fa fa-arrow-circle-o-left fa-2x"></a>
+            <a href="#" class="fa fa-arrow-circle-o-right fa-2x"></a>
+            <a href="#" class="fa fa-hand-peace-o fa-2x"></a>
+            <a href="#" class="fa fa-smile-o fa-2x"></a>
           </nav>
         </header>
         <nav class="tabs">
-           <a href="#panel-products"></a>
-           <a href="#panel-"></a>
-           <a href="#panel-"></a>
+           <a href="#panel-products" class="active">Products</a>
+           <a href="#panel-downloads">Downloads</a>
+           <a href="#panel-applications">Applications</a>
+           <a href="#panel-projects">Projects</a>
+           <a href="#panel-freeware">Freeware</a>
         </nav>
         <section class="main">
 
-        <div class="tabContent">
-          <ul class="grid">
-            <div class="grid-pad">
-            <section class="panel active" id="panel-products">
-            <li class="col-1">
+        <section class="tabContent">
+          <!-- <li> -->
+            <!-- <a href="#panel-products" class="">Products</a> -->
+            <section class="panel active" id="panel-products"> <!--PRODUCTS PANEL-->
+            <section class="col-1">
+            <h2>Learning & Games</h2>
+            <ul class="detail">
+              <li>Catch the Bullet</li>
+              <li>Snoopydoo</li>
+              <li>Fallen Angel</li>
+              <li>Sui Maker</li>
+              <li>Wave Master</li>
+              <li>Golf Pro</li>
+            </ul>
+          </section>
+            <section class="col-2">
+            <h2>Utilities</h2>
+            <ul class="detail">
+              <li>Gadget Finder</li>
+              <li>Green Tree Express</li>
+              <li>Green Tree Pro</li>
+              <li>Wobbler 3.0</li>
+              <li>Coolkid</li>
+            </ul>
+          </section>
+            <section class="col-3">
               <div class="module">
-              <h2>Learning & Games</h2>
-              <p>a</p>
-              <p>b</p>
+            <h2>Education</h2>
+            <ul class="detail">
+              <li>Learn Thai</li>
+              <li>Math Genius</li>
+              <li>Chemokid</li>
               </div>
-            </li>
-            <li class="col-2">
-              <div class="module">
-              <h2>Utilities</h2>
-              <p>a</p>
-              <p>b</p>
-              </div>
-            </li>
-            <li class="col-3">
-              <div class="module">
-              <h2>Education</h2>
-              <p>a</p>
-              <p>b</p>
-              </div>
-            </li>
-          </section> <!--END OF PRODUCTS-->
-
-
-
-
-            <!-- <li class="col-4">
-              <div class="module">
-              <h2>d</h2>
-              </div>
-            </li>
-              <li class="col-5">
-                <div class="module">
-                <h2>e</h2>
-                </div>
-              </li>
-            <li class="col-6">
-              <div class="module">
-              <h2>f</h2>
+            </ul>
+          </section>
+          <section class="col-4">
+            <div class="module">
+          <h2>Professionals</h2>
+          <ul class="detail">
+            <li>Success 1.0</li>
+            <li>Moneymaker</li>
             </div>
-          </li>
           </ul>
+        </section>
+          </section>
+         <!--END OF PRODUCTS-->
+        <!-- <li> -->
+          <!-- <a href="#panel-downloads">Downloads</a> <!--DOWNLOADS PANEL-->
+          <section class="panel" id="panel-downloads">
+            <section class="col-1">
+            <h2>Education & Learning</h2>
+            <ul class="detail">
+              <li>Learn Thai</li>
+              <li>Math Genius</li>
+              <li>Chemokid</li>
+            </ul>
+          </section>
+            <section class="col-2">
+              <h2>Professionals</h2>
+              <ul class="detail">
+                <li>Success 1.0</li>
+                <li>Moneymaker</li>
+            </ul>
+          </section>
+            <section class="col-3">
+              <div class="module">
+            <h2>Entertainment</h2>
+            <ul class="detail">
+              <li>Gadget Finder</li>
+              <li>Green Tree Express</li>
+              <li>Green Tree Pro</li>
+              <li>Holy Cannoli</li>
+              <li>Wobbler 3.0</li>
+              <li>Coolkid</li>
+              </div>
+            </ul>
+          </section>
+          <section class="col-4">
+            <div class="module">
+          <h2>Games</h2>
+          <ul class="detail">
+            <li>Catch the Bullet</li>
+            <li>Snoopydoo</li>
+            <li>Fallen Angel</li>
+            <li>Sui Maker</li>
+            <li>Wave Master</li>
+            <li>Golf Pro</li>
+            </div>
+          </ul>
+        </section>
+          </section> <!--END DOWNLOADS PANEL-->
+        <!-- </li> -->
+        <!-- <li> -->
+          <!-- <a href="#panel-applications">Applications</a> -->
+          <section class="panel" id="panel-applications"> <!--APP PANEL-->
+            <section class="col-1">
+            <h2>Learning & Games</h2>
+            <ul class="detail">
+              <li>Catch the Bullet</li>
+              <li>Snoopydoo</li>
+            </ul>
+          </section>
+            <section class="col-2">
+            <h2>Utilities</h2>
+            <ul class="detail">
+              <li>Gadget Finder</li>
+              <li>Green Tree Express</li>
+              <li>Green Tree Pro</li>
+              <li>Wobbler 3.0</li>
+              <li>Coolkid</li>
+            </ul>
+          </section>
+            <section class="col-3">
+              <div class="module">
+            <h2>Education</h2>
+            <ul class="detail">
+              <li>Learn Thai</li>
+              <li>Math Genius</li>
+              <li>Chemokid</li>
+              </div>
+            </ul>
+          </section>
+          <section class="col-4">
+            <h2>Professionals</h2>
+            <ul class="detail">
+              <li>Success 1.0</li>
+              <li>Moneymaker</li>
+          </ul>
+        </section>
+          </section> <!--END APP PANEL-->
+        <!-- </li> -->
+        <!-- <li> -->
+          <!-- <a href="#panel-projects">Projects</a> -->
+          <section class="panel" id="panel-projects"> <!--PROJECTS PANEL-->
+            <section class="col-1">
+            <h2>Learning & Games</h2>
+            <ul class="detail">
+              <li>Catch the Bullet</li>
+              <li>Snoopydoo</li>
+              <li>Fallen Angel</li>
+              <li>Sui Maker</li>
+              <li>Wave Master</li>
+              <li>Golf Pro</li>
+            </ul>
+          </section>
+            <section class="col-2">
+            <h2>Utilities</h2>
+            <ul class="detail">
+              <li>Gadget Finder</li>
+              <li>Green Tree Express</li>
+            </ul>
+          </section>
+            <section class="col-3">
+              <div class="module">
+            <h2>Entertainment</h2>
+            <ul class="detail">
+              <li>Gadget Finder</li>
+              <li>Green Tree Express</li>
+              <li>Green Tree Pro</li>
+              <li>Holy Cannoli</li>
+              <li>Wobbler 3.0</li>
+              <li>Coolkid</li>
+              </div>
+            </ul>
+          </section>
+          </section> <!--END PROJECTS PANEL-->
+        <!-- </li> -->
+        <!-- <li> -->
+          <!-- <a href="#panel-freeware">Freeware</a> -->
+          <section class="panel" id="panel-freeware"> <!--FREEWARE PANEL-->
+            <section class="col-1">
+            <h2>Utilities</h2>
+            <ul class="detail">
+              <li>Green Tree Pro</li>
+              <li>Wobbler 3.0</li>
+              <li>Coolkid</li>
+            </ul>
+          </section>
+          <section class="col-2">
+            <div class="module">
+          <h2>Education</h2>
+          <ul class="detail">
+            <li>Learn Thai</li>
+            <li>Math Genius</li>
+            <li>Chemokid</li>
+            </div>
+          </ul>
+        </section>
+        <section class="col-3">
+          <h2>Professionals</h2>
+          <ul class="detail">
+            <li>Success 1.0</li>
+            <li>Moneymaker</li>
+          </ul>
+        </section>
+            <section class="col-4">
+            <h2>Learning & Games</h2>
+            <ul class="detail">
+              <li>Catch the Bullet</li>
+              <li>Snoopydoo</li>
+              <li>Fallen Angel</li>
+              <li>Sui Maker</li>
+              <li>Wave Master</li>
+              <li>Golf Pro</li>
+            </ul>
+          </section>
+          </section> <!--END FREEWARE PANEL-->
+        <!-- </li> -->
 
-    </section> <!-END MAIN CONTENT-->
+
+
+
+    </section> <!--END MAIN CONTENT-->
   </section>
-</div>
+</section>
       </div>
-      </div> <!--END PAGE CONTENT-->
+    </main> <!--END PAGE CONTENT-->
 
 
 
