@@ -4,7 +4,9 @@
   "description": "",
   "main": "StringCalculator.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "browser-sync start --server --directory --files='index.html'",
+    "sass": "node-sass --output-style expanded --output css/ scss/main.scss"
   },
   "repository": {
     "type": "git",
