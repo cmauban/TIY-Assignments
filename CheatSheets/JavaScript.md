@@ -1,5 +1,5 @@
-#About JavaScript
-###The Four Primitive Types:
+# About JavaScript
+### The Four Primitive Types:
 1. `null`- 1 value. Intentionally empty value. Simplest type of expression.
   - ex: Number(null) // 0
 2. `Boolean`- 2 values. comparing two things. (true and false)
@@ -11,7 +11,7 @@
 4. `String`- represents text. "words", textual data in quotes, numbers don't need quotes. Concatenate: putting two strings together.
   - ex: String("Hello World")
 
-##Special Constants:
+## Special Constants:
 - `Inifinty`- numeric value representing infinity
   - ex: 4 / Infinity = 0
   - ex: 2 * Infinity = Infinity
@@ -20,7 +20,7 @@
 - `undefined`- a value that is undefined such as a variable that has not been assigned a value.
   - ex: Number(demo) // demo is not defined
 
-##Basic Operators:
+## Basic Operators:
 - Arithmetic, e.g. +, -, / : takes numerical values as their operands and returns a single numerical value.
   - ex: 3 + 2
   - ex: 4 / 2
@@ -64,7 +64,7 @@ ex:
   Number(Boolean(null));
 ```
 
-#####Functions have 3 things:
+##### Functions have 3 things:
 
 1. Input- parameters/arguments
 2. Output- ex: return. (return value is always undefined unless noted)
@@ -81,7 +81,7 @@ The `function` keyword is used to _define_ a function with parentheses and curly
 
 Once a function has been defined, it can be _invoked_ by a function name.
 
-###Different types of functions:
+### Different types of functions:
 
 - An **anonymous function** is a function without a function name: `function () {}`
  - `setTimeout` accepts a function as an argument. The correct way to pass a function as an argument is defining it as anonymous or giving the function a name. If you use parenthesis(brackets), you aren't actually passing a function, You are executing the function and passing the result of the function to setTimeout. So don't use parenthesis to pass.
@@ -124,7 +124,7 @@ Once a function has been defined, it can be _invoked_ by a function name.
        }
 ```
 
-##Control Flow Constructs
+## Control Flow Constructs
 
 - Block Statements: The most basic statement. used to group statements. The block is delimited by a pair of curly brackets:
 ```
@@ -199,7 +199,7 @@ while (x < 10) {
 console.log("Is there anything else you'd like?");
 ```
 
-###Loops
+### Loops
 
 - **While Statement**: creates a loop that executes a specified statement as long as the test condition evaluates to `true`.
 ```
@@ -339,15 +339,15 @@ var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Raleigh", "Charlotte", "
 for (var i = 0; i < cities.length; i++) {
     console.log("I would like to visit " + cities[i]);
 ```
-###Document Object Model (DOM)
+### Document Object Model (DOM)
 - is the model of the HTML inside the document.
 - JS gives us a DOM
 - DOM is where the document lives.
 
-####Window Object
+#### Window Object
 represents a window containing a DOM document.  a window for a given document can be obtained using the document.defaultView property. a brief reference for all of the methods, properties, and events available through the DOM window object. The window object implements the Window interface, which in turn inherits from the AbstractView interface.
 
-#####Properties:
+##### Properties:
 - LOCATION: read-only property returns a Location object with information about the current location of the document.
 ```
 		var oldLocation = location;
@@ -444,14 +444,14 @@ represents a window containing a DOM document.  a window for a given document ca
 	}
 	</script>
 ```
-####Location Object
+#### Location Object
 
-#####Properties: *see location property in window*
+##### Properties: *see location property in window*
 
-####Document Object
+#### Document Object
 Each web page loaded in the browser has its own document object. The Document interface serves as an entry point into the web page's content (the DOM tree, including elements such as body and table) and provides functionality which is global to the document (such as obtaining the page's URL and creating new elements in the document).
 
-#####Properties:
+##### Properties:
 - HEAD: Returns the <head> element of the current document. `var objRef = document.head;`
 	ex:
 ```
@@ -478,7 +478,7 @@ Each web page loaded in the browser has its own document object. The Document in
 		document.body = aNewBodyElement;
 		alert(document.body.id); // "newBodyElement"
 ```
-#####Methods:
+##### Methods:
 - `getElementById`: takes a string and returns the DOM element with that ID. if there is no element with the given id, it returns null.
 	- `element = document.getElementById("id");`
 
@@ -496,9 +496,9 @@ Each web page loaded in the browser has its own document object. The Document in
 - `write`
 - `writeln`
 
-####`HTMLElement` Type
+#### `HTMLElement` Type
 
-#####Properties:
+##### Properties:
 - id: `<h1 id="myHeader">Hello World!</h1>`
 - className: returns class name of an element `document.getElementById("myDIV").className = "mystyle";`
 - innerHTML: sets or returns the HTML content (inner HTML) of an element.
@@ -510,7 +510,7 @@ Each web page loaded in the browser has its own document object. The Document in
 
 *parentNode, firstChild, lastChild, previousSibling, nextSibling - returns null if there is no such child, parent, or sibling node. BUT `childNodes` array is length of zero if no childNodes.
 
-#####Methods:
+##### Methods:
 - `addEventListener`: is the way to register an event listener. It allows adding more than a single handler for an event. You can add many event handlers to one element.
 	- `element.addEventListener(event, function, useCapture);`
 	- first parameter is the type of the event (like "click" or "mousedown").
@@ -520,7 +520,7 @@ Each web page loaded in the browser has its own document object. The Document in
 	- The return value is false if at least one of the event handlers which handled this event called Event.preventDefault(). Otherwise it returns true.
 - *Attribute family:
 
-####`HTMLCollection` and `NodeList` Types
+#### `HTMLCollection` and `NodeList` Types
 
 The **HTMLCollection** interface represents a generic collection (array-like object) of elements (in document order) and offers methods and properties for selecting from the list.
 
@@ -537,12 +537,12 @@ The **HTMLCollection** interface represents a generic collection (array-like obj
 
 -  Each node has a `childNodes` property that contains an ordered array of all its children. One can index into this array. Use when you want to manipulate a Node that doesn't have an ID.
 
-###[Events] (http://www.w3schools.com/js/js_htmldom_events.asp)
+#### [Events] (http://www.w3schools.com/js/js_htmldom_events.asp)
 HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document. It is any input a user can provide triggers an event in JavaScript: clicks, scrolls, pressing a key on the keyboard.
 
 Events are first captured down to the innermost target, then bubble up.
 
-#####Properties:
+##### Properties:
 - `event.bubbles`: After an event triggers on the deepest possible element, it then triggers on parents in nesting order. First captured and handled by the innermost element and then propagated to outer elements. it returns a Boolean value, which is true if the event bubbles up through the DOM. only certain events can bubble, and they will bubble if the property is set to true.
 	- The order is called a *bubbling order*, because an event bubbles from the innermost element up through parents, like a bubble of air in the water. ex: 3 bubbles first, then 2, then 1.
 ```
